@@ -70,7 +70,7 @@
         "groups": [
           {
             "group": "Product",
-            "icon": "rocket-launch",
+            "icon": "box-open",
             "pages": [
               "prometheus/introduction"
             ]
@@ -79,6 +79,8 @@
             "group": "IDE Extension",
             "pages": [
               "prometheus/extension/introduction",
+              "prometheus/extension/quick-start",
+              
               {
                 "group": "Features",
                 "icon": "star",
