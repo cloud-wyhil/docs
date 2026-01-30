@@ -1,66 +1,63 @@
 ---
-title: 'Quick Start'
-description: '어플리케이션의 레이아웃을 변경하는 방법을 알아봅니다.'
+title: '빠른 시작'
+description: '채팅 모드 빠른 시작방법을 알려 드립니다.'
 icon: 'rocket'
 ---
 
-# Quick Start Tutorial
+# 빠른 시작 튜토리얼
 
-> Learn Prometheus's core features through hands-on exercises. Get started with Autocomplete, Edit, Chat, and Agent mode in minutes.
+> 실습을 통해 Prometheus의 핵심 기능을 배워보세요. 몇 분 안에 자동 완성, 수정(Edit), 채팅 및 에이전트 모드를 시작할 수 있습니다.
 
-Welcome to Prometheus! This interactive tutorial will guide you through all four core features using practical examples. Follow along step-by-step to learn more about Prometheus's capabilities.
+Prometheus에 오신 것을 환영합니다! 이 대화형 튜토리얼은 실용적인 예제를 사용하여 네 가지 핵심 기능을 모두 안내합니다. Prometheus의 기능을 자세히 알아보려면 단계를 차례대로 따라와 주세요.
 
 <Info>
-  **Prerequisites**: Make sure you have [installed
-  Prometheus](/ide-extensions/install) and [signed
-  in](https://auth.continue.dev/) to get started.
+  **사전 요구 사항**: 시작하기 전에 [Prometheus 설치](/ide-extensions/install)와 [로그인](https://auth.continue.dev/)이 완료되었는지 확인하세요.
 </Info>
 
 ***
 
-## 🔄 Autocomplete
+## 🔄 자동 완성 (Autocomplete)
 
-**What it does**: Provides intelligent inline code suggestions as you type, powered by AI.
+**기능**: AI가 사용자의 입력을 분석하여 실시간으로 지능적인 인라인 코드 제안을 제공합니다.
 
 <Steps>
-  <Step title="Create a Test File">
-    Create a new file called `tutorial.js` (or use any language you prefer) in your IDE
+  <Step title="테스트 파일 생성">
+    IDE에서 `tutorial.js`라는 이름의 새 파일을 생성하세요 (원하는 다른 언어를 사용해도 좋습니다).
   </Step>
 
-  <Step title="Try Autocomplete">
-    Copy this starter code and place your cursor at the end of the comment:
+  <Step title="자동 완성 시도">
+    다음 시작 코드를 복사하고 주석 끝에 커서를 놓으세요:
 
     ```javascript  theme={null}
-    // TODO: Implement a sorting algorithm function
+    // TODO: 정렬 알고리즘 함수 구현
     function sortingAlgorithm(arr) {
-      // Place cursor here and press Enter
+      // 여기에 커서를 두고 Enter를 누르세요
     }
     ```
 
-    Press **Enter** and watch Prometheus suggest code completions. Press **Tab** to accept suggestions.
+    **Enter**를 누르고 Prometheus가 코드 완성을 제안하는 것을 확인하세요. **Tab** 키를 눌러 제안을 수락합니다.
   </Step>
 
-  <Step title="See the Magic">
-    Prometheus will intelligently suggest function implementations based on the context and comment.
+  <Step title="결과 확인">
+    Prometheus는 문맥과 주석에 따라 함수 구현을 지능적으로 제안합니다.
   </Step>
 </Steps>
 
 <Tip>
-  Autocomplete works best when you provide clear function names, comments, or
-  type annotations that give context about your intent.
+  자동 완성은 의도를 명확하게 나타내는 함수 이름, 주석 또는 타입 어노테이션을 제공할 때 가장 효과적으로 작동합니다.
 </Tip>
 
 ***
 
 <img src="https://mintcdn.com/continue-docs/4yBoEYQuVyTbLO4x/images/autocomplete-quick-start.gif?s=c3eeae6173167403efe9d3f13f5bd025" alt="autocomplete-demo" data-og-width="924" width="924" data-og-height="720" height="720" data-path="images/autocomplete-quick-start.gif" data-optimize="true" data-opv="3" />
 
-## ✏️ Edit
+## ✏️ 수정 (Edit)
 
-**What it does**: Make quick, targeted changes to specific code sections using natural language instructions.
+**기능**: 자연어 명령을 사용하여 특정 코드 섹션에 대해 빠르고 정확한 변경 작업을 수행합니다.
 
 <Steps>
-  <Step title="Add Sample Code">
-    Paste this bubble sort implementation in your file:
+  <Step title="샘플 코드 추가">
+    파일에 다음 버블 정렬 구현 코드를 붙여넣으세요:
 
     ```javascript  theme={null}
     function sortingAlgorithm(x) {
@@ -78,39 +75,38 @@ Welcome to Prometheus! This interactive tutorial will guide you through all four
     ```
   </Step>
 
-  <Step title="Highlight the Function">
-    **Highlight** the entire function in your editor
+  <Step title="함수 강조 표시">
+    에디터에서 함수 전체를 **드래그하여 강조 표시(Highlight)** 하세요.
   </Step>
 
-  <Step title="Open Edit Mode">Press **Cmd/Ctrl + I** to open Edit mode</Step>
+  <Step title="수정 모드 열기">**Cmd/Ctrl + I**를 눌러 수정(Edit) 모드를 엽니다.</Step>
 
-  <Step title="Give Instructions">
-    Type: `"make this more readable and add TypeScript types"`
+  <Step title="명령 입력">
+    `"이 코드를 더 읽기 쉽게 만들고 TypeScript 타입을 추가해줘"` 라고 입력하세요.
   </Step>
 
-  <Step title="Watch the Magic">
-    Watch Prometheus refactor your code automatically!
+  <Step title="수정 결과 확인">
+    Prometheus가 자동으로 코드를 리팩토링하는 모습을 확인하세요!
   </Step>
 
-  <Step title="Review Changes">
-    Prometheus will show you a diff of the proposed changes. Accept or reject individual changes as needed.
+  <Step title="변경 사항 검토">
+    Prometheus가 제안된 변경 사항의 차이(diff)를 보여줍니다. 필요에 따라 개별 변경 사항을 수락하거나 거부하세요.
   </Step>
 </Steps>
 
 <Note>
-  Edit is perfect for refactoring, adding documentation, fixing bugs, or
-  converting between languages/frameworks.
+  수정(Edit) 기능은 리팩토링, 문서 추가, 버그 수정 또는 언어/프레임워크 간 변환에 매우 적합합니다.
 </Note>
 
 <img src="https://mintcdn.com/continue-docs/qJOXoW3PnI7_Ra2c/images/edit-quick-start.gif?s=28accc8146b008fcb16a3dfdb263d68c" alt="edit-demo" data-og-width="980" width="980" data-og-height="720" height="720" data-path="images/edit-quick-start.gif" data-optimize="true" data-opv="3" />
 
-## 💬 Chat Mode
+## 💬 채팅 모드 (Chat Mode)
 
-**What it does**: Interactive AI assistant that can analyze code, answer questions, and provide guidance without leaving your IDE.
+**기능**: IDE를 벗어나지 않고도 코드를 분석하고, 질문에 답하며, 지침을 제공할 수 있는 대화형 AI 어시스턴트입니다.
 
 <Steps>
-  <Step title="Add Another Function">
-    Add this second sorting function to your file:
+  <Step title="다른 함수 추가">
+    파일에 두 번째 정렬 함수를 추가하세요:
 
     ```javascript  theme={null}
     function sortingAlgorithm2(x) {
@@ -128,194 +124,181 @@ Welcome to Prometheus! This interactive tutorial will guide you through all four
     ```
   </Step>
 
-  <Step title="Start a Conversation">
-    1. **Highlight** the function
-    2. Use the keyboard shortcuts below to add it to Chat.
-    3. Ask: `"What sorting algorithm is this and how can I optimize it?"`
+  <Step title="대화 시작하기">
+    1. 함수를 **강조 표시**하세요.
+    2. 아래의 단축키를 사용하여 채팅에 추가합니다.
+    3. `"이것은 어떤 정렬 알고리즘이며 어떻게 최적화할 수 있나요?"`라고 물어보세요.
   </Step>
 
-  <Step title="Explore Further">
-    Try these follow-up questions:
+  <Step title="더 깊게 알아보기">
+    다음과 같은 후속 질문을 시도해 보세요:
 
-    * `"Show me how to implement quicksort instead"`
-    * `"What's the time complexity of this algorithm?"`
-    * `"Can you write unit tests for this function?"`
+    * `"대신 퀵 정렬(quicksort)을 구현하는 방법을 보여줘"`
+    * `"이 알고리즘의 시간 복잡도는 어떻게 되나요?"`
+    * `"이 함수에 대한 단위 테스트를 작성해 줄 수 있나요?"`
   </Step>
 </Steps>
 
-### Chat Mode Keyboard Shortcuts
+### 채팅 모드 단축키
 
 <Tabs>
   <Tab title="VS Code">
     **Cmd/Ctrl + L**\
-    New Chat / New Chat With Selected Code / Close Prometheus Sidebar If Chat Already In Focus
+    새 채팅 / 선택한 코드로 새 채팅 시작 / 채팅에 이미 포커스가 있는 경우 Prometheus 사이드바 닫기
 
     **Cmd/Ctrl + Shift + L**\
-    Focus Current Chat / Add Selected Code To Current Chat / Close Prometheus Sidebar If Chat Already In Focus
+    현재 채팅에 포커스 / 선택한 코드를 현재 채팅에 추가 / 채팅에 이미 포커스가 있는 경우 Prometheus 사이드바 닫기
   </Tab>
 
   <Tab title="JetBrains IDEs">
     **Cmd/Ctrl + J**\
-    New Chat / New Chat With Selected Code / Close Prometheus Sidebar If Chat Already In Focus
+    새 채팅 / 선택한 코드로 새 채팅 시작 / 채팅에 이미 포커스가 있는 경우 Prometheus 사이드바 닫기
 
     **Cmd/Ctrl + Shift + J**\
-    Focus Current Chat / Add Selected Code To Current Chat / Close Prometheus Sidebar If Chat Already In Focus
+    현재 채팅에 포커스 / 선택한 코드를 현재 채팅에 추가 / 채팅에 이미 포커스가 있는 경우 Prometheus 사이드바 닫기
   </Tab>
 </Tabs>
 
 <Tip>
-  Use Chat for code reviews, debugging help, learning new concepts, or
-  brainstorming solutions to complex problems.
+  코드 리뷰, 디버깅 도움말, 새로운 개념 학습 또는 복잡한 문제에 대한 솔루션 브레인스토밍에 채팅을 활용하세요.
 </Tip>
 
 <img src="https://mintcdn.com/continue-docs/4yBoEYQuVyTbLO4x/images/chat-quick-start.gif?s=db8b1d40af253b62c244d046be532957" alt="chat-demo" data-og-width="1140" width="1140" data-og-height="720" height="720" data-path="images/chat-quick-start.gif" data-optimize="true" data-opv="3" />
 
 ***
 
-## 🤖 Agent Mode
+## 🤖 에이전트 모드 (Agent Mode)
 
-**What it does**: An autonomous coding assistant that can read files, make changes, run commands, and handle complex multi-step tasks.
+**기능**: 파일을 읽고, 변경하고, 명령을 실행하며, 복잡한 다단계 작업을 처리할 수 있는 자율 코딩 어시스턴트입니다.
 
 <Steps>
-  <Step title="Switch to Agent Mode">
-    1. Open the Prometheus panel
-    2. Click the **dropdown** in the bottom left of the input box
-    3. Select **"Agent"** mode
+  <Step title="에이전트 모드로 전환">
+    1. Prometheus 패널을 엽니다.
+    2. 입력창 왼쪽 하단의 **드롭다운**을 클릭합니다.
+    3. **"Agent (에이전트)"** 모드를 선택합니다.
   </Step>
 
-  <Step title="Give Agent Mode a Complex Task">
-    Try this prompt: `"Write comprehensive unit tests for the sorting functions
-      in this file. Create the tests in a new file using Jest, and make sure to test
-      edge cases like empty arrays and single elements."`
+  <Step title="에이전트 모드에 복잡한 작업 지시">
+    다음 프롬프트를 시도해 보세요: `"이 파일의 정렬 함수들에 대해 포괄적인 단위 테스트를 작성해줘. Jest를 사용하여 새 파일을 만들고, 빈 배열이나 단일 요소와 같은 엣지 케이스도 반드시 테스트해줘."`
   </Step>
 
-  <Step title="Watch Agent Mode Work">
-    Agent mode will:
+  <Step title="에이전트 모드 작동 확인">
+    에디터 모드는 다음과 같이 작동합니다:
 
-    * ✅ Analyze your existing code
-    * ✅ Create a new test file
-    * ✅ Write comprehensive tests
-    * ✅ Handle setup and imports
-    * ✅ Explain what it's doing at each step
+    * ✅ 기존 코드 분석
+    * ✅ 새 테스트 파일 생성
+    * ✅ 포괄적인 테스트 작성
+    * ✅ 설정 및 임포트 처리
+    * ✅ 각 단계에서 수행 중인 작업 설명
   </Step>
 </Steps>
 
 <Warning>
-  Agent mode has powerful capabilities including file creation and modification.
-  Always review Agent mode's changes before accepting them.
+  에이전트 모드는 파일 생성 및 수정을 포함한 강력한 기능을 가지고 있습니다. 변경 사항을 적용하기 전에 항상 검토하세요.
 </Warning>
 
 <img src="https://mintcdn.com/continue-docs/4yBoEYQuVyTbLO4x/images/agent-quick-start.gif?s=c3fb3c1f7a1003242ee233390c09ed68" alt="agent-demo" data-og-width="996" width="996" data-og-height="720" height="720" data-path="images/agent-quick-start.gif" data-optimize="true" data-opv="3" />
 
 ***
 
-## Explore More Extension Examples
+## 더 많은 익스텐션 예시 살펴보기
 
-Ready to explore more? Prometheus offers five powerful features to enhance your coding workflow:
+더 자세히 알아볼 준비가 되셨나요? Prometheus는 코딩 워크플로우를 향상시키기 위한 다섯 가지 강력한 기능을 제공합니다:
 
 <Tabs>
-  <Tab title="Agent Mode">
-    [Agent Mode](/ide-extensions/agent/quick-start) equips the Chat model with the tools needed to handle a wide range of coding tasks
+  <Tab title="에이전트 모드">
+    [에이전트 모드](/ide-extensions/agent/quick-start)는 채팅 모델에 광범위한 코딩 작업을 처리하는 데 필요한 도구들을 장착합니다.
 
         <img src="https://mintcdn.com/continue-docs/6EWp3-Bet9bo6Nsz/images/agent-9ef792cfc196a3b5faa984fb072c4400.gif?s=08eb200c6aa31c15d6876757842d60e6" alt="agent mode" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/agent-9ef792cfc196a3b5faa984fb072c4400.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Agent Mode](/ide-extensions/agent/quick-start)
+      [에이전트 모드](/ide-extensions/agent/quick-start)에 대해 더 알아보기
     </Info>
   </Tab>
 
-  <Tab title="Chat Mode">
-    [Chat](/ide-extensions/chat/quick-start) makes it easy to ask for help from an LLM without needing to leave the IDE
+  <Tab title="채팅 모드">
+    [채팅](/ide-extensions/chat/quick-start)을 사용하면 IDE를 떠날 필요 없이 LLM의 도움을 쉽게 요청할 수 있습니다.
 
         <img src="https://mintcdn.com/continue-docs/6EWp3-Bet9bo6Nsz/images/chat-489b68d156be2aafe09ee7cedf233fba.gif?s=a058d12821d3238b3f7ecef047024d5f" alt="chat" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/chat-489b68d156be2aafe09ee7cedf233fba.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Chat Mode](/ide-extensions/chat/quick-start)
+      [채팅 모드](/ide-extensions/chat/quick-start)에 대해 더 알아보기
     </Info>
   </Tab>
 
-  <Tab title="Plan">
-    [Plan](/ide-extensions/agent/plan-mode) provides a safe environment with read-only tools for exploring code and planning changes
+  <Tab title="계획 (Plan)">
+    [계획](/ide-extensions/agent/plan-mode) 모드는 코드를 탐색하고 변경 사항을 계획하기 위한 읽기 전용 도구가 포함된 안전한 환경을 제공합니다.
 
         <img src="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode.gif?s=628aea892fe00e73589209aab2dd2c54" alt="plan" data-og-width="1108" width="1108" data-og-height="720" height="720" data-path="images/plan-mode.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Plan Mode](/ide-extensions/agent/plan-mode)
+      [계획 모드](/ide-extensions/agent/plan-mode)에 대해 더 알아보기
     </Info>
   </Tab>
 
-  <Tab title="Edit">
-    [Edit](/ide-extensions/edit/quick-start) is a convenient way to modify code without leaving your current file
+  <Tab title="수정 (Edit)">
+    [수정](/ide-extensions/edit/quick-start)은 현재 파일을 벗어나지 않고 코드를 수정할 수 있는 편리한 방법입니다.
 
         <img src="https://mintcdn.com/continue-docs/tt1KAgjxyDBw6wmj/images/edit.gif?s=fb8e91c14731bec92ede94522f87b98a" alt="edit" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/edit.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Edit](/ide-extensions/edit/quick-start)
+      [수정(Edit)](/ide-extensions/edit/quick-start)에 대해 더 알아보기
     </Info>
   </Tab>
 
-  <Tab title="Autocomplete">
-    [Autocomplete](/ide-extensions/autocomplete/quick-start) provides inline code suggestions as you type
+  <Tab title="자동 완성 (Autocomplete)">
+    [자동 완성](/ide-extensions/autocomplete/quick-start)은 입력하는 대로 인라인 코드 제안을 제공합니다.
 
         <img src="https://mintcdn.com/continue-docs/6EWp3-Bet9bo6Nsz/images/autocomplete-9d4e3f7658d3e65b8e8b20f2de939675.gif?s=717e217d13baccf5b112cfd06c9bcb82" alt="autocomplete" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/autocomplete-9d4e3f7658d3e65b8e8b20f2de939675.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Autocomplete](/ide-extensions/autocomplete/quick-start)
+      [자동 완성](/ide-extensions/autocomplete/quick-start)에 대해 더 알아보기
     </Info>
   </Tab>
 </Tabs>
 
-## 🚀 Next Steps
+## 🚀 다음 단계
 
-Congratulations! You've experienced all four core Prometheus features. Here's what to explore next:
+축하합니다! Prometheus의 네 가지 핵심 기능을 모두 경험해 보셨습니다. 다음으로 살펴볼 단계는 다음과 같습니다:
 
 <CardGroup cols={2}>
-  <Card title="Customize Your Setup" icon="gear" href="/customize/overview">
-    Configure models, add context providers, and personalize your workflow
+  <Card title="설정 맞춤화" icon="gear" href="/customize/overview">
+    모델을 구성하고, 컨텍스트 제공자를 추가하며, 워크플로우를 개인화하세요.
   </Card>
 
-  <Card title="Advanced Features" icon="rocket" href="/ide-extensions/agent/quick-start">
-    Dive deeper into Agent mode capabilities and advanced use cases
+  <Card title="고급 기능" icon="rocket" href="/ide-extensions/agent/quick-start">
+    에이전트 모드의 기능과 고급 사용 사례를 더 자세히 알아보세요.
   </Card>
 
-  <Card title="Model Providers" icon="brain" href="/customize/model-providers/overview">
-    Connect your preferred AI models and providers
+  <Card title="모델 제공자" icon="brain" href="/customize/model-providers/overview">
+    선호하는 AI 모델 및 제공자를 연결하세요.
   </Card>
 
-  <Card title="Join Community" icon="users" href="https://discord.gg/NWtdYexhMs">
-    Get help and share experiences with other Prometheus users
+  <Card title="커뮤니티 참여" icon="users" href="https://discord.gg/NWtdYexhMs">
+    다른 Prometheus 사용자들과 도움을 주고받으며 경험을 공유하세요.
   </Card>
 </CardGroup>
 
 ***
 
-## 📚 Feature Deep Dives
+## 📚 주요 기능 심층 학습
 
-Ready to master specific features? Check out these detailed guides:
+특정 기능을 마스터할 준비가 되셨나요? 다음 상세 가이드를 확인하세요:
 
 <AccordionGroup>
-  <Accordion title="Autocomplete Deep Dive">
-    Learn about [configuring autocomplete
-    models](/customize/model-roles/autocomplete), [fine-tuning
-    suggestions](/customize/deep-dives/autocomplete), and [troubleshooting
-    common issues](/troubleshooting).
+  <Accordion title="자동 완성 심층 학습">
+    [자동 완성 모델 구성](/customize/model-roles/autocomplete), [기능 미세 조정](/customize/deep-dives/autocomplete), [일반적인 문제 해결](/troubleshooting)에 대해 알아보세요.
   </Accordion>
 
-  <Accordion title="Chat & Agent Mode Best Practices">
-    Discover [effective prompting techniques](/customize/deep-dives/prompts), [hub
-    v. local configuration](/guides/understanding-configs), and [custom slash
-    commands](/customize/deep-dives/prompts).
+  <Accordion title="채팅 및 에이전트 모드 베스트 프랙티스">
+    [효과적인 프롬프트 기술](/customize/deep-dives/prompts), [허브 및 로컬 구성](/guides/understanding-configs), [커스텀 슬래시 명령](/customize/deep-dives/prompts)을 살펴보세요.
   </Accordion>
 
-  <Accordion title="Enterprise & Teams">
-    Explore [Hub configurations](/mission-control/configs/intro), [organization
-    management](/mission-control/governance/creating-an-org), and [sharing
-    configurations](/mission-control/sharing).
+  <Accordion title="엔터프라이즈 및 팀">
+    [허브 구성](/mission-control/configs/intro), [조직 관리](/mission-control/governance/creating-an-org), [구성 공유](/mission-control/sharing)에 대해 알아보세요.
   </Accordion>
 </AccordionGroup>
 
 <Info>
-  **Need help?** Check our [troubleshooting guide](/troubleshooting) or ask a
-  question in our [community
-  discussions](https://github.com/continuedev/continue/discussions).
+  **도움이 필요하신가요?** [문제 해결 가이드](/troubleshooting)를 확인하거나 [커뮤니티 토론](https://github.com/continuedev/continue/discussions)에서 질문해 주세요.
 </Info>

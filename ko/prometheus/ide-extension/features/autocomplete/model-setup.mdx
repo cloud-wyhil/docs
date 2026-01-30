@@ -1,11 +1,11 @@
 ---
-title: 'Recommended Models for Autocomplete in Prometheus'
-description: 'Choose the best autocomplete model for Prometheus, including hosted high-performance options, fast speed/quality tradeoffs, and local privacy-first models.'
+title: 'Prometheus 자동 완성 권장 모델'
+description: '호스팅되는 고성능 옵션, 빠른 속도와 품질의 균형 잡힌 옵션, 로컬 프라이버시 우선 모델을 포함하여 Prometheus에 가장 적합한 자동 완성 모델을 선택하세요.'
 ---
 
-# Recommended Models for Autocomplete in Prometheus
+# Prometheus 자동 완성 권장 모델
 
-> Choose the best autocomplete model for Prometheus, including hosted high-performance options, fast speed/quality tradeoffs, and local privacy-first models.
+> 호스팅되는 고성능 옵션, 빠른 속도와 품질의 균형 잡힌 옵션, 로컬 프라이버시 우선 모델을 포함하여 Prometheus에 가장 적합한 자동 완성 모델을 선택하세요.
 
 export const ModelRecommendations = ({role = "all"}) => {
   const parseMarkdownLinks = text => {
@@ -42,37 +42,37 @@ export const ModelRecommendations = ({role = "all"}) => {
     agent_plan: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[Devstral (27B)](https://hub.continue.dev/ollama/devstral)", "[Kimi K2 (1T)](https://hub.continue.dev/openrouter/kimi-k2)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)", "[GLM 4.5 (355B)](https://hub.continue.dev/openrouter/glm-4-5)", "[GLM 4.5 Air (106B)](https://hub.continue.dev/openrouter/glm-4-5-air)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 약간 더 우수합니다."
     },
     chat_edit: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed and open models have pretty similar performance"
+      notes: "폐쇄형 모델과 오픈 소스 모델의 성능이 거의 비슷합니다."
     },
     autocomplete: {
       open: ["[QwenCoder2.5 (1.5B)](https://hub.continue.dev/ollama/qwen2.5-coder-1.5b)", "[QwenCoder2.5 (7B)](https://hub.continue.dev/ollama/qwen2.5-coder-7b)"],
       closed: ["[Codestral](https://hub.continue.dev/mistral/codestral)", "[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 약간 더 우수합니다."
     },
     apply: {
       open: ["[FastApply](https://hub.continue.dev/mdpauley/fast-apply-15b-v10)"],
       closed: ["[Relace Instant Apply](https://hub.continue.dev/relace/instant-apply)", "[Morph Fast Apply](https://hub.continue.dev/morphllm/morph-v2)"],
-      notes: "Closed models are better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 더 우수합니다."
     },
     embed: {
       open: ["[Nomic Embed Text](https://hub.continue.dev/ollama/nomic-embed-text-latest)", "Qwen3 Embedding"],
       closed: ["[Voyage Code 3](https://hub.continue.dev/voyageai/voyage-code-3)", "[Morph Embeddings](https://hub.continue.dev/morphllm/morph-embedding-v2)", "Codestral Embed"],
-      notes: "Closed models are slightly better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 약간 더 우수합니다."
     },
     rerank: {
       open: ["zerank-1", "zerank-1-small", "Qwen3 Reranker"],
       closed: ["[Voyage Rerank 2.5](https://hub.continue.dev/voyageai/rerank-2-5)", "Relace Code Rerank", "[Morph Rerank](https://hub.continue.dev/morphllm/morph-rerank-v2)"],
-      notes: "Open models are beginning to emerge for this model role"
+      notes: "이 모델 역할에 대해 오픈 소스 모델이 등장하기 시작했습니다."
     },
     next_edit: {
       open: ["[Instinct](https://hub.continue.dev/continuedev/instinct)"],
       closed: ["[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 더 우수합니다."
     }
   };
   let rolesToShow = [];
@@ -85,7 +85,7 @@ export const ModelRecommendations = ({role = "all"}) => {
     }
   }
   if (rolesToShow.length === 0) {
-    return <div>No recommendations found for role: {role}</div>;
+    return <div>권장 사항을 찾을 수 없습니다: {role}</div>;
   }
   return <table style={{
     width: "100%",
@@ -99,28 +99,28 @@ export const ModelRecommendations = ({role = "all"}) => {
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Model role
+            모델 역할
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best open models
+            최고의 오픈 소스 모델
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best closed models
+            최고의 폐쇄형(기성) 모델
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Notes
+            비고
           </th>
         </tr>
       </thead>
@@ -168,30 +168,30 @@ export const ModelRecommendations = ({role = "all"}) => {
     </table>;
 };
 
-Setting up the right model for autocomplete is important for a smooth coding experience. Here are our top recommendations:
+원활한 코딩 경험을 위해서는 자동 완성을 위한 적절한 모델을 설정하는 것이 중요합니다. 다음은 주요 권장 사항입니다:
 
-## Model Recommendations
+## 모델 권장 사항
 
 <ModelRecommendations role="autocomplete" />
 
 <Info>
-  For a complete comparison of all models, see our [comprehensive model recommendations](/customize/models#recommended-models).
+  모든 모델에 대한 전체 비교는 [포괄적인 모델 권장 테이블](/customize/models#recommended-models)을 참조하세요.
 </Info>
 
-## Next Edit Model
+## Next Edit 모델
 
-For proactive code prediction that anticipates your next edit, Prometheus supports specialized [Next Edit](/ide-extensions/autocomplete/next-edit) models:
+다음 편집을 예측하는 선제적 코드 예측을 위해 Prometheus는 특화된 [Next Edit](/ide-extensions/autocomplete/next-edit) 모델을 지원합니다:
 
-**Supported Next Edit model:**
+**지원되는 Next Edit 모델:**
 
-* `mercury-coder-nextedit`: Primary model optimized for next edit prediction
+* `mercury-coder-nextedit`: 다음 편집 예측에 최적화된 기본 모델
 
-Next Edit automatically activates when you have a compatible model configured for autocomplete and the appropriate access permissions.
+Next Edit은 호환되는 모델이 자동 완성을 위해 구성되어 있고 적절한 접근 권한이 있을 때 자동으로 활성화됩니다.
 
-## Need Help?
+## 도움이 필요하신가요?
 
-If you're not seeing any completions or need more detailed configuration options, check out our comprehensive [autocomplete deep dive guide](/customize/deep-dives/autocomplete).
+완성 제안이 표시되지 않거나 더 자세한 구성 옵션이 필요한 경우, 포괄적인 [자동 완성 심층 학습 가이드](/customize/deep-dives/autocomplete)를 확인하세요.
 
-## Model Compatibility
+## 모델 호환성
 
-To see a complete list of models and their capabilities, visit our [Model Capabilities guide](/customize/deep-dives/model-capabilities).
+모델 및 해당 기능의 전체 목록을 보려면 [모델 기능 가이드](/customize/deep-dives/model-capabilities)를 방문하세요.

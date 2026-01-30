@@ -1,86 +1,85 @@
 ---
-title: 'Quick Start'
-description: 'Prometheus의 Agent Mode(에이전트 모드)를 사용 방법'
+title: '빠른 시작'
+description: 'Prometheus의 에이전트 모드(Agent Mode) 사용 방법'
 ---
 
-# Quick Start
+# 빠른 시작
 
-> Prometheus의 Agent Mode(에이전트 모드)를 사용하여 AI 기반 도구를 활용해 코드 변경, 버그 수정, 명령 실행 등을 자동으로 수행해 보세요. 이 도구는 자연어 명령에 따라 코드베이스를 수정할 수 있습니다.
+> Prometheus의 에이전트 모드를 사용하여 AI 기반 도구를 활용해 코드 변경, 버그 수정, 명령 실행 등을 자동으로 수행해 보세요. 이 도구는 자연어 명령에 따라 코드베이스를 수정할 수 있습니다.
 
-Agent Mode(에이전트 모드)는 채팅 모델에 다양한 코딩 작업을 처리하는 데 필요한 도구를 제공하여 모델이 스스로 결정을 내리고 사용자가 수동으로 컨텍스트를 찾고 작업을 수행하는 수고를 덜어줍니다.
+에이전트 모드는 채팅 모델에게 코딩 작업을 처리하는 데 필요한 도구를 제공하여 모델이 스스로 결정을 내리게 함으로써, 사용자가 수동으로 컨텍스트를 찾고 작업을 수행하는 수고를 덜어줍니다.
 
-<Accordion title="Learn how to choose the right mode" icon="lightbulb">
+<Accordion title="적절한 모드를 선택하는 방법 알아보기" icon="lightbulb">
   <Columns cols={3}>
-    <Card title="Chat Mode" icon="comments">
-      *Learn and discuss without changing code.*
+    <Card title="채팅 모드" icon="comments">
+      *코드를 직접 수정하지 않고 학습과 토론에 집중하세요.*
 
-      **Mental Model:** Talking to a knowledgeable colleague
+      **핵심 개념:** 해박한 지식을 가진 동료와의 대화
 
-      **Best For:** Explaining concepts, comparing approaches, code review discussions.
+      **적합한 사례:** 개념 설명, 접근 방식 비교, 코드 리뷰 토론
+
     </Card>
 
-    <Card title="Plan Mode" icon="binoculars">
-      *Safely explore and plan with read-only tools.*
+    <Card title="계획 모드" icon="binoculars">
+      *읽기 전용 도구로 안전하게 탐색하고 계획을 세우세요.*
 
-      **Mental Model:** Architect surveying before renovation
+      **핵심 개념:** 리노베이션 전에 사전 조사를 하는 건축가
 
-      **Best For:** Understanding a codebase, bug investigation, planning implementations.
+      **적합한 사례:** 코드베이스 파악, 버그 조사, 구현 계획 수립
+
     </Card>
 
-    <Card title="Agent Mode" icon="hammer">
-      *Make actual changes with full tool access.*
+    <Card title="에이전트 모드" icon="hammer">
+      *모든 도구를 사용하여 실제 변경을 수행하세요.*
 
-      **Mental Model:** Contractor executing approved blueprints
+      **핵심 개념:** 승인된 설계도에 따라 작업을 수행하는 계약업체
 
-      **Best For:** Implementing features, fixing bugs, running tests and commands.
+      **적합한 사례:** 기능 구현, 버그 수정, 테스트 및 명령 실행
+
     </Card>
   </Columns>
 </Accordion>
 
-### How to Use Agent Mode
+### 에이전트 모드 사용 방법
 
-채팅 입력란 아래에 있는 모드 선택기에서 `Agent`으로 전환할 수 있습니다. 모드 선택기에는 세 가지 옵션이 있습니다:
+채팅 입력창 아래에 있는 모드 선택기에서 `Agent`로 전환할 수 있습니다. 모드 선택기에는 세 가지 옵션이 있습니다:
 
-* **Chat mode**: 아무런 도구도 사용하지 않고, 오직 대화만으로 진행했습니다.
-* **Plan mode**: 안전한 탐색 및 계획수립을 위한 읽기 전용 도구
-* **Agent mode**: 변경에 사용할 수 있는 모든 도구를 활용 합니다.
+* **채팅(Chat) 모드**: 도구를 전혀 사용하지 않고 대화만으로 진행합니다.
+* **계획(Plan) 모드**: 안전한 탐색 및 계획 수립을 위한 읽기 전용 도구만 사용합니다.
+* **에이전트(Agent) 모드**: 수정을 포함하여 사용 가능한 모든 도구를 활용합니다.
 
-<img src="https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=10848029d93155fd5d2d57c7f8835001" alt="How to select agent mode" data-og-width="186" width="186" data-og-height="124" height="124" data-path="images/mode-select-agent.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=280&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=a397ee93f37174fa9cd91281048572a9 280w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=560&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=0cb97f20a7c093e664f412b69deee3b7 560w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=840&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=ddbd0a1fbb9d341f99fc3caf2b184166 840w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=1100&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=c639dca84601115f3b5894a23fc7947b 1100w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=1650&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=1637c7d5530a904c90d19cdd8e1d9b0f 1650w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=2500&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=3e859386cd33a9ab17df535e9f2a2874 2500w" />
+<img src="https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=10848029d93155fd5d2d57c7f8835001" alt="에이전트 모드 선택 방법" data-og-width="186" width="186" data-og-height="124" height="124" data-path="images/mode-select-agent.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=280&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=a397ee93f37174fa9cd91281048572a9 280w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=560&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=0cb97f20a7c093e664f412b69deee3b7 560w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=840&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=ddbd0a1fbb9d341f99fc3caf2b184166 840w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=1100&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=c639dca84601115f3b5894a23fc7947b 1100w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=1650&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=1637c7d5530a904c90d19cdd8e1d9b0f 1650w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=2500&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=3e859386cd33a9ab17df535e9f2a2874 2500w" />
 
 <Info>
-  Agent Mode(에이전트 모드) 또는 Plan Mode(플랜 모드)가 `Not Supported`'지원되지 않음' 메시지와 함께 비활성화된 경우,
-  선택한 모델 또는 공급자가 도구를 지원하지 않거나 Prometheus에서 아직 도구를 지원하지 않는 것입니다.
-  자세한 내용은 [모델 블록](/customize/models)을 참조하십시오.
+  에이전트 모드 또는 계획 모드가 `Not Supported`(지원되지 않음) 메시지와 함께 비활성화된 경우, 선택한 모델 또는 공급자가 도구 기능을 지원하지 않거나 Prometheus에서 해당 공급자의 도구 기능을 아직 지원하지 않는 것입니다. 자세한 내용은 [모델 설정](/customize/models)을 참조하십시오.
 </Info>
 
 <Tip>
-  키보드 단축키 `Cmd/Ctrl + .`을 사용하여 모드를 빠르게 전환할 수 있습니다.
+  키보드 단축키 `Cmd/Ctrl + .`를 사용하여 모드를 빠르게 전환할 수 있습니다.
 </Tip>
 
-### How to Chat with Agent mode
+### 에이전트 모드로 채팅하기
 
-Agent mode는 [Chat](/ide-extensions/chat/how-it-works) 모드와 동일한 인터페이스 내에서 작동하므로 동일한 [input](/ide-extensions/chat/quick-start#how-to-start-a-conversation)을 사용하여 메시지를 보내고 [`@` context providers](/ide-extensions/chat/quick-start#how-to-use--for-additional-context) 또는 [highlighted code from the editor](/ide-extensions/chat/quick-start#how-to-include-code-context)를 추가하는 것과 같은 컨텍스트를 제공하는 동일한 수동 방법을 계속 사용할 수 있습니다.
+에이전트 모드는 [채팅](/ide-extensions/chat/how-it-works) 모드와 동일한 인터페이스 내에서 작동하므로, 동일한 [입력 방식](/ide-extensions/chat/quick-start#how-to-start-a-conversation)으로 메시지를 보내고 [`@` 컨텍스트 제공자](/ide-extensions/chat/quick-start#how-to-use--for-additional-context) 또는 [에디터의 강조 표시된 코드](/ide-extensions/chat/quick-start#how-to-include-code-context)를 통한 컨텍스트 제공 방식을 그대로 사용할 수 있습니다.
 
+#### 에이전트 모드에서 자연어 사용하기
 
-#### How to Use Natural Language with Agent mode
+에이전트 모드를 사용하면 자연어 명령을 통해 모델이 특정 작업을 수행하도록 할 수 있습니다. 예를 들어 다음과 같이 요청할 수 있습니다:
 
-Agent mode(에이전트 모드)를 사용하면 자연어 명령을 제공하고 모델이 작업을 수행하도록 할 수 있습니다. 예를 들어 다음과 같이 말할 수 있습니다.
+> "이 프로젝트의 모든 eslint 설정에서 @typescript-eslint/naming-convention 규칙을 "off"로 설정해줘"
 
-> Set the @typescript-eslint/naming-convention rule to "off" for all eslint configurations in this project
+에이전트 모드는 작업을 완료하는 데 필요한 도구를 스스로 결정하여 실행합니다.
 
-Agent mode(에이전트 모드)는 작업을 완료하는 데 사용할 도구를 결정합니다.
+### 에이전트 모드에 권한 부여하기
 
-## How to Give Agent Mode Permission
+기본적으로 에이전트 모드는 도구를 사용하려고 할 때 권한을 요청합니다. 에이전트 모드가 도구 호출을 진행하도록 허용하려면 `Continue`를 클릭하고, 거부하려면 `취소(Cancel)`를 클릭하십시오.
 
-기본적으로 Agent mode는 도구를 사용하려고 할 때 권한을 요청합니다. Agent mode가 도구 호출을 진행하도록 허용하려면 `Continue`를 클릭하고, 거부하려면 `취소`를 클릭하십시오.
+<img src="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=2388322b412e592db2c7a2153a43a4b1" alt="권한을 요청하는 에이전트" data-og-width="1432" width="1432" data-og-height="702" height="702" data-path="images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=280&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=6d3c676f2c38c3932dd6df1a5eb3e8e2 280w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=560&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=aa11aa7e4b9b6c64dee47917f016f02a 560w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=840&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=5861a5fbf6f6b42bc6d61193b3ca81cd 840w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=1100&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=1e395a1b60590b67105e2c337f225546 1100w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=1650&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=97316a8b04f78222201f927c76d9d64c 1650w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=2500&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=7c036ab32e7c1f662c30d5012594d3e3 2500w" />
 
+도구 정책을 사용하여 특정 도구의 사용을 제외하거나 자동화할 수 있습니다. 자세한 내용은 [MCP 도구](/customize/mcp-tools)를 참조하십시오.
 
-<img src="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=2388322b412e592db2c7a2153a43a4b1" alt="agent requesting permission" data-og-width="1432" width="1432" data-og-height="702" height="702" data-path="images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=280&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=6d3c676f2c38c3932dd6df1a5eb3e8e2 280w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=560&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=aa11aa7e4b9b6c64dee47917f016f02a 560w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=840&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=5861a5fbf6f6b42bc6d61193b3ca81cd 840w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=1100&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=1e395a1b60590b67105e2c337f225546 1100w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=1650&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=97316a8b04f78222201f927c76d9d64c 1650w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=2500&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=7c036ab32e7c1f662c30d5012594d3e3 2500w" />
+### 도구 응답 확인 방법
 
-도구 정책을 사용하여 특정 도구의 사용을 제외하거나 자동화할 수 있습니다. 자세한 내용은 [MCP Tools](/customize/mcp-tools)를 참조하십시오.
+도구 호출에서 반환되는 모든 데이터는 자동으로 모델에 피드백됩니다. 대부분의 오류 또한 포착되어 반환되므로, 에이전트 모드가 이를 바탕으로 후속 작업을 결정할 수 있습니다.
 
-## How to View Tool Responses
-
-툴 호출에서 반환되는 모든 데이터는 컨텍스트 항목으로 모델에 자동으로 피드백됩니다. 대부분의 오류 또한 포착되어 반환되므로 Agent mode는 어떻게 진행할지 결정할 수 있습니다.
-
-<img src="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=655307312b107f9b1e4b1127ab295933" alt="agent response" data-og-width="1454" width="1454" data-og-height="1038" height="1038" data-path="images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=280&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=568a706c10ee91c568ff26030352f5f8 280w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=560&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=f902d300aae9df38483037c43f46d8bc 560w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=840&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=baeccae00eef24e9cd8bb16fe6bd8434 840w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=1100&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=82ae2a156d7150abd6812afce8d2f597 1100w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=1650&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=e855b868757e3df3d1ffc3fe40607379 1650w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=2500&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=a2b2f95d2c77a962ff210bbb7b472364 2500w" />
+<img src="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=655307312b107f9b1e4b1127ab295933" alt="에이전트 응답" data-og-width="1454" width="1454" data-og-height="1038" height="1038" data-path="images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=280&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=568a706c10ee91c568ff26030352f5f8 280w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=560&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=f902d300aae9df38483037c43f46d8bc 560w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=840&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=baeccae00eef24e9cd8bb16fe6bd8434 840w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=1100&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=82ae2a156d7150abd6812afce8d2f597 1100w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=1650&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=e855b868757e3df3d1ffc3fe40607379 1650w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=2500&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=a2b2f95d2c77a962ff210bbb7b472364 2500w" />

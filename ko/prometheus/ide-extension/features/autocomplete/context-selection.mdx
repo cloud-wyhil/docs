@@ -1,28 +1,26 @@
 ---
-title: 'Context Selection'
-description: 'Learn how Prometheus selects relevant code context in Chat Mode.'
+title: '컨텍스트 선택'
+description: 'Prometheus가 인라인 코드 제안을 생성할 때 관련 코드 컨텍스트를 선택하는 방법을 알아봅니다.'
 ---
 
+# 컨텍스트 선택
 
+> 파일 내용, 언어 서버 정의, 임포트 및 최근 파일 기록을 사용하여 Prometheus의 자동 완성이 관련 코드 컨텍스트를 선택하는 방법에 대해 알아봅니다.
 
-# Context Selection
+자동 완성은 현재 커서 위치를 기반으로 컨텍스트를 자동으로 결정합니다. 프롬프트에 포함할 내용을 결정하기 위해 다음과 같은 기술을 사용합니다.
 
-> Learn how Prometheus's autocomplete selects relevant code context using file content, language server definitions, imports, and recent file history.
+## 파일 접두사 및 접미사 컨텍스트
 
-Autocomplete will automatically determine context based on the current cursor position. We use the following techniques to determine what to include in the prompt:
+커서 위치를 기준으로 파일의 이전 코드와 이후 코드를 항상 포함합니다.
 
-## File Prefix and Suffix Context
+## 언어 서버 프로토콜 (LSP) 정의
 
-We will always include the code from your file prior to and after the cursor position.
+에디터에서 `Cmd/Ctrl + 클릭`을 사용하는 것과 유사하게, 동일한 도구(LSP)를 사용하여 "정의로 이동(go to definition)" 기능을 지원합니다. 예를 들어, 함수 호출을 입력 중인 경우 해당 함수의 정의를 포함합니다. 또는 메서드 내부에서 코드를 작성 중인 경우 매개변수나 반환 유형에 대한 유형 정의를 포함합니다.
 
-## Language Server Protocol (LSP) Definitions
+## 임포트된 파일 컨텍스트
 
-Similar to how you can use cmd/ctrl + click in your editor, we use the same tool (the LSP) to power "go to definition". For example, if you are typing out a function call, we will include the function definition. Or, if you are writing code inside of a method, we will include the type definitions for any parameters or the return type.
+임포트 항목이 너무 많은 경우가 많으므로 모든 항목을 포함할 수는 없습니다. 대신 커서 주변의 심볼 중에서 일치하는 임포트가 있는 것을 찾아 컨텍스트로 사용합니다.
 
-## Imported File Context
+## 최근 파일 컨텍스트
 
-Because there are often many imports, we can't include all of them. Instead, we look for symbols around your cursor that have matching imports and use that as context.
-
-## Recent File Context
-
-We automatically consider recently opened or edited files and include snippets that are relevant to the current completion.
+최근에 열었거나 편집한 파일을 자동으로 고려하여 현재 완성 작업과 관련된 코드 스니펫을 포함합니다.

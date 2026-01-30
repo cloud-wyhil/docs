@@ -1,67 +1,67 @@
 ---
-title: 'Overview'
-description: 'Overview of Prometheus customization options.'
+title: '개요'
+description: 'Prometheus 맞춤 설정 옵션 개요입니다.'
 ---
 
-# Customization Overview
+# 맞춤 설정 개요
 
-> Learn how to customize Prometheus with model providers, rules, prompts, and tools
+> 모델 제공자, 규칙, 프롬프트 및 도구를 사용하여 Prometheus를 맞춤 설정하는 방법을 알아봅니다.
 
-Prometheus can be deeply customized to fit your specific development workflow and preferences. This guide covers the main ways you can customize Prometheus to enhance your coding experience.
+Prometheus는 특정 개발 워크플로우와 선호도에 맞춰 깊이 있게 맞춤 설정할 수 있습니다. 이 가이드에서는 코딩 경험을 향상시키기 위해 Prometheus를 맞춤 설정할 수 있는 주요 방법들을 다룹니다.
 
-## Change Your Model Provider
+## 모델 제공자 변경
 
-Prometheus allows you to choose your favorite or even add multiple model providers. This allows you to use different models for different tasks, or to try another model if you're not happy with the results from your current model. Prometheus supports all of the popular model providers, including OpenAI, Anthropic, Microsoft/Azure, Mistral, and more. You can even self host your own model provider if you'd like.
+Prometheus를 사용하면 선호하는 모델 제공자를 선택하거나 여러 제공자를 추가할 수 있습니다. 이를 통해 작업에 따라 다른 모델을 사용하거나, 현재 모델의 결과가 만족스럽지 않을 경우 다른 모델을 시도해 볼 수 있습니다. Prometheus는 OpenAI, Anthropic, Microsoft/Azure, Mistral 등 대중적인 모든 모델 제공자를 지원합니다. 원하는 경우 자체 호스팅 모델 제공자를 사용할 수도 있습니다.
 
-[Learn more about model providers →](/customize/model-providers/overview)
+[모델 제공자에 대해 더 알아보기 →](/customize/model-providers/overview)
 
-## Select Different Models for Specific Tasks
+## 특정 작업에 적합한 모델 선택
 
-Different Prometheus features can use different models. We call these *model roles*. For example, you can use a different model for Chat mode than you do for Autocomplete.
+Prometheus의 각 기능은 서로 다른 모델을 사용할 수 있습니다. 이를 *모델 역할(model roles)*이라고 부릅니다. 예를 들어, 채팅 모드와 자동 완성에 각각 다른 모델을 사용할 수 있습니다.
 
-[Learn more about model roles →](/customize/model-roles)
+[모델 역할에 대해 더 알아보기 →](/customize/model-roles)
 
-## Create Custom Prompts
+## 커스텀 프롬프트 생성
 
-Create custom slash commands and prompt templates to streamline your workflow.
+워크플로우를 효율화하기 위해 커스텀 슬래시 명령어와 프롬프트 템플릿을 생성하세요.
 
-[Learn more about prompts →](/customize/prompts)
+[프롬프트에 대해 더 알아보기 →](/customize/prompts)
 
-## Configure Rules
+## 규칙(Rules) 구성
 
-Set up rules to guide AI responses and ensure consistent behavior across your codebase.
+AI 응답을 가이드하고 코드베이스 전체에서 일관된 동작을 보장하도록 규칙을 설정하세요.
 
-[Learn more about rules →](/customize/rules)
+[규칙에 대해 더 알아보기 →](/customize/rules)
 
-## Call External Tools and Functions
+## 외부 도구 및 기능 호출
 
-Give your agent the power of tools using [Agent mode in the extensions](/ide-extensions/agent/quick-start) or add custom tools to your agent using [MCP Servers](/customize/mcp-tools).
+[확장 프로그램의 에이전트 모드](/ide-extensions/agent/quick-start)를 사용하여 에이전트에게 도구의 힘을 부여하거나, [MCP 서버](/customize/mcp-tools)를 사용하여 에이전트에 커스텀 도구를 추가하세요.
 
-[Learn more about MCP tools →](/customize/mcp-tools)
+[MCP 도구에 대해 더 알아보기 →](/customize/mcp-tools)
 
-## Deep Dives
+## 심층 학습 (Deep Dives)
 
-Detailed technical explanations of Prometheus's internal workings and advanced configuration options.
+Prometheus의 내부 작동 방식과 고급 구성 옵션에 대한 자세한 기술적 설명입니다.
 
-[Read Deep Dives →](/customize/deep-dives/configuration)
+[심층 학습 읽어보기 →](/customize/deep-dives/configuration)
 
-## Reference
+## 참조 (Reference)
 
-Complete configuration reference and API documentation.
+전체 구성 참조 및 API 문서입니다.
 
-[View Reference →](/reference)
+[참조 보기 →](/reference)
 
 ***
 
-Whatever you choose, you'll probably start by editing your configuration.
+어떤 것을 선택하든, 먼저 구성을 편집하는 것부터 시작하게 될 것입니다.
 
-## Edit Your Configuration
+## 구성 편집하기
 
-You can easily access your configuration from the Prometheus Chat sidebar. Open the sidebar by pressing `cmd/ctrl` + `L` (VS Code) or `cmd/ctrl` + `J` (JetBrains) and click the Agent selector above the main chat input. Then, you can hover over an agent and click the `new window` (hub agents) or `gear` (local agents) icon.
+Prometheus 채팅 사이드바에서 쉽게 구성을 편집할 수 있습니다. `Cmd/Ctrl + L` (VS Code) 또는 `Cmd/Ctrl + J` (JetBrains)를 눌러 사이드바를 열고, 메인 채팅 입력창 위의 에이전트 선택기를 클릭하세요. 그런 다음 에이전트 위에 마우스를 올리고 `새 창` (허브 에이전트) 또는 `톱니바퀴` (로컬 에이전트) 아이콘을 클릭하면 됩니다.
 
-<img src="https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=4b924f4d0dd50c94893d8609edbe930d" alt="configure" data-og-width="750" width="750" data-og-height="514" height="514" data-path="images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=280&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=06a34d2cbb88f86246b824ddee37daf4 280w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=560&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=28e927fa07369e4929dee7ee6a09d636 560w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=840&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=15097d5aabd271cdea87f13425e3d7ca 840w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=1100&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=4b9167730a97dd6588d12c01dd3c931b 1100w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=1650&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=8702c31fe17f6785dde54099b1fce840 1650w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=2500&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=79eea96b2471b8049c93b443da3da45d 2500w" />
+<img src="https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=4b924f4d0dd50c94893d8609edbe930d" alt="구성" data-og-width="750" width="750" data-og-height="514" height="514" data-path="images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=280&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=06a34d2cbb88f86246b824ddee37daf4 280w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=560&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=28e927fa07369e4929dee7ee6a09d636 560w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=840&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=15097d5aabd271cdea87f13425e3d7ca 840w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=1100&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=4b9167730a97dd6588d12c01dd3c931b 1100w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=1650&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=8702c31fe17f6785dde54099b1fce840 1650w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=2500&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=79eea96b2471b8049c93b443da3da45d 2500w" />
 
-## Manage Your Configuration
+## 구성 관리하기
 
-* See [Editing Hub Configurations](/mission-control/configs/edit-a-config) for more details on managing your hub configuration
-* See the [Config Deep Dive](/reference) for more details on local configurations
+* 허브 구성 관리에 대한 자세한 내용은 [허브 구성 편집하기](/mission-control/configs/edit-a-config)를 참조하세요.
+* 로컬 구성에 대한 자세한 내용은 [구성 심층 학습](/reference)을 참조하세요.

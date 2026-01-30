@@ -1,42 +1,42 @@
 ---
-title: 'Quick Start'
-description: '어플리케이션의 레이아웃을 변경하는 방법을 알아봅니다.'
+title: '빠른 시작'
+description: 'Prometheus 수정(Edit) 기능을 사용하는 방법을 알아봅니다.'
 ---
 
-# Quick Start with Prometheus Edit
+# Prometheus 수정(Edit) 빠른 시작
 
-> Get started with Prometheus's Edit feature for making quick, targeted code changes directly in your file using AI suggestions, with keyboard shortcuts for accepting or rejecting modifications
+> AI 제안을 사용하여 파일에서 직접 빠르고 정밀하게 코드를 변경할 수 있는 Prometheus의 수정(Edit) 기능을 시작해 보세요. 키보드 단축키를 사용하여 수정 사항을 수락하거나 거부할 수 있습니다.
 
-## How to Prometheus Edit
+## Prometheus 수정(Edit)이란?
 
-Edit is a convenient way to make quick changes to specific code and files. Select code, describe your code changes, and a diff will be streamed inline to your file which you can accept or reject.
+수정(Edit)은 특정 코드와 파일을 빠르게 변경할 수 있는 편리한 방법입니다. 코드를 선택하고 변경 내용을 설명하면, 파일 내에 인라인으로 diff가 스트리밍되어 나타나며 이를 수락하거나 거부할 수 있습니다.
 
-Edit is recommended for small, targeted changes, such as
+수정(Edit)은 다음과 같은 작고 정밀한 변경에 권장됩니다:
 
-* Writing comments
-* Generating unit tests
-* Refactoring functions or methods
+* 주석 작성
+* 유닛 테스트 생성
+* 함수 또는 메서드 리팩토링
 
-## How to Activate Edit
+## 수정 모드 활성화 방법
 
-Highlight the block of code you would like to modify and press `Cmd+I` (Mac) or `Ctrl+I` (Windows/Linux) to activate Edit mode. You can also press `Cmd/Ctrl+I` with no code highlighted, which will default to inserting code at the current cursor location.
+수정하려는 코드 블록을 강조 표시하고 Mac에서는 `Cmd+I`, Windows/Linux에서는 `Ctrl+I`를 눌러 수정 모드를 활성화합니다. 코드를 강조 표시하지 않고 `Cmd/Ctrl+I`를 누르면 현재 커서 위치에 코드를 삽입하는 기능이 기본으로 작동합니다.
 
-Once you've activated Edit, you're ready to provide instructions.
+수정 모드를 활성화한 후에는 지침을 제공할 준비가 된 것입니다.
 
-### How to Provide Instructions
+### 지침 제공 방법
 
-Describe the changes you would like the model to make to your highlighted code. For edits, a good prompt should be relatively short and concise. For longer, more complex tasks, we recommend using [Chat](/ide-extensions/chat/quick-start).
+모델이 강조 표시된 코드에 적용할 변경 사항을 설명합니다. 수정의 경우 프롬프트는 비교적 짧고 간결한 것이 좋습니다. 더 길고 복잡한 작업의 경우에는 [채팅](/ide-extensions/chat/quick-start)을 사용하는 것을 권장합니다.
 
-### How to Accept or Reject Changes
+### 변경 사항 수락 또는 거부 방법
 
-Proposed changes appear as inline diffs within your highlighted text.
+제안된 변경 사항은 강조 표시된 텍스트 내에 인라인 diff로 나타납니다.
 
-You can navigate through each proposed change, accepting or rejecting them using `Cmd+Opt+Y` (Mac) or `Ctrl+Alt+Y` (Windows/Linux) to accept, or `Cmd+Opt+N` (Mac) or `Ctrl+Alt+N` (Windows/Linux) to reject.
+각 제안된 변경 사항을 탐색하면서, Mac에서는 `Cmd+Opt+Y`, Windows/Linux에서는 `Ctrl+Alt+Y`를 눌러 수락하거나, Mac에서는 `Cmd+Opt+N`, Windows/Linux에서는 `Ctrl+Alt+N`을 눌러 거부할 수 있습니다.
 
-You can also accept or reject all changes at once using `Cmd+Shift+Enter` (Mac) or `Ctrl+Shift+Enter` (Windows/Linux) to accept, or `Cmd+Shift+Delete` (Mac) or `Ctrl+Shift+Backspace` (Windows/Linux) to reject.
+또한 모든 변경 사항을 한 번에 수락하려면 Mac의 경우 `Cmd+Shift+Enter`, Windows/Linux의 경우 `Ctrl+Shift+Enter`를 사용하고, 한 번에 거부하려면 Mac의 경우 `Cmd+Shift+Delete`, Windows/Linux의 경우 `Ctrl+Shift+Backspace`를 사용할 수 있습니다.
 
-If you want to request a new suggestion for the same highlighted code section, you can use `Cmd+I` (Mac) or `Ctrl+I` (Windows/Linux) to re-prompt the model.
+동일한 강조 표시된 코드 섹션에 대해 새로운 제안을 요청하려면 `Cmd+I` (Mac) 또는 `Ctrl+I` (Windows/Linux)를 사용하여 모델에 다시 프롬프트를 보낼 수 있습니다.
 
-## How to Use Edit in Jetbrains
+## Jetbrains에서 수정 기능 사용하기
 
-In Jetbrains, Edit is implemented as an inline popup. See the header GIF example.
+Jetbrains에서 수정 기능은 인라인 팝업으로 구현되어 있습니다. 상단의 GIF 예시를 참조하세요.

@@ -1,11 +1,11 @@
 ---
-title: 'Model Setup'
-description: 'Learn how to configure and set up models in Prometheus'
+title: '모델 설정'
+description: 'Prometheus에서 모델을 구성하고 설정하는 방법을 알아봅니다.'
 ---
 
-# Recommended Models for Chat in Prometheus
+# Prometheus의 채팅 권장 모델
 
-> Choose the best chat model for Prometheus, including hosted high-performance options, fast speed/quality tradeoffs, and local privacy-first models.
+> 호스팅되는 고성능 옵션, 빠른 속도와 품질의 균형 잡힌 옵션, 로컬 프라이버시 우선 모델을 포함하여 Prometheus에 가장 적합한 채팅 모델을 선택하세요.
 
 export const ModelRecommendations = ({role = "all"}) => {
   const parseMarkdownLinks = text => {
@@ -42,37 +42,37 @@ export const ModelRecommendations = ({role = "all"}) => {
     agent_plan: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[Devstral (27B)](https://hub.continue.dev/ollama/devstral)", "[Kimi K2 (1T)](https://hub.continue.dev/openrouter/kimi-k2)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)", "[GLM 4.5 (355B)](https://hub.continue.dev/openrouter/glm-4-5)", "[GLM 4.5 Air (106B)](https://hub.continue.dev/openrouter/glm-4-5-air)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "시스템 폐쇄형 모델이 오픈 소스 모델보다 약간 더 우수합니다."
     },
     chat_edit: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed and open models have pretty similar performance"
+      notes: "폐쇄형 모델과 오픈 소스 모델의 성능이 거의 비슷합니다."
     },
     autocomplete: {
       open: ["[QwenCoder2.5 (1.5B)](https://hub.continue.dev/ollama/qwen2.5-coder-1.5b)", "[QwenCoder2.5 (7B)](https://hub.continue.dev/ollama/qwen2.5-coder-7b)"],
       closed: ["[Codestral](https://hub.continue.dev/mistral/codestral)", "[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "시스템 폐쇄형 모델이 오픈 소스 모델보다 약간 더 우수합니다."
     },
     apply: {
       open: ["[FastApply](https://hub.continue.dev/mdpauley/fast-apply-15b-v10)"],
       closed: ["[Relace Instant Apply](https://hub.continue.dev/relace/instant-apply)", "[Morph Fast Apply](https://hub.continue.dev/morphllm/morph-v2)"],
-      notes: "Closed models are better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 더 우수합니다."
     },
     embed: {
       open: ["[Nomic Embed Text](https://hub.continue.dev/ollama/nomic-embed-text-latest)", "Qwen3 Embedding"],
       closed: ["[Voyage Code 3](https://hub.continue.dev/voyageai/voyage-code-3)", "[Morph Embeddings](https://hub.continue.dev/morphllm/morph-embedding-v2)", "Codestral Embed"],
-      notes: "Closed models are slightly better than open models"
+      notes: "시스템 폐쇄형 모델이 오픈 소스 모델보다 약간 더 우수합니다."
     },
     rerank: {
       open: ["zerank-1", "zerank-1-small", "Qwen3 Reranker"],
       closed: ["[Voyage Rerank 2.5](https://hub.continue.dev/voyageai/rerank-2-5)", "Relace Code Rerank", "[Morph Rerank](https://hub.continue.dev/morphllm/morph-rerank-v2)"],
-      notes: "Open models are beginning to emerge for this model role"
+      notes: "이 모델 역할에 대해 오픈 소스 모델이 등장하기 시작했습니다."
     },
     next_edit: {
       open: ["[Instinct](https://hub.continue.dev/continuedev/instinct)"],
       closed: ["[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are better than open models"
+      notes: "폐쇄형 모델이 오픈 소스 모델보다 더 우수합니다."
     }
   };
   let rolesToShow = [];
@@ -85,7 +85,7 @@ export const ModelRecommendations = ({role = "all"}) => {
     }
   }
   if (rolesToShow.length === 0) {
-    return <div>No recommendations found for role: {role}</div>;
+    return <div>권장 사항을 찾을 수 없습니다: {role}</div>;
   }
   return <table style={{
     width: "100%",
@@ -99,28 +99,28 @@ export const ModelRecommendations = ({role = "all"}) => {
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Model role
+            모델 역할
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best open models
+            최고의 오픈 소스 모델
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best closed models
+            최고의 폐쇄형(시스템) 모델
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Notes
+            비고
           </th>
         </tr>
       </thead>
@@ -168,17 +168,17 @@ export const ModelRecommendations = ({role = "all"}) => {
     </table>;
 };
 
-The model you use for Chat mode will be:
+채팅 모드에서 사용하는 모델은 다음과 같이 작동합니다:
 
-* used with Edit mode by default but can be switched
-* always used with Agent mode if the model supports tool calling
+* 기본적으로 수정(Edit) 모드에서 함께 사용되지만 변경할 수 있습니다.
+* 모델이 도구 호출(tool calling)을 지원하는 경우 에이전트 모드에서 항상 사용됩니다.
 
-## Model Recommendations
+## 모델 권장 사항
 
 <ModelRecommendations role="chat_edit" />
 
 <Info>
-  For a comprehensive comparison of all available models by role, see our [model recommendations table](/customize/models#recommended-models).
+  역할별 모든 사용 가능한 모델의 포괄적인 비교는 [모델 권장 테이블](/customize/models#recommended-models)을 참조하세요.
 </Info>
 
-For model recommendations, please refer to our [Model Recommendations page](/customize/models).
+모델 권장 사항에 대한 자세한 내용은 [모델 권장 페이지](/customize/models)를 참조하세요.

@@ -1,57 +1,55 @@
 ---
-title: 'Plan Mode'
-description: 'Learn how to use Plan Mode in Prometheus to explore and understand codebases safely with read-only tools, search, and analysis before making changes'
+title: '계획 모드'
+description: '변경 사항을 적용하기 전에 읽기 전용 도구, 검색 및 분석을 사용하여 코드베이스를 안전하게 탐색하고 이해하기 위해 Prometheus에서 계획 모드를 사용하는 방법을 알아봅니다.'
 ---
 
-# Plan Mode in Prometheus – Safe, Read-Only Code Exploration
+# Prometheus 계획 모드 – 안전한 읽기 전용 코드 탐색
 
-> Learn how to use Plan Mode in Prometheus to explore and understand codebases safely with read-only tools, search, and analysis before making changes
+> 변경 사항을 적용하기 전에 읽기 전용 도구, 검색 및 분석을 사용하여 코드베이스를 안전하게 탐색하고 이해하기 위해 Prometheus에서 계획 모드를 사용하는 방법을 알아봅니다.
 
-## What is Plan mode?
+## 계획(Plan) 모드란 무엇인가요?
 
-Plan mode is a restricted environment that provides read-only access to your codebase. It's designed for safe exploration, understanding code, and planning changes without making any modifications.
+계획 모드는 코드베이스에 대한 읽기 전용 액세스 권한을 제공하는 제한된 환경입니다. 어떠한 수정도 가하지 않고 코드를 이해하고, 변경 사항을 계획하며 안전하게 탐색할 수 있도록 설계되었습니다.
 
-<img src="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode.gif?s=628aea892fe00e73589209aab2dd2c54" alt="Plan mode in action" data-og-width="1108" width="1108" data-og-height="720" height="720" data-path="images/plan-mode.gif" data-optimize="true" data-opv="3" />
+<img src="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode.gif?s=628aea892fe00e73589209aab2dd2c54" alt="실행 중인 계획 모드" data-og-width="1108" width="1108" data-og-height="720" height="720" data-path="images/plan-mode.gif" data-optimize="true" data-opv="3" />
 
-### What Are the Key Features of Plan Mode?
+### 계획 모드의 주요 기능은 무엇인가요?
 
-* **Read-only tools**: Access files, search, and analyze without risk
-* **Safe exploration**: Perfect for understanding unfamiliar codebases
-* **Planning focus**: Develop implementation strategies before execution
-* **MCP support**: Works with all MCP tools alongside built-in read-only tools
+* **읽기 전용 도구**: 위험 없이 파일 액세스, 검색 및 분석을 수행합니다.
+* **안전한 탐색**: 낯선 코드베이스를 파악하는 데 적합합니다.
+* **계획 수립에 집중**: 실행 전에 구현 전략을 개발합니다.
+* **MCP 지원**: 내장된 읽기 전용 도구와 함께 모든 MCP 도구를 사용할 수 있습니다.
 
-### How Plan Mode Works
+### 계획 모드 작동 방식
 
-Plan mode filters the available tools to only include read-only operations. This means you can:
+계획 모드는 사용 가능한 도구를 읽기 전용 작업으로만 제한합니다. 즉, 다음과 같은 작업이 가능합니다:
 
-* Read any file in your project
-* Search through code with grep and glob patterns
-* View repository structure and diffs
-* Fetch web content for additional context
-* Use all MCP tools
+* 프로젝트의 모든 파일 읽기
+* grep 및 glob 패턴을 사용하여 코드 검색
+* 저장소 구조 및 변경 사항(diff) 보기
+* 추가 컨텍스트를 위해 웹 콘텐츠 가져오기
+* 모든 MCP 도구 사용
 
-But you cannot:
+하지만 다음과 같은 작업은 불가능합니다:
 
-* Create, edit, or delete files
-* Run terminal commands
-* Make any system changes
+* 파일 생성, 편집 또는 삭제
+* 터미널 명령 실행
+* 시스템 변경 수행
 
-### How to Get Started with Plan Mode
+### 계획 모드 시작 방법
 
-Select "Plan" from the mode selector below the chat input, or use `Cmd/Ctrl + .` to cycle through modes.
+채팅 입력창 아래의 모드 선택기에서 "Plan"을 선택하거나, `Cmd/Ctrl + .`을 사용하여 모드를 전환하세요.
 
-<img src="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=cf163b2b50f6b01d9cdd83ebee7ab8dd" alt="Plan mode selector" data-og-width="1404" width="1404" data-og-height="390" height="390" data-path="images/plan-mode-selector.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=280&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=e3b3f027d05e717f19a7f78b58ce8011 280w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=560&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=ba68c43f670eea6f7c8cdb25a0c89e73 560w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=840&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=1901142b32f7ca06fa5a9a9ac68cbc07 840w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=1100&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=873ec3be56254820c18e802aeb61314d 1100w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=1650&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=350d84ea49e307ebaadae0773d9a1a53 1650w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=2500&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=6f08a91ab4265a6304febccbee2b06f2 2500w" />
+<img src="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=cf163b2b50f6b01d9cdd83ebee7ab8dd" alt="계획 모드 선택기" data-og-width="1404" width="1404" data-og-height="390" height="390" data-path="images/plan-mode-selector.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=280&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=e3b3f027d05e717f19a7f78b58ce8011 280w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=560&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=ba68c43f670eea6f7c8cdb25a0c89e73 560w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=840&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=1901142b32f7ca06fa5a9a9ac68cbc07 840w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=1100&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=873ec3be56254820c18e802aeb61314d 1100w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=1650&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=350d84ea49e307ebaadae0773d9a1a53 1650w, https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode-selector.png?w=2500&fit=max&auto=format&n=bpNErLbBON28HbZ-&q=85&s=6f08a91ab4265a6304febccbee2b06f2 2500w" />
 
-For detailed information about tools and usage, see the [Agent documentation](/ide-extensions/agent/how-it-works), which covers both Agent and Plan modes.
+도구 및 사용법에 대한 자세한 내용은 에이전트 및 계획 모드를 모두 다루는 [에이전트 설명서](/ide-extensions/agent/how-it-works)를 참조하세요.
 
-### What Is the Common Workflow for Plan Mode?
+### 계획 모드의 일반적인 워크플로우는 무엇인가요?
 
-1. **Start in Plan mode** to explore and understand
-2. **Develop your approach** with the model's help
-3. **Switch to Agent mode** when ready to implement
+1. 탐색 및 이해를 위해 **계획 모드에서 시작**합니다.
+2. 모델의 도움을 받아 **접근 방식을 개발**합니다.
+3. 구현할 준비가 되면 **에이전트 모드로 전환**합니다.
 
 <Tip>
-  Plan mode shares the same interface and context features as Chat and Agent
-  modes. You can use `@` context providers and highlight code just like in other
-  modes.
+  계획 모드는 채팅 및 에이전트 모드와 동일한 인터페이스 및 컨텍스트 기능을 공유합니다. 다른 모드와 마찬가지로 `@` 컨텍스트 제공자를 사용하거나 코드를 강조 표시할 수 있습니다.
 </Tip>

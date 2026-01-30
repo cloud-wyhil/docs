@@ -1,46 +1,46 @@
 ---
-title: 'Rules'
-description: 'IDE Extension에서 사용할 수 있는 규칙을 정의하는 방법을 알아봅니다.'
+title: '규칙'
+description: 'IDE 확장 프로그램에서 사용할 수 있는 규칙을 정의하는 방법을 알아봅니다.'
 ---
 
-# Rules
+# 규칙 (Rules)
 
-> Rules allow you to provide specific instructions that guide how the AI agent behaves when working with your code. Instead of the AI making assumptions about your coding standards, architecture patterns, or project-specific requirements, you can explicitly define guidelines that ensure consistent, contextually appropriate responses.
+> 규칙(Rules)을 사용하면 AI 에이전트가 코드를 작성할 때 어떻게 행동해야 하는지에 대한 구체적인 지침을 제공할 수 있습니다. AI가 코딩 표준, 아키텍처 패턴 또는 프로젝트별 요구 사항에 대해 자의적으로 판단하는 대신, 개발자가 명시적으로 가이드라인을 정의하여 일관되고 문맥에 맞는 응답을 보장할 수 있습니다.
 
-Think of these as the guardrails for your AI coding agents:
+규칙을 AI 코딩 에이전트를 위한 '가드레일'이라고 생각하세요:
 
-* **Enforce company-specific coding standards** and security practices
-* **Implement quality checks** that match your engineering culture
-* **Create paved paths** for developers to follow organizational best practices
+* **회사 전용 코딩 표준** 및 보안 관행을 적용합니다.
+* 엔지니어링 문화에 맞는 **품질 검사를 구현**합니다.
+* 개발자가 조직의 베스트 프랙티스를 따를 수 있는 **표준화된 경로(paved paths)를 생성**합니다.
 
-By implementing rules, you transform the AI from a generic coding agent into a knowledgeable team member that understands your project's unique requirements and constraints.
+규칙을 구현함으로써, 범용적인 코딩 에이전트를 프로젝트의 고유한 요구 사항과 제약을 이해하는 지식 풍부한 팀원으로 변화시킬 수 있습니다.
 
-## How Rules Work
+## 규칙 작동 방식
 
-Your agent detects rules and applies the specified rules while in [Agent](/ide-extensions/agent/quick-start), [Chat](/ide-extensions/chat/quick-start), and [Edit](/ide-extensions/edit/quick-start) modes.
+에이전트는 규칙을 감지하여 [에이전트(Agent)](/ide-extensions/agent/quick-start), [채팅(Chat)](/ide-extensions/chat/quick-start), [수정(Edit)](/ide-extensions/edit/quick-start) 모드에서 작업하는 동안 지정된 규칙을 적용합니다.
 
-## Where to Manage Rules
+## 규칙 관리 위치
 
 <Columns cols={2}>
-  <Card title="Local Rules (.continue/rules)" icon="folder">
-    * Create files in `.continue/rules` folder
-    * Automatically appear with Hub configs
-    * Edit directly in your file system
-    * Version controlled alongside your code
-    * Best for project-specific rules (e.g., "remember to generate migrations after modifying the db")
+  <Card title="로컬 규칙 (.continue/rules)" icon="folder">
+    * `.continue/rules` 폴더에 파일을 생성합니다.
+    * 허브 구성과 함께 자동으로 나타납니다.
+    * 파일 시스템에서 직접 편집할 수 있습니다.
+    * 코드와 함께 버전 관리가 가능합니다.
+    * 프로젝트별 규칙에 가장 적합합니다 (예: "DB 수정 후 반드시 마이그레이션 생성하기").
   </Card>
 
-  <Card title="Hub Rules" icon="cloud">
-    * Manage on [Prometheus Mission Control](https://hub.continue.dev)
-    * Reference in config.yaml with `uses:`
-    * Share with team and community
-    * Easy to include in multiple agents
-    * Best for organization-wide rules (e.g., "always use X library for Y task")
+  <Card title="허브 규칙" icon="cloud">
+    * [Prometheus Mission Control](https://hub.continue.dev)에서 관리합니다.
+    * `config.yaml`에서 `uses:`를 사용하여 참조합니다.
+    * 팀 및 커뮤니티와 공유할 수 있습니다.
+    * 여러 에이전트에 쉽게 포함할 수 있습니다.
+    * 조직 전체 규칙에 가장 적합합니다 (예: "Y 작업에는 항상 X 라이브러리 사용하기").
   </Card>
 </Columns>
 
 <Info>
-  **Quick Setup**: Start with local rules for immediate use, then promote commonly used rules to the Hub for sharing and reuse.
+  **빠른 설정**: 즉각적인 사용을 위해 로컬 규칙부터 시작한 다음, 자주 사용되는 규칙은 공유 및 재사용을 위해 허브로 등록하세요.
 </Info>
 
-Learn more in the [rules deep dive](/customize/deep-dives/rules), and view [`rules`](/reference#rules) in the YAML Reference for more details.
+더 자세한 내용은 [규칙 심층 학습](/customize/deep-dives/rules)을 참고하고, YAML 참조의 [`rules`](/reference#rules) 섹션에서 상세 내용을 확인하세요.

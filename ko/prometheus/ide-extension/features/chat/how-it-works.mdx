@@ -1,61 +1,61 @@
 ---
-title: 'How Chat Works'
-description: 'Learn how Chat Mode works in Prometheus and how it differs from Agent Mode'
+title: '채팅 작동 원리'
+description: 'Prometheus에서 채팅 모드가 작동하는 방식과 에이전트 모드와의 차이점을 알아봅니다.'
 ---
 
-# How Chat Works
+# 채팅 작동 원리
 
-> Prometheus's Chat feature provides a conversational interface with AI models directly in your IDE sidebar.
+> Prometheus의 채팅 기능은 IDE 사이드바에서 AI 모델과 직접 대화할 수 있는 인터페이스를 제공합니다.
 
-## How Chat Core Functionality Works
+## 채팅 핵심 기능 작동 방식
 
-When you start a chat conversation, Prometheus:
+채팅 대화를 시작하면 Prometheus는 다음과 같은 과정을 거칩니다:
 
-1. **Gathers Context**: Uses any selected code sections and @-mentioned context
-2. **Constructs Prompt**: Combines your input with relevant context
-3. **Sends to Model**: Prompts the configured AI model for a response
-4. **Streams Response**: Returns the AI response in real-time to the sidebar
+1. **컨텍스트 수집**: 선택된 코드 섹션과 `@`로 언급된 컨텍스트를 사용합니다.
+2. **프롬프트 생성**: 사용자의 입력과 관련 컨텍스트를 결합합니다.
+3. **모델로 전송**: 구성된 AI 모델에 응답을 요청합니다.
+4. **응답 스트리밍**: 실시간으로 사이드바에 AI 응답을 반환합니다.
 
-## How Context Management Works
+## 컨텍스트 관리 방식
 
-### What Context Is Automatically Included
+### 자동으로 포함되는 컨텍스트
 
-* Selected code in your editor
-* Current file context when relevant
-* Previous conversation history in the session
+* 에디터에서 선택한 코드
+* 관련이 있는 경우 현재 파일 컨텍스트
+* 세션 내 이전 대화 기록
 
-### How to Add Manual Context
+### 수동으로 컨텍스트 추가하기
 
-* `@Files` - Reference specific files
+* `@Files` - 특정 파일 참조
 
-## How Response Handling Works
+## 응답 처리 방식
 
-Each code section in the AI response includes action buttons:
+AI 응답의 각 코드 섹션에는 다음과 같은 액션 버튼이 포함되어 있습니다:
 
-* **Apply to current file** - Replace selected code
-* **Insert at cursor** - Add code at cursor position
-* **Copy** - Copy code to clipboard
+* **Apply to current file (현재 파일에 적용)** - 선택한 코드를 대체합니다.
+* **Insert at cursor (커서 위치에 삽입)** - 커서 위치에 코드를 추가합니다.
+* **Copy (복사)** - 코드를 클립보드에 복사합니다.
 
-## How Session Management Works
+## 세션 관리 방식
 
-* Use `Cmd/Ctrl + L` (VS Code) or `Cmd/Ctrl + J` (JetBrains) to start a new session
-* Clears all previous context for a fresh start
-* Helpful for switching between different tasks
+* VS Code에서 `Cmd/Ctrl + L` 또는 JetBrains에서 `Cmd/Ctrl + J`를 사용하여 새 세션을 시작합니다.
+* 새로 시작할 때 이전의 모든 컨텍스트를 지웁니다.
+* 서로 다른 작업 간에 전환할 때 유용합니다.
 
-## What Advanced Features Are Available
+## 제공되는 고급 기능
 
-### How to Use Prompt Inspection
+### 프롬프트 검사 방법
 
-View the exact prompt sent to the AI model in the [prompt logs](/troubleshooting) for debugging and optimization.
+디버깅 및 최적화를 위해 [프롬프트 로그](/troubleshooting)에서 AI 모델로 전송된 정확한 프롬프트를 확인할 수 있습니다.
 
-### Context
+### 컨텍스트
 
-Learn more about how you can bring in context:
+컨텍스트를 가져오는 방법에 대해 자세히 알아보세요:
 
-* [Codebase Context](/guides/codebase-documentation-awareness)
-* [Documentation Context](/guides/codebase-documentation-awareness)
-* [Built-in Context Providers](/customize/deep-dives/custom-providers)
+* [코드베이스 컨텍스트](/guides/codebase-documentation-awareness)
+* [문서 컨텍스트](/guides/codebase-documentation-awareness)
+* [내장 컨텍스트 제공자](/customize/deep-dives/custom-providers)
 
 ***
 
-*Chat is designed to feel like a natural conversation while maintaining full transparency about what context is being used.*
+*채팅은 사용되는 컨텍스트에 대한 투명성을 유지하면서 자연스러운 대화처럼 느껴지도록 설계되었습니다.*
