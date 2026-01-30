@@ -9,197 +9,563 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+    
+        "tabs": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "SinglePoint",
-        "groups": [
-          {
-            "group": "Product",
-            "pages": [
-              "singlepoint/introduction"
-            ]
-          },
-          {
-            "group": "Tutorial",
-            "pages": [
-              "singlepoint/tutorial/chat",
-              "singlepoint/tutorial/Mmnutes"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Prometheus",
-        "groups": [
-          {
-            "group": "Product",
-            "icon": "box-open",
-            "pages": [
-              "prometheus/introduction"
-            ]
-          },
-          {
-            "group": "IDE Extension",
-            "pages": [
-              "prometheus/extension/introduction",
-              "prometheus/extension/quick-start",
+            "tab": "Guides",
+            "groups": [
               {
-                "group": "Features",
-                "icon": "star",
+                "group": "Getting started",
                 "pages": [
+                  "en/index",
+                  "en/quickstart",
+                  "en/development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "en/essentials/settings",
+                  "en/essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "en/essentials/markdown",
+                  "en/essentials/code",
+                  "en/essentials/images",
+                  "en/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "en/ai-tools/cursor",
+                  "en/ai-tools/claude-code",
+                  "en/ai-tools/windsurf"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "SinglePoint",
+            "groups": [
+              {
+                "group": "Product",
+                "pages": [
+                  "en/singlepoint/introduction"
+                ]
+              },
+              {
+                "group": "Tutorial",
+                "pages": [
+                  "en/singlepoint/tutorial/chat",
+                  "singlepoint/tutorial/Mmnutes"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Prometheus",
+            "groups": [
+              {
+                "group": "Product",
+                "icon": "box-open",
+                "pages": [
+                  "en/prometheus/introduction"
+                ]
+              },
+              {
+                "group": "IDE Extension",
+                "pages": [
+                  "en/prometheus/extension/introduction",
+                  "prometheus/extension/quick-start",
                   {
-                    "group": "Agent",
-                    "icon": "robot",
+                    "group": "Features",
+                    "icon": "star",
                     "pages": [
-                      "prometheus/extension/features/agent/quick-start",
-                      "prometheus/extension/features/agent/how-it-works",
-                      "prometheus/extension/features/agent/plan-mode",
-                      "prometheus/extension/features/agent/model-setup",
-                      "prometheus/extension/features/agent/how-to-customize",
-                      "prometheus/extension/features/agent/context-selection"
+                      {
+                        "group": "Agent",
+                        "icon": "robot",
+                        "pages": [
+                          "en/prometheus/extension/features/agent/quick-start",
+                          "en/prometheus/extension/features/agent/how-it-works",
+                          "en/prometheus/extension/features/agent/plan-mode",
+                          "en/prometheus/extension/features/agent/model-setup",
+                          "en/prometheus/extension/features/agent/how-to-customize",
+                          "en/prometheus/extension/features/agent/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Chat",
+                        "icon": "comments",
+                        "pages": [
+                          "en/prometheus/extension/features/chat/quick-start",
+                          "en/prometheus/extension/features/chat/how-it-works",
+                          "en/prometheus/extension/features/chat/model-setup",
+                          "en/prometheus/extension/features/chat/how-to-customize",
+                          "en/prometheus/extension/features/chat/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Autocomplete",
+                        "icon": "wand-magic-sparkles",
+                        "pages": [
+                          "en/prometheus/extension/features/autocomplete/quick-start",
+                          "en/prometheus/extension/features/autocomplete/how-it-works",
+                          "en/prometheus/extension/features/autocomplete/model-setup",
+                          "en/prometheus/extension/features/autocomplete/how-to-customize",
+                          "en/prometheus/extension/features/autocomplete/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Edit",
+                        "icon": "pen-to-square",
+                        "pages": [
+                          "en/prometheus/extension/features/edit/quick-start",
+                          "en/prometheus/extension/features/edit/how-it-works",
+                          "en/prometheus/extension/features/edit/model-setup",
+                          "en/prometheus/extension/features/edit/how-to-customize",
+                          "en/prometheus/extension/features/edit/context-selection"
+                        ]
+                      }
                     ]
                   },
                   {
-                    "group": "Chat",
-                    "icon": "comments",
+                    "group": "Customize",
+                    "icon": "sliders",
                     "pages": [
-                      "prometheus/extension/features/chat/quick-start",
-                      "prometheus/extension/features/chat/how-it-works",
-                      "prometheus/extension/features/chat/model-setup",
-                      "prometheus/extension/features/chat/how-to-customize",
-                      "prometheus/extension/features/chat/context-selection"
-                    ]
-                  },
-                  {
-                    "group": "Autocomplete",
-                    "icon": "wand-magic-sparkles",
-                    "pages": [
-                      "prometheus/extension/features/autocomplete/quick-start",
-                      "prometheus/extension/features/autocomplete/how-it-works",
-                      "prometheus/extension/features/autocomplete/model-setup",
-                      "prometheus/extension/features/autocomplete/how-to-customize",
-                      "prometheus/extension/features/autocomplete/context-selection"
-                    ]
-                  },
-                  {
-                    "group": "Edit",
-                    "icon": "pen-to-square",
-                    "pages": [
-                      "prometheus/extension/features/edit/quick-start",
-                      "prometheus/extension/features/edit/how-it-works",
-                      "prometheus/extension/features/edit/model-setup",
-                      "prometheus/extension/features/edit/how-to-customize",
-                      "prometheus/extension/features/edit/context-selection"
+                      "en/prometheus/extension/customize/overview",
+                      "en/prometheus/extension/customize/rules",
+                      "en/prometheus/extension/customize/prompts"
                     ]
                   }
                 ]
               },
               {
-                "group": "Customize",
-                "icon": "sliders",
+                "group": "Application",
                 "pages": [
-                  "prometheus/extension/customize/overview",
-                  "prometheus/extension/customize/rules",
-                  "prometheus/extension/customize/prompts"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Application",
-            "pages": [
-              "prometheus/application/introduction",
-              {
-                "group": "Features",
-                "icon": "star",
-                "pages": [
+                  "en/prometheus/application/introduction",
                   {
-                    "group": "Chat",
-                    "icon": "comments",
+                    "group": "Features",
+                    "icon": "star",
                     "pages": [
-                      "prometheus/application/features/chat/quick-start"
-                    ]
-                  },
-                  {
-                    "group": "Dashboard",
-                    "icon": "dashboard",
-                    "pages": [
-                      "prometheus/application/features/dashboard/quick-start"
+                      {
+                        "group": "Chat",
+                        "icon": "comments",
+                        "pages": [
+                          "en/prometheus/application/features/chat/quick-start"
+                        ]
+                      },
+                      {
+                        "group": "Dashboard",
+                        "icon": "dashboard",
+                        "pages": [
+                          "en/prometheus/application/features/dashboard/quick-start"
+                        ]
+                      }
                     ]
                   }
                 ]
+              },
+              {
+                "group": "Tutorial",
+                "pages": [
+                  "en/prometheus/tutorial/preparation",
+                  "en/prometheus/tutorial/board",
+                  "en/prometheus/tutorial/layout",
+                  "en/prometheus/tutorial/login",
+                  "en/prometheus/tutorial/logout",
+                  "en/prometheus/tutorial/logic_create",
+                  "en/prometheus/tutorial/logic_update",
+                  "en/prometheus/tutorial/sql_create",
+                  "en/prometheus/tutorial/sql_tuning"
+                ]
               }
             ]
           },
           {
-            "group": "Tutorial",
-            "pages": [
-              "prometheus/tutorial/preparation",
-              "prometheus/tutorial/board",
-              "prometheus/tutorial/layout",
-              "prometheus/tutorial/login",
-              "prometheus/tutorial/logout",
-              "prometheus/tutorial/logic_create",
-              "prometheus/tutorial/logic_update",
-              "prometheus/tutorial/sql_create",
-              "prometheus/tutorial/sql_tuning"
+            "tab": "API reference",
+            "groups": [
+              {
+                "group": "API documentation",
+                "pages": [
+                  "en/api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "en/api-reference/endpoint/get",
+                  "en/api-reference/endpoint/create",
+                  "en/api-reference/endpoint/delete",
+                  "en/api-reference/endpoint/webhook"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "language": "ko",
+    
+        "tabs": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "ko/index",
+                  "ko/quickstart",
+                  "ko/development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "ko/essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "ko/essentials/markdown",
+                  "ko/essentials/code",
+                  "ko/essentials/images",
+                  "ko/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "ko/ai-tools/cursor",
+                  "ko/ai-tools/claude-code",
+                  "ko/ai-tools/windsurf"
+                ]
+              }
             ]
           },
           {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "싱글포인트",
+            "groups": [
+              {
+                "group": "제품",
+                "pages": [
+                  "ko/singlepoint/introduction"
+                ]
+              },
+              {
+                "group": "튜토리얼",
+                "pages": [
+                  "ko/singlepoint/tutorial/chat",
+                  "ko/singlepoint/tutorial/Mmnutes"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "프로메테우스",
+            "groups": [
+              {
+                "group": "제품",
+                "icon": "box-open",
+                "pages": [
+                  "ko/prometheus/introduction"
+                ]
+              },
+              {
+                "group": "IDE Extension",
+                "pages": [
+                  "ko/prometheus/extension/introduction",
+                  "ko/prometheus/extension/quick-start",
+                  {
+                    "group": "제품특징",
+                    "icon": "star",
+                    "pages": [
+                      {
+                        "group": "Agent",
+                        "icon": "robot",
+                        "pages": [
+                          "ko/prometheus/extension/features/agent/quick-start",
+                          "ko/prometheus/extension/features/agent/how-it-works",
+                          "ko/prometheus/extension/features/agent/plan-mode",
+                          "ko/prometheus/extension/features/agent/model-setup",
+                          "ko/prometheus/extension/features/agent/how-to-customize",
+                          "ko/prometheus/extension/features/agent/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Chat",
+                        "icon": "comments",
+                        "pages": [
+                          "ko/prometheus/extension/features/chat/quick-start",
+                          "ko/prometheus/extension/features/chat/how-it-works",
+                          "ko/prometheus/extension/features/chat/model-setup",
+                          "ko/prometheus/extension/features/chat/how-to-customize",
+                          "ko/prometheus/extension/features/chat/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Autocomplete",
+                        "icon": "wand-magic-sparkles",
+                        "pages": [
+                          "ko/prometheus/extension/features/autocomplete/quick-start",
+                          "ko/prometheus/extension/features/autocomplete/how-it-works",
+                          "ko/prometheus/extension/features/autocomplete/model-setup",
+                          "ko/prometheus/extension/features/autocomplete/how-to-customize",
+                          "ko/prometheus/extension/features/autocomplete/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Edit",
+                        "icon": "pen-to-square",
+                        "pages": [
+                          "ko/prometheus/extension/features/edit/quick-start",
+                          "ko/prometheus/extension/features/edit/how-it-works",
+                          "ko/prometheus/extension/features/edit/model-setup",
+                          "ko/prometheus/extension/features/edit/how-to-customize",
+                          "ko/prometheus/extension/features/edit/context-selection"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "맞춤 설정",
+                    "icon": "sliders",
+                    "pages": [
+                      "ko/prometheus/extension/customize/overview",
+                      "ko/prometheus/extension/customize/rules",
+                      "ko/prometheus/extension/customize/prompts"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Application",
+                "pages": [
+                  "ko/prometheus/application/introduction",
+                  {
+                    "group": "Features",
+                    "icon": "star",
+                    "pages": [
+                      {
+                        "group": "Chat",
+                        "icon": "comments",
+                        "pages": [
+                          "ko/prometheus/application/features/chat/quick-start"
+                        ]
+                      },
+                      {
+                        "group": "Dashboard",
+                        "icon": "dashboard",
+                        "pages": [
+                          "ko/prometheus/application/features/dashboard/quick-start"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "튜토리얼",
+                "pages": [
+                  "ko/prometheus/tutorial/preparation",
+                  "ko/prometheus/tutorial/board",
+                  "ko/prometheus/tutorial/layout",
+                  "ko/prometheus/tutorial/login",
+                  "ko/prometheus/tutorial/logout",
+                  "ko/prometheus/tutorial/logic_create",
+                  "ko/prometheus/tutorial/logic_update",
+                  "ko/prometheus/tutorial/sql_create",
+                  "ko/prometheus/tutorial/sql_tuning"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "ja",
+    
+        "tabs": [
+          {
+            "tab": "ガイド",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "ja/index",
+                  "ja/quickstart",
+                  "ja/development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "ja/essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "ja/essentials/markdown",
+                  "ja/essentials/code",
+                  "ja/essentials/images",
+                  "ja/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "ja/ai-tools/cursor",
+                  "ja/ai-tools/claude-code",
+                  "ja/ai-tools/windsurf"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "シングルポイント",
+            "groups": [
+              {
+                "group": "プロダクト",
+                "pages": [
+                  "ja/singlepoint/introduction"
+                ]
+              },
+              {
+                "group": "チュートリアル",
+                "pages": [
+                  "ja/singlepoint/tutorial/chat",
+                  "ja/singlepoint/tutorial/Mmnutes"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "プロメテウス",
+            "groups": [
+              {
+                "group": "プロダクト",
+                "icon": "box-open",
+                "pages": [
+                  "ja/prometheus/introduction"
+                ]
+              },
+              {
+                "group": "IDE Extension",
+                "pages": [
+                  "ja/prometheus/extension/introduction",
+                  "ja/prometheus/extension/quick-start",
+                  {
+                    "group": "Features",
+                    "icon": "star",
+                    "pages": [
+                      {
+                        "group": "Agent",
+                        "icon": "robot",
+                        "pages": [
+                          "ja/prometheus/extension/features/agent/quick-start",
+                          "ja/prometheus/extension/features/agent/how-it-works",
+                          "ja/prometheus/extension/features/agent/plan-mode",
+                          "ja/prometheus/extension/features/agent/model-setup",
+                          "ja/prometheus/extension/features/agent/how-to-customize",
+                          "ja/prometheus/extension/features/agent/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Chat",
+                        "icon": "comments",
+                        "pages": [
+                          "ja/prometheus/extension/features/chat/quick-start",
+                          "ja/prometheus/extension/features/chat/how-it-works",
+                          "ja/prometheus/extension/features/chat/model-setup",
+                          "ja/prometheus/extension/features/chat/how-to-customize",
+                          "ja/prometheus/extension/features/chat/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Autocomplete",
+                        "icon": "wand-magic-sparkles",
+                        "pages": [
+                          "ja/prometheus/extension/features/autocomplete/quick-start",
+                          "ja/prometheus/extension/features/autocomplete/how-it-works",
+                          "ja/prometheus/extension/features/autocomplete/model-setup",
+                          "ja/prometheus/extension/features/autocomplete/how-to-customize",
+                          "ja/prometheus/extension/features/autocomplete/context-selection"
+                        ]
+                      },
+                      {
+                        "group": "Edit",
+                        "icon": "pen-to-square",
+                        "pages": [
+                          "ja/prometheus/extension/features/edit/quick-start",
+                          "ja/prometheus/extension/features/edit/how-it-works",
+                          "ja/prometheus/extension/features/edit/model-setup",
+                          "ja/prometheus/extension/features/edit/how-to-customize",
+                          "ja/prometheus/extension/features/edit/context-selection"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Customize",
+                    "icon": "sliders",
+                    "pages": [
+                      "ja/prometheus/extension/customize/overview",
+                      "ja/prometheus/extension/customize/rules",
+                      "ja/prometheus/extension/customize/prompts"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Application",
+                "pages": [
+                  "ja/prometheus/application/introduction",
+                  {
+                    "group": "Features",
+                    "icon": "star",
+                    "pages": [
+                      {
+                        "group": "Chat",
+                        "icon": "comments",
+                        "pages": [
+                          "ja/prometheus/application/features/chat/quick-start"
+                        ]
+                      },
+                      {
+                        "group": "Dashboard",
+                        "icon": "dashboard",
+                        "pages": [
+                          "ja/prometheus/application/features/dashboard/quick-start"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "チュートリアル",
+                "pages": [
+                  "ja/prometheus/tutorial/preparation",
+                  "ja/prometheus/tutorial/board",
+                  "ja/prometheus/tutorial/layout",
+                  "ja/prometheus/tutorial/login",
+                  "ja/prometheus/tutorial/logout",
+                  "ja/prometheus/tutorial/logic_create",
+                  "ja/prometheus/tutorial/logic_update",
+                  "ja/prometheus/tutorial/sql_create",
+                  "ja/prometheus/tutorial/sql_tuning"
+                ]
+              }
             ]
           }
         ]
