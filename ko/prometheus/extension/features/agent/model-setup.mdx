@@ -1,11 +1,11 @@
 ---
 title: 'Model Setup'
-description: 'Learn how to configure and set up models in Prometheus'
+description: 'Prometheus에서 모델을 구성하고 설정하는 방법을 알아보세요.'
 ---
 
 # Model Setup for Agent Mode
 
-> Learn how to set up models for Agent Mode in Prometheus, including recommended models and configuration options for optimal performance
+Prometheus에서 Agent Mode(에이전트 모드)용 모델을 설정하는 방법을 알아보세요. 최적의 성능을 위한 권장 모델 및 구성 옵션도 포함되어 있습니다.
 
 export const ModelRecommendations = ({role = "all"}) => {
   const parseMarkdownLinks = text => {
@@ -168,15 +168,15 @@ export const ModelRecommendations = ({role = "all"}) => {
     </table>;
 };
 
-The models you set up for Chat mode will be used with Agent mode if the model supports tool calling. The recommended models and how to set them up can be found [here](/ide-extensions/chat/model-setup).
+Chat Mode(채팅 모드)용으로 설정한 모델은 해당 모델이 도구 호출을 지원하는 경우 Agent Mode(에이전트 모드)에서도 사용됩니다. 권장 모델 및 설정 방법은 [여기](/ide-extensions/chat/model-setup)에서 확인할 수 있습니다.
 
 ## How System Message Tools Work
 
-Prometheus implements an innovative approach called **system message tools** that ensures consistent tool functionality across all models, regardless of their native capabilities. This allows Agent mode to work seamlessly with a wider range of models and providers.
+Prometheus는 **시스템 메시지 도구**라는 혁신적인 접근 방식을 구현하여 모델의 기본 기능에 관계없이 모든 모델에서 일관된 도구 기능을 보장합니다. 이를 통해 Agent Mode(에이전트 모드)는 더 넓은 범위의 모델 및 공급자와 원활하게 작동할 수 있습니다:
 
 ### How System Message Tools Function
 
-Instead of relying solely on native tool calling APIs (which vary between providers), Prometheus converts tools into XML format and includes them in the system message. The model generates tool calls as structured XML within its response, which Prometheus then parses and executes. This approach provides:
+프로메테우스는 제공업체마다 다른 네이티브 도구 호출 API에만 의존하는 대신, 도구를 XML 형식으로 변환하여 시스템 메시지에 포함합니다. 이 모델은 응답 내에 구조화된 XML 형식으로 도구 호출을 생성하고, 프로메테우스는 이를 구문 분석하여 실행합니다. 이 접근 방식은 다음과 같은 이점을 제공합니다:
 
 * **Universal compatibility** - Any model capable of following instructions can use tools, not just those with native tool support
 * **Consistent behavior** - Tool calls work identically across OpenAI, Anthropic, local models, and others
@@ -189,8 +189,8 @@ Instead of relying solely on native tool calling APIs (which vary between provid
 
 ### How to Configure Agent Mode
 
-Agent mode automatically determines whether to use native or system message tools based on the model's capabilities. No additional configuration is required - simply select your model and Prometheus handles the rest.
+Agent mode는 모델의 기능에 따라 네이티브 메시지 도구 또는 시스템 메시지 도구를 사용할지 자동으로 결정합니다. 추가 구성은 필요하지 않으며, 모델을 선택하기만 하면 Prometheus가 나머지를 처리합니다.
 
 ## How to Check Model Compatibility
 
-To see which models support specific features like tool use (for Agent mode) and image input, check out our [Model Capabilities guide](/customize/deep-dives/model-capabilities).
+도구 사용(Agent mode) 및 이미지 입력과 같은 특정 기능을 지원하는 모델을 확인하려면 [모델 기능 가이드](/customize/deep-dives/model-capabilities)를 참조하세요.
