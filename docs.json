@@ -80,7 +80,6 @@
             "pages": [
               "prometheus/extension/introduction",
               "prometheus/extension/quick-start",
-              
               {
                 "group": "Features",
                 "icon": "star",
@@ -146,7 +145,27 @@
           {
             "group": "Application",
             "pages": [
-              "prometheus/application/introduction"
+              "prometheus/application/introduction",
+              {
+                "group": "Features",
+                "icon": "star",
+                "pages": [
+                  {
+                    "group": "Chat",
+                    "icon": "comments",
+                    "pages": [
+                      "prometheus/application/features/chat/quick-start"
+                    ]
+                  },
+                  {
+                    "group": "Dashboard",
+                    "icon": "dashboard",
+                    "pages": [
+                      "prometheus/application/features/dashboard/quick-start"
+                    ]
+                  }
+                ]
+              }
             ]
           },
           {
