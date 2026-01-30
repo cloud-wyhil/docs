@@ -48,6 +48,46 @@
         ]
       },
       {
+        "tab": "SinglePoint",
+        "groups": [
+          {
+            "group": "Product",
+            "pages": [
+              "singlepoint/introduction"
+            ]
+          },
+          {
+            "group": "Tutorial",
+            "pages": [
+              "singlepoint/tutorial/get",
+              "singlepoint/tutorial/create",
+              "singlepoint/tutorial/delete",
+              "singlepoint/tutorial/webhook"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Prometheus",
+        "groups": [
+          {
+            "group": "Product",
+            "pages": [
+              "prometheus/introduction"
+            ]
+          },
+          {
+            "group": "Tutorial",
+            "pages": [
+              "prometheus/tutorial/get",
+              "prometheus/tutorial/create",
+              "prometheus/tutorial/delete",
+              "prometheus/tutorial/webhook"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "API reference",
         "groups": [
           {
