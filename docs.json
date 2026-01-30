@@ -59,10 +59,8 @@
           {
             "group": "Tutorial",
             "pages": [
-              "singlepoint/tutorial/get",
-              "singlepoint/tutorial/create",
-              "singlepoint/tutorial/delete",
-              "singlepoint/tutorial/webhook"
+              "singlepoint/tutorial/chat",
+              "singlepoint/tutorial/Mmnutes"
             ]
           }
         ]
@@ -79,10 +77,15 @@
           {
             "group": "Tutorial",
             "pages": [
-              "prometheus/tutorial/get",
-              "prometheus/tutorial/create",
-              "prometheus/tutorial/delete",
-              "prometheus/tutorial/webhook"
+              "prometheus/tutorial/preparation",
+              "prometheus/tutorial/board",
+              "prometheus/tutorial/layout",
+              "prometheus/tutorial/login",
+              "prometheus/tutorial/logout",
+              "prometheus/tutorial/logic_create",
+              "prometheus/tutorial/logic_update",
+              "prometheus/tutorial/sql_create",
+              "prometheus/tutorial/sql_tuning"
             ]
           }
         ]
