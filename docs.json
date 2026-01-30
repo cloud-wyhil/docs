@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "WYHIL Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -70,6 +70,7 @@
         "groups": [
           {
             "group": "Product",
+            "icon": "rocket-launch",
             "pages": [
               "prometheus/introduction"
             ]
@@ -77,7 +78,67 @@
           {
             "group": "IDE Extension",
             "pages": [
-              "prometheus/extension/introduction"
+              "prometheus/extension/introduction",
+              {
+                "group": "Features",
+                "icon": "star",
+                "pages": [
+                  {
+                    "group": "Agent",
+                    "icon": "robot",
+                    "pages": [
+                      "prometheus/extension/features/agent/quick-start",
+                      "prometheus/extension/features/agent/how-it-works",
+                      "prometheus/extension/features/agent/plan-mode",
+                      "prometheus/extension/features/agent/model-setup",
+                      "prometheus/extension/features/agent/how-to-customize",
+                      "prometheus/extension/features/agent/context-selection"
+                    ]
+                  },
+                  {
+                    "group": "Chat",
+                    "icon": "comments",
+                    "pages": [
+                      "prometheus/extension/features/chat/quick-start",
+                      "prometheus/extension/features/chat/how-it-works",
+                      "prometheus/extension/features/chat/model-setup",
+                      "prometheus/extension/features/chat/how-to-customize",
+                      "prometheus/extension/features/chat/context-selection"
+                    ]
+                  },
+                  {
+                    "group": "Autocomplete",
+                    "icon": "wand-magic-sparkles",
+                    "pages": [
+                      "prometheus/extension/features/autocomplete/quick-start",
+                      "prometheus/extension/features/autocomplete/how-it-works",
+                      "prometheus/extension/features/autocomplete/model-setup",
+                      "prometheus/extension/features/autocomplete/how-to-customize",
+                      "prometheus/extension/features/autocomplete/context-selection"
+                    ]
+                  },
+                  {
+                    "group": "Edit",
+                    "icon": "pen-to-square",
+                    "pages": [
+                      "prometheus/extension/features/edit/quick-start",
+                      "prometheus/extension/features/edit/how-it-works",
+                      "prometheus/extension/features/edit/model-setup",
+                      "prometheus/extension/features/edit/how-to-customize",
+                      "prometheus/extension/features/edit/context-selection"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Customize",
+                "icon": "sliders",
+                "pages": [
+                  "prometheus/extension/customize/overview",
+                  "prometheus/extension/customize/rules",
+                  "prometheus/extension/customize/prompts"
+                ]
+              }
             ]
           },
           {
