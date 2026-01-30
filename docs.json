@@ -169,8 +169,8 @@
   },
   "footer": {
     "socials": {
-      // "x": "https://x.com/wyhil",
-      // "github": "https://github.com/wyhil",
+      "x": "https://x.com/wyhil",
+      "github": "https://github.com/wyhil",
       "facebook": "https://www.facebook.com/wyhil",
       "linkedin": "https://linkedin.com/company/wyhil"
     }
