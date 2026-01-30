@@ -12,7 +12,6 @@
     "languages": [
       {
         "language": "en",
-    
         "tabs": [
           {
             "tab": "Guides",
@@ -82,8 +81,8 @@
               {
                 "group": "IDE Extension",
                 "pages": [
-                  "en/prometheus/extension/introduction",
-                  "prometheus/extension/quick-start",
+                  "en/prometheus/ide-extension/introduction",
+                  "en/prometheus/ide-extension/quick-start",
                   {
                     "group": "Features",
                     "icon": "star",
@@ -92,45 +91,45 @@
                         "group": "Agent",
                         "icon": "robot",
                         "pages": [
-                          "en/prometheus/extension/features/agent/quick-start",
-                          "en/prometheus/extension/features/agent/how-it-works",
-                          "en/prometheus/extension/features/agent/plan-mode",
-                          "en/prometheus/extension/features/agent/model-setup",
-                          "en/prometheus/extension/features/agent/how-to-customize",
-                          "en/prometheus/extension/features/agent/context-selection"
+                          "en/prometheus/ide-extension/features/agent/quick-start",
+                          "en/prometheus/ide-extension/features/agent/how-it-works",
+                          "en/prometheus/ide-extension/features/agent/plan-mode",
+                          "en/prometheus/ide-extension/features/agent/model-setup",
+                          "en/prometheus/ide-extension/features/agent/how-to-customize",
+                          "en/prometheus/ide-extension/features/agent/context-selection"
                         ]
                       },
                       {
                         "group": "Chat",
                         "icon": "comments",
                         "pages": [
-                          "en/prometheus/extension/features/chat/quick-start",
-                          "en/prometheus/extension/features/chat/how-it-works",
-                          "en/prometheus/extension/features/chat/model-setup",
-                          "en/prometheus/extension/features/chat/how-to-customize",
-                          "en/prometheus/extension/features/chat/context-selection"
+                          "en/prometheus/ide-extension/features/chat/quick-start",
+                          "en/prometheus/ide-extension/features/chat/how-it-works",
+                          "en/prometheus/ide-extension/features/chat/model-setup",
+                          "en/prometheus/ide-extension/features/chat/how-to-customize",
+                          "en/prometheus/ide-extension/features/chat/context-selection"
                         ]
                       },
                       {
                         "group": "Autocomplete",
                         "icon": "wand-magic-sparkles",
                         "pages": [
-                          "en/prometheus/extension/features/autocomplete/quick-start",
-                          "en/prometheus/extension/features/autocomplete/how-it-works",
-                          "en/prometheus/extension/features/autocomplete/model-setup",
-                          "en/prometheus/extension/features/autocomplete/how-to-customize",
-                          "en/prometheus/extension/features/autocomplete/context-selection"
+                          "en/prometheus/ide-extension/features/autocomplete/quick-start",
+                          "en/prometheus/ide-extension/features/autocomplete/how-it-works",
+                          "en/prometheus/ide-extension/features/autocomplete/model-setup",
+                          "en/prometheus/ide-extension/features/autocomplete/how-to-customize",
+                          "en/prometheus/ide-extension/features/autocomplete/context-selection"
                         ]
                       },
                       {
                         "group": "Edit",
                         "icon": "pen-to-square",
                         "pages": [
-                          "en/prometheus/extension/features/edit/quick-start",
-                          "en/prometheus/extension/features/edit/how-it-works",
-                          "en/prometheus/extension/features/edit/model-setup",
-                          "en/prometheus/extension/features/edit/how-to-customize",
-                          "en/prometheus/extension/features/edit/context-selection"
+                          "en/prometheus/ide-extension/features/edit/quick-start",
+                          "en/prometheus/ide-extension/features/edit/how-it-works",
+                          "en/prometheus/ide-extension/features/edit/model-setup",
+                          "en/prometheus/ide-extension/features/edit/how-to-customize",
+                          "en/prometheus/ide-extension/features/edit/context-selection"
                         ]
                       }
                     ]
@@ -139,9 +138,9 @@
                     "group": "Customize",
                     "icon": "sliders",
                     "pages": [
-                      "en/prometheus/extension/customize/overview",
-                      "en/prometheus/extension/customize/rules",
-                      "en/prometheus/extension/customize/prompts"
+                      "en/prometheus/ide-extension/customize/overview",
+                      "en/prometheus/ide-extension/customize/rules",
+                      "en/prometheus/ide-extension/customize/prompts"
                     ]
                   }
                 ]
@@ -212,7 +211,6 @@
       },
       {
         "language": "ko",
-    
         "tabs": [
           {
             "tab": "Guides",
@@ -282,8 +280,8 @@
               {
                 "group": "IDE Extension",
                 "pages": [
-                  "ko/prometheus/extension/introduction",
-                  "ko/prometheus/extension/quick-start",
+                  "ko/prometheus/ide-extension/introduction",
+                  "ko/prometheus/ide-extension/quick-start",
                   {
                     "group": "제품특징",
                     "icon": "star",
@@ -292,45 +290,45 @@
                         "group": "Agent",
                         "icon": "robot",
                         "pages": [
-                          "ko/prometheus/extension/features/agent/quick-start",
-                          "ko/prometheus/extension/features/agent/how-it-works",
-                          "ko/prometheus/extension/features/agent/plan-mode",
-                          "ko/prometheus/extension/features/agent/model-setup",
-                          "ko/prometheus/extension/features/agent/how-to-customize",
-                          "ko/prometheus/extension/features/agent/context-selection"
+                          "ko/prometheus/ide-extension/features/agent/quick-start",
+                          "ko/prometheus/ide-extension/features/agent/how-it-works",
+                          "ko/prometheus/ide-extension/features/agent/plan-mode",
+                          "ko/prometheus/ide-extension/features/agent/model-setup",
+                          "ko/prometheus/ide-extension/features/agent/how-to-customize",
+                          "ko/prometheus/ide-extension/features/agent/context-selection"
                         ]
                       },
                       {
                         "group": "Chat",
                         "icon": "comments",
                         "pages": [
-                          "ko/prometheus/extension/features/chat/quick-start",
-                          "ko/prometheus/extension/features/chat/how-it-works",
-                          "ko/prometheus/extension/features/chat/model-setup",
-                          "ko/prometheus/extension/features/chat/how-to-customize",
-                          "ko/prometheus/extension/features/chat/context-selection"
+                          "ko/prometheus/ide-extension/features/chat/quick-start",
+                          "ko/prometheus/ide-extension/features/chat/how-it-works",
+                          "ko/prometheus/ide-extension/features/chat/model-setup",
+                          "ko/prometheus/ide-extension/features/chat/how-to-customize",
+                          "ko/prometheus/ide-extension/features/chat/context-selection"
                         ]
                       },
                       {
                         "group": "Autocomplete",
                         "icon": "wand-magic-sparkles",
                         "pages": [
-                          "ko/prometheus/extension/features/autocomplete/quick-start",
-                          "ko/prometheus/extension/features/autocomplete/how-it-works",
-                          "ko/prometheus/extension/features/autocomplete/model-setup",
-                          "ko/prometheus/extension/features/autocomplete/how-to-customize",
-                          "ko/prometheus/extension/features/autocomplete/context-selection"
+                          "ko/prometheus/ide-extension/features/autocomplete/quick-start",
+                          "ko/prometheus/ide-extension/features/autocomplete/how-it-works",
+                          "ko/prometheus/ide-extension/features/autocomplete/model-setup",
+                          "ko/prometheus/ide-extension/features/autocomplete/how-to-customize",
+                          "ko/prometheus/ide-extension/features/autocomplete/context-selection"
                         ]
                       },
                       {
                         "group": "Edit",
                         "icon": "pen-to-square",
                         "pages": [
-                          "ko/prometheus/extension/features/edit/quick-start",
-                          "ko/prometheus/extension/features/edit/how-it-works",
-                          "ko/prometheus/extension/features/edit/model-setup",
-                          "ko/prometheus/extension/features/edit/how-to-customize",
-                          "ko/prometheus/extension/features/edit/context-selection"
+                          "ko/prometheus/ide-extension/features/edit/quick-start",
+                          "ko/prometheus/ide-extension/features/edit/how-it-works",
+                          "ko/prometheus/ide-extension/features/edit/model-setup",
+                          "ko/prometheus/ide-extension/features/edit/how-to-customize",
+                          "ko/prometheus/ide-extension/features/edit/context-selection"
                         ]
                       }
                     ]
@@ -339,9 +337,9 @@
                     "group": "맞춤 설정",
                     "icon": "sliders",
                     "pages": [
-                      "ko/prometheus/extension/customize/overview",
-                      "ko/prometheus/extension/customize/rules",
-                      "ko/prometheus/extension/customize/prompts"
+                      "ko/prometheus/ide-extension/customize/overview",
+                      "ko/prometheus/ide-extension/customize/rules",
+                      "ko/prometheus/ide-extension/customize/prompts"
                     ]
                   }
                 ]
@@ -392,7 +390,6 @@
       },
       {
         "language": "ja",
-    
         "tabs": [
           {
             "tab": "ガイド",
@@ -462,8 +459,8 @@
               {
                 "group": "IDE Extension",
                 "pages": [
-                  "ja/prometheus/extension/introduction",
-                  "ja/prometheus/extension/quick-start",
+                  "ja/prometheus/ide-extension/introduction",
+                  "ja/prometheus/ide-extension/quick-start",
                   {
                     "group": "Features",
                     "icon": "star",
@@ -472,45 +469,45 @@
                         "group": "Agent",
                         "icon": "robot",
                         "pages": [
-                          "ja/prometheus/extension/features/agent/quick-start",
-                          "ja/prometheus/extension/features/agent/how-it-works",
-                          "ja/prometheus/extension/features/agent/plan-mode",
-                          "ja/prometheus/extension/features/agent/model-setup",
-                          "ja/prometheus/extension/features/agent/how-to-customize",
-                          "ja/prometheus/extension/features/agent/context-selection"
+                          "ja/prometheus/ide-extension/features/agent/quick-start",
+                          "ja/prometheus/ide-extension/features/agent/how-it-works",
+                          "ja/prometheus/ide-extension/features/agent/plan-mode",
+                          "ja/prometheus/ide-extension/features/agent/model-setup",
+                          "ja/prometheus/ide-extension/features/agent/how-to-customize",
+                          "ja/prometheus/ide-extension/features/agent/context-selection"
                         ]
                       },
                       {
                         "group": "Chat",
                         "icon": "comments",
                         "pages": [
-                          "ja/prometheus/extension/features/chat/quick-start",
-                          "ja/prometheus/extension/features/chat/how-it-works",
-                          "ja/prometheus/extension/features/chat/model-setup",
-                          "ja/prometheus/extension/features/chat/how-to-customize",
-                          "ja/prometheus/extension/features/chat/context-selection"
+                          "ja/prometheus/ide-extension/features/chat/quick-start",
+                          "ja/prometheus/ide-extension/features/chat/how-it-works",
+                          "ja/prometheus/ide-extension/features/chat/model-setup",
+                          "ja/prometheus/ide-extension/features/chat/how-to-customize",
+                          "ja/prometheus/ide-extension/features/chat/context-selection"
                         ]
                       },
                       {
                         "group": "Autocomplete",
                         "icon": "wand-magic-sparkles",
                         "pages": [
-                          "ja/prometheus/extension/features/autocomplete/quick-start",
-                          "ja/prometheus/extension/features/autocomplete/how-it-works",
-                          "ja/prometheus/extension/features/autocomplete/model-setup",
-                          "ja/prometheus/extension/features/autocomplete/how-to-customize",
-                          "ja/prometheus/extension/features/autocomplete/context-selection"
+                          "ja/prometheus/ide-extension/features/autocomplete/quick-start",
+                          "ja/prometheus/ide-extension/features/autocomplete/how-it-works",
+                          "ja/prometheus/ide-extension/features/autocomplete/model-setup",
+                          "ja/prometheus/ide-extension/features/autocomplete/how-to-customize",
+                          "ja/prometheus/ide-extension/features/autocomplete/context-selection"
                         ]
                       },
                       {
                         "group": "Edit",
                         "icon": "pen-to-square",
                         "pages": [
-                          "ja/prometheus/extension/features/edit/quick-start",
-                          "ja/prometheus/extension/features/edit/how-it-works",
-                          "ja/prometheus/extension/features/edit/model-setup",
-                          "ja/prometheus/extension/features/edit/how-to-customize",
-                          "ja/prometheus/extension/features/edit/context-selection"
+                          "ja/prometheus/ide-extension/features/edit/quick-start",
+                          "ja/prometheus/ide-extension/features/edit/how-it-works",
+                          "ja/prometheus/ide-extension/features/edit/model-setup",
+                          "ja/prometheus/ide-extension/features/edit/how-to-customize",
+                          "ja/prometheus/ide-extension/features/edit/context-selection"
                         ]
                       }
                     ]
@@ -519,9 +516,9 @@
                     "group": "Customize",
                     "icon": "sliders",
                     "pages": [
-                      "ja/prometheus/extension/customize/overview",
-                      "ja/prometheus/extension/customize/rules",
-                      "ja/prometheus/extension/customize/prompts"
+                      "ja/prometheus/ide-extension/customize/overview",
+                      "ja/prometheus/ide-extension/customize/rules",
+                      "ja/prometheus/ide-extension/customize/prompts"
                     ]
                   }
                 ]
@@ -605,9 +602,9 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view"
-   ]
+      "copy",
+      "view"
+    ]
   },
   "footer": {
     "socials": {
