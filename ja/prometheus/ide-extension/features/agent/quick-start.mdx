@@ -1,84 +1,83 @@
 ---
-title: 'Quick Start'
-description: '어플리케이션의 레이아웃을 변경하는 방법을 알아봅니다.'
+title: 'クイックスタート'
+description: 'エージェントモードの基本的な使い方について説明します。'
 ---
 
-# Quick Start
+# クイックスタート (Quick Start)
 
-> Get started with Prometheus's Agent mode to automatically implement code changes, fix bugs, and run commands using AI-powered tools that can modify your codebase based on natural language instructions
+> Prometheusのエージェントモードを使い始めて、コードの変更を自動的に実装したり、バグを修正したり、自然言語の指示に基づいてコードベースを修正できるAI駆動ツールを使用してコマンドを実行したりしましょう。
 
-Agent mode equips the Chat model with the tools needed to handle a wide range of coding tasks, allowing the model to make decisions and save you the work of manually finding context and performing actions.
+エージェントモードは、チャットモデルに幅広いコーディングタスクを処理するために必要なツールを装備させます。これにより、モデルが自ら意思決定を行い、コンテキストを手動で探したりアクションを実行したりする手間を省くことができます。
 
-<Accordion title="Learn how to choose the right mode" icon="lightbulb">
+<Accordion title="適切なモードの選び方" icon="lightbulb">
   <Columns cols={3}>
-    <Card title="Chat Mode" icon="comments">
-      *Learn and discuss without changing code.*
+    <Card title="チャットモード" icon="comments">
+      *コードを変更せずに学習し、議論します。*
 
-      **Mental Model:** Talking to a knowledgeable colleague
+      **メンタルモデル:** 知識豊富な同僚との会話
 
-      **Best For:** Explaining concepts, comparing approaches, code review discussions.
+      **最適な用途:** 概念の説明、アプローチの比較、コードレビューの議論。
     </Card>
 
-    <Card title="Plan Mode" icon="binoculars">
-      *Safely explore and plan with read-only tools.*
+    <Card title="プランモード" icon="binoculars">
+      *読み取り専用ツールで安全に探索し、計画を立てます。*
 
-      **Mental Model:** Architect surveying before renovation
+      **メンタルモデル:** リフォーム前に調査を行う建築家
 
-      **Best For:** Understanding a codebase, bug investigation, planning implementations.
+      **最適な用途:** コードベースの理解、バグの調査、実装の計画。
     </Card>
 
-    <Card title="Agent Mode" icon="hammer">
-      *Make actual changes with full tool access.*
+    <Card title="エージェントモード" icon="hammer">
+      *ツールへのフルアクセスで実際に変更を加えます。*
 
-      **Mental Model:** Contractor executing approved blueprints
+      **メンタルモデル:** 承認された設計図を実行する請負業者
 
-      **Best For:** Implementing features, fixing bugs, running tests and commands.
+      **最適な用途:** 機能の実装、バグの修正、テストやコマンドの実行。
     </Card>
   </Columns>
 </Accordion>
 
-### How to Use Agent Mode
+### エージェントモードの使い方
 
-You can switch to `Agent` in the mode selector below the chat input box. The mode selector offers three options:
+チャット入力ボックスの下にあるモードセレクターで `エージェント (Agent)` に切り替えることができます。モードセレクターには3つのオプションがあります：
 
-* **Chat mode**: No tools available, pure conversation
-* **Plan mode**: Read-only tools for safe exploration and planning
-* **Agent mode**: All tools available for making changes
+* **チャットモード (Chat mode)**: ツールは使用不可、純粋な会話のみ
+* **プランモード (Plan mode)**: 安全な探索と計画のための読み取り専用ツール
+* **エージェントモード (Agent mode)**: 変更を加えるためのすべてのツールが使用可能
 
 <img src="https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=10848029d93155fd5d2d57c7f8835001" alt="How to select agent mode" data-og-width="186" width="186" data-og-height="124" height="124" data-path="images/mode-select-agent.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=280&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=a397ee93f37174fa9cd91281048572a9 280w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=560&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=0cb97f20a7c093e664f412b69deee3b7 560w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=840&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=ddbd0a1fbb9d341f99fc3caf2b184166 840w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=1100&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=c639dca84601115f3b5894a23fc7947b 1100w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=1650&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=1637c7d5530a904c90d19cdd8e1d9b0f 1650w, https://mintcdn.com/continue-docs/fwCiH4jYqddOFwab/images/mode-select-agent.png?w=2500&fit=max&auto=format&n=fwCiH4jYqddOFwab&q=85&s=3e859386cd33a9ab17df535e9f2a2874 2500w" />
 
 <Info>
-  If Agent mode or Plan mode is disabled with a `Not Supported` message, the selected
-  model or provider doesn't support tools, or Prometheus doesn't yet support tools
-  with it. See [Model Blocks](/customize/models) for more information.
+  エージェントモードまたはプランモードが無効で `Not Supported`（サポートされていません）というメッセージが表示される場合、選択されたモデルまたはプロバイダーがツールをサポートしていないか、Prometheusがまだそのモデルでのツール使用をサポートしていません。詳細は [モデル設定](/customize/models) をご覧ください。
 </Info>
 
 <Tip>
-  Use the keyboard shortcut `Cmd/Ctrl + .` to quickly cycle between modes.
+  キーボードショートカット `Cmd/Ctrl + .` を使用して、モードを素早く切り替えることができます。
 </Tip>
 
-### How to Chat with Agent mode
+### エージェントモードでのチャット方法
 
-Agent mode lives within the same interface as [Chat](/ide-extensions/chat/how-it-works) mode, so the same [input](/ide-extensions/chat/quick-start#how-to-start-a-conversation) is used to send messages and you can still use the same manual methods of providing context, such as [`@` context providers](/ide-extensions/chat/quick-start#how-to-use--for-additional-context) or adding [highlighted code from the editor](/ide-extensions/chat/quick-start#how-to-include-code-context).
+エージェントモードは [チャット](/ide-extensions/chat/how-it-works) モードと同じインターフェースを使用するため、メッセージの送信には同じ [入力欄](/ide-extensions/chat/quick-start#how-to-start-a-conversation) を使用します。また、[`@` コンテキストプロバイダー](/ide-extensions/chat/quick-start#how-to-use--for-additional-context)や [エディタでハイライトされたコードの追加](/ide-extensions/chat/quick-start#how-to-include-code-context)など、これまでと同じ手動でのコンテキスト提供方法も使用できます。
 
-#### How to Use Natural Language with Agent mode
+#### エージェントモードでの自然言語の使い方
 
-With Agent mode, you can provide natural language instruction and let the model do the work. As an example, you might say
+エージェントモードでは、自然言語で指示を与え、モデルに作業を任せることができます。例えば、次のように指示できます：
 
 > Set the @typescript-eslint/naming-convention rule to "off" for all eslint configurations in this project
+> （このプロジェクト内のすべてのeslint設定で、@typescript-eslint/naming-conventionルールを"off"に設定してください）
 
-Agent mode will then decide which tools to use to get the job done.
+エージェントモードは、指示を完了するためにどのツールを使用すべきかを自ら決定します。
 
-## How to Give Agent Mode Permission
+## エージェントモードに権限を与える方法
 
-By default, Agent mode will ask permission when it wants to use a tool. Click `Prometheus` to allow Agent mode to proceed with the tool call or `Cancel` to reject it.
+デフォルトでは、エージェントモードがツールを使用しようとする際、権限を求めてきます。`Prometheus` をクリックするとエージェントモードがツール呼び出しを続行することを許可し、`キャンセル (Cancel)` をクリックすると拒否します。
 
 <img src="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=2388322b412e592db2c7a2153a43a4b1" alt="agent requesting permission" data-og-width="1432" width="1432" data-og-height="702" height="702" data-path="images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=280&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=6d3c676f2c38c3932dd6df1a5eb3e8e2 280w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=560&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=aa11aa7e4b9b6c64dee47917f016f02a 560w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=840&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=5861a5fbf6f6b42bc6d61193b3ca81cd 840w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=1100&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=1e395a1b60590b67105e2c337f225546 1100w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=1650&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=97316a8b04f78222201f927c76d9d64c 1650w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-permission-c150919a5c43eb4f55d9d4a46ef8b2d6.png?w=2500&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=7c036ab32e7c1f662c30d5012594d3e3 2500w" />
 
-You can use tool policies to exclude or make usage automatic for specific tools. See [MCP Tools](/customize/mcp-tools) for more background.
+ツールポリシーを使用して、特定のツールを除外したり、自動的に使用するように設定したりすることもできます。背景情報の詳細は [MCPツール](/customize/mcp-tools) をご覧ください。
 
-## How to View Tool Responses
+## ツールの回答を確認する方法
 
-Any data returned from a tool call is automatically fed back into the model as a context item. Most errors are also caught and returned, so that Agent mode can decide how to proceed.
+ツール呼び出しから返されたデータは、コンテキストアイテムとして自動的にモデルにフィードバックされます。ほとんどのエラーもキャッチされて返されるため、エージェントモードは作業をどのように続行するかを決定できます。
 
 <img src="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=655307312b107f9b1e4b1127ab295933" alt="agent response" data-og-width="1454" width="1454" data-og-height="1038" height="1038" data-path="images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=280&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=568a706c10ee91c568ff26030352f5f8 280w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=560&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=f902d300aae9df38483037c43f46d8bc 560w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=840&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=baeccae00eef24e9cd8bb16fe6bd8434 840w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=1100&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=82ae2a156d7150abd6812afce8d2f597 1100w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=1650&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=e855b868757e3df3d1ffc3fe40607379 1650w, https://mintcdn.com/continue-docs/aqkmhoH7ofi-wWp4/images/ide-extensions/agent/images/agent-response-c7287c82aac93fb4376f9d85b352b2d7.png?w=2500&fit=max&auto=format&n=aqkmhoH7ofi-wWp4&q=85&s=a2b2f95d2c77a962ff210bbb7b472364 2500w" />

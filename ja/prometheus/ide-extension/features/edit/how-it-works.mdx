@@ -1,24 +1,24 @@
 ---
-title: 'How Edit Works'
-description: 'Learn how Prometheus edit functionality works by using highlighted code and file context to prompt the model for code modifications.'
+title: 'エディットの仕組み'
+description: 'ハイライトされたコードとファイルコンテキストを使用してモデルにコード修正を促す、Prometheusのエディット機能の仕組みについて説明します。'
 ---
 
-# How Edit Works
+# エディットの仕組み
 
-> Using the highlighted code, the contents of the current file containing your highlight, and your input instructions, we prompt the model to edit the code according to your instructions. No other additional context is provided to the model.
+> ハイライトされたコード、そのハイライトを含む現在のファイルの内容、および入力された指示を使用して、指示に従ってコードを編集するようモデルに促します。これ以外の追加のコンテキストはモデルに提供されません。
 
-## How Edit Functionality Works
+## エディット機能の動作プロセス
 
-When you start an edit session, Prometheus:
+エディットセッションを開始すると、Prometheusは以下の処理を行います：
 
-1. **Gathers Context**: Uses the highlighted code and the current file contents
-2. **Prompts the Model**: Sends the gathered context and your input instructions to the model
-3. **Applies Changes**: The model response is then streamed directly back to the highlighted range in your code, where we apply a diff formatting to show the proposed changes.
+1. **コンテキストの収集**: ハイライトされたコードと現在のファイルの内容を使用します。
+2. **モデルへの指示**: 収集されたコンテキストと入力された指示をモデルに送信します。
+3. **変更の適用**: モデルの回答はコード内のハイライトされた範囲に直接ストリーミングされ、提案された変更を示すために差分（diff）形式で表示されます。
 
-If you accept the diff, we remove the previously highlighted lines, and if you reject the diff, we remove the proposed changes.
+差分を承認すると以前のハイライト部分が置き換わり、拒否すると提案された変更が削除されます。
 
 <Info>
-  **Looking for AI that predicts your next edit?** Check out [Next Edit](/ide-extensions/autocomplete/next-edit), an experimental feature that proactively suggests code changes before you even start typing, going beyond traditional autocomplete to anticipate entire code modifications.
+  **次の編集箇所を予測するAIをお探しですか？** [ネクストエディット (Next Edit)](/ide-extensions/autocomplete/next-edit) をチェックしてみてください。これは、入力し始める前にコードの変更を先回りして提案する実験的な機能で、従来のオートコンプリートを超えて、コード修正全体を予測します。
 </Info>
 
-If you would like to view the exact prompt that is sent to the model during an edit, you can [find it in the prompt logs](/troubleshooting#check-the-logs).
+エディット中にモデルに送信される正確なプロンプトを確認したい場合は、[プロンプトログ](/troubleshooting#check-the-logs)で見つけることができます。

@@ -1,92 +1,88 @@
 ---
-title: 'Quick Start'
-description: '어플리케이션의 레이아웃을 변경하는 방법을 알아봅니다.'
+title: 'クイックスタート'
+description: 'チャットモードの基本的な使い方について説明します。'
 ---
 
-# Chat Mode Quick Start
+# チャットモードのクイックスタート
 
-> Get started with Prometheus's AI chat assistant to solve coding problems directly in your IDE, with features for code context sharing, codebase search, and applying generated solutions to your files
+> PrometheusのAIチャットアシスタントを使い始めて、IDE内で直接コーディングの問題を解決しましょう。コードコンテキストの共有、コードベースの検索、生成された解決策のファイルへの適用などの機能があります。
 
-Chat makes it easy to ask for help from an AI without leaving your IDE. Get explanations, generate code, and iterate on solutions conversationally.
+チャットを使用すると、IDEを離れることなく簡単にAIに助けを求めることができます。解説を聞いたり、コードを生成したり、対話形式で解決策を練り上げたりすることが可能です。
 
-## How to Use Chat - Basic Usage
+## チャットの使い方 - 基本
 
-### How to Start a Conversation
+### 会話の始め方
 
-Type your question or request in the chat input and press Enter.
+チャット入力欄に質問やリクエストを入力して `Enter` を押します。
 
-**Examples:**
+**例:**
 
-* "Explain this function"
-* "How do I handle errors in this code?"
-* "Generate a test for this component"
+* 「この関数を解説して」
+* 「このコードでエラーを処理するにはどうすればいい？」
+* 「このコンポーネントのテストを生成して」
 
-### How to Include Code Context
+### コードコンテキストの含め方
 
-Select code in your editor, then use the keyboard shortcut to include it in your chat:
+エディタでコードを選択し、キーボードショートカットを使用してチャットに含めます。
 
-* VS Code
-* JetBrains
+* **VS Code:** `Cmd/Ctrl + L` を押して、選択したコードをチャットに送信します。
+* **JetBrains:** `Cmd/Ctrl + J` を押して、選択したコードをチャットに送信します。
 
-Press `Cmd/Ctrl + L` to send selected code to chat
+### @ を使用したコンテキストの追加
 
-Press `Cmd/Ctrl + J` to send selected code to chat
+`@` を入力して、特定のコンテキストを含めます：
 
-### How to Use @ for Additional Context
+* `@Files` - 特定のファイルを参照
+* `@Terminal` - ターミナルの出力内容を含める
 
-Type `@` to include specific context:
+## 回答への対応
 
-* `@Files` - Reference specific files
-* `@Terminal` - Include terminal output
+AIが回答の中でコードを提供すると、アクションボタンが表示されます：
 
-## How to Work with Responses
+* **Apply to current file (現在のファイルに適用)** - 選択したコードを置き換えます
+* **Insert at cursor (カーソル位置に挿入)** - カーソル位置にコードを追加します
+* **Copy (コピー)** - コードをクリップボードにコピーします
 
-When the AI provides code in its response, you'll see action buttons:
+## チャットを活用するためのヒント
 
-* **Apply to current file** - Replace your selected code
-* **Insert at cursor** - Add code at your cursor position
-* **Copy** - Copy code to clipboard
+### セッションの新規開始
 
-## What Are the Pro Tips for Chat
+空のチャットで `Cmd/Ctrl + L` (VS Code) または `Cmd/Ctrl + J` (JetBrains) を押すと、新しいセッションを開始できます。
 
-### Start Fresh
+### 具体的に伝える
 
-Press `Cmd/Ctrl + L` (VS Code) or `Cmd/Ctrl + J` (JetBrains) in an empty chat to start a new session.
+以下の詳細を含めると、より良い回答が得られます：
 
-### Be Specific
+* 実現したいこと
+* 制約や要件
+* 好みのコーディングスタイルやパターン
 
-Include details about:
+### 繰り返し（イテレーション）
 
-* What you're trying to accomplish
-* Any constraints or requirements
-* Your preferred coding style or patterns
+最初の回答が完璧でない場合は：
 
-### Iterate
+* 追加の質問をする
+* 修正を依頼する
+* さらに別のコンテキストを提供する
 
-If the first response isn't perfect:
+## チャットの一般的なユースケース
 
-* Ask follow-up questions
-* Request modifications
-* Provide additional context
+### コードの解説
 
-## What Are Common Use Cases for Chat
+理解しにくいコードを選択して、「このコードは何をしているの？」と質問します。
 
-### Code Explanation
+### バグ修正
 
-Select confusing code and ask "What does this code do?"
+エラーメッセージを含めて、「このエラーを直すにはどうすればいい？」と質問します。
 
-### Bug Fixing
+### コード生成
 
-Include error messages and ask "How do I fix this error?"
+欲しいものを説明します：「ユーザープロフィールを表示する React コンポーネントを作成して」
 
-### Code Generation
+### リファクタリング
 
-Describe what you want: "Create a React component that displays a user profile"
-
-### Refactoring
-
-Select code and ask "How can I make this more efficient?"
+コードを選択して、「これをより効率的にするにはどうすればいい？」と質問します。
 
 ***
 
-*Chat is designed for quick interactions and iterative problem-solving. Don't hesitate to ask follow-up questions!*
+*チャットは、迅速なやり取りと反復的な問題解決のために設計されています。躊躇せずに追加の質問を投げかけてみてください！*

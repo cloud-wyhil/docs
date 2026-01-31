@@ -1,56 +1,59 @@
 ---
-title: 'How Agent Mode Works'
-description: 'Learn how Agent Mode works in Prometheus and how it differs from Chat Mode'
+title: 'エージェントモードの仕組み'
+description: 'Prometheusのエージェントモードがどのように動作するのか、またチャットモードとの違いについて説明します。'
 ---
 
-# How Agent Mode Works
+# エージェントモードの仕組み
 
-> Agent mode offers the same functionality as Chat mode, while also including tools in the request to the model and an interface for handling tool calls and responses.
+> エージェントモードは、チャットモードと同じ機能を提供しつつ、モデルへのリクエストにツール（Tools）を含め、ツールの呼び出しと回答を処理するためのインターフェースを備えています。
 
-## How the Tool Handshake Works
+## ツールハンドシェイクの仕組み
 
-Tools provide a flexible, powerful way for models to interface with the external world. They are provided to the model as a JSON object with a name and an arguments schema. For example, a `read_file` tool with a `filepath` argument will give the model the ability to request the contents of a specific file.
+ツールは、モデルが外部の世界とやり取りするための柔軟で強力な手段を提供します。ツールは、名前と引数のスキーマ（Arguments Schema）を持つJSONオブジェクトとして、モデルに提供されます。例えば、`filepath` という引数を持つ `read_file` ツールを提供することで、モデルは特定のファイルの内容を要求できるようになります。
 
-The following handshake describes how Agent mode uses tools:
+以下のハンドシェイク（やり取り）は、エージェントモードがどのようにツールを使用するかを説明しています：
 
-1. In Agent mode, available tools are sent along with `user` chat requests
-2. The model can choose to include a tool call in its response
-3. The user gives permission. This step is skipped if the policy for that tool is set to `Automatic`
-4. Prometheus calls the tool using built-in functionality or the MCP server that offers that particular tool
-5. Prometheus sends the result back to the model
-6. The model responds, potentially with another tool call and step 2 begins again
+1. エージェントモードでは、使用可能なツールが `user` のチャットリクエストと共に送信されます。
+2. モデルは、回答の中にツール呼び出しを含めることを選択できます。
+3. ユーザーが許可を与えます。そのツールのポリシーが `Automatic`（自動）に設定されている場合、このステップはスキップされます。
+4. Prometheusは、内蔵機能またはそのツールを提供するMCPサーバーを使用してツールを呼び出します。
+5. Prometheusは結果をモデルに送り返します。
+6. モデルが回答します。必要に応じて再度ツール呼び出しを行い、ステップ2に戻ります。
 
 <Info>
-  Tool availability varies by mode: - **Chat mode**: No tools included - **Plan
-  mode**: Only read-only tools included - **Agent mode**: All tools included
+  利用可能なツールはモードによって異なります：
+  - **チャットモード (Chat mode)**: ツールは含まれません
+  - **プランモード (Plan mode)**: 読み取り専用ツールのみ含まれます
+  - **エージェントモード (Agent mode)**: すべてのツールが含まれます
 </Info>
 
-## What Built-in Tools Are Available
+## 利用可能な組み込みツール
 
-Prometheus includes several built-in tools which provide the model access to IDE functionality.
+Prometheusには、モデルがIDE機能にアクセスできるようにするための組み込みツールがいくつか含まれています。
 
-### What Tools Are Available in Plan Mode (Read-Only)
+### プランモードで利用可能なツール（読み取り専用）
 
-In Plan mode, only these read-only tools are available:
+プランモードでは、以下の読み取り専用ツールのみが利用可能です：
 
-* **Read file** (`read_file`)
-* **Read currently open file** (`read_currently_open_file`)
-* **List directory** (`ls`)
-* **Glob search** (`glob_search`)
-* **Grep search** (`grep_search`)
-* **Fetch URL content** (`fetch_url_content`)
-* **Search web** (`search_web`)
-* **View diff** (`view_diff`)
-* **View repo map** (`view_repo_map`)
-* **View subdirectory** (`view_subdirectory`)
-* **Codebase tool** (`codebase_tool`)
+* **Read file** (`read_file`): ファイルを読み込む
+* **Read currently open file** (`read_currently_open_file`): 現在開いているファイルを読み込む
+* **List directory** (`ls`): ディレクトリ内容を一覧表示する
+* **Glob search** (`glob_search`): Globパターンで検索する
+* **Grep search** (`grep_search`): Grepで検索する
+* **Fetch URL content** (`fetch_url_content`): URLのコンテンツを取得する
+* **Search web** (`search_web`): ウェブ検索を行う
+* **View diff** (`view_diff`): 差分を表示する
+* **View repo map** (`view_repo_map`): リポジトリマップを表示する
+* **View subdirectory** (`view_subdirectory`): サブディレクトリを表示する
+* **Codebase tool** (`codebase_tool`): コードベースツール
 
-### What Tools Are Available in Agent Mode (All Tools)
+### エージェントモードで利用可能なツール（すべてのツール）
 
-In Agent mode, all tools are available including the read-only tools above plus:
+エージェントモードでは、上記の読み取り専用ツールに加えて、以下のツールを含むすべてのツールが利用可能です：
 
-* **Create new file** (`create_new_file`): Create a new file within the project
-* **Edit file** (`edit_existing_file`): Make changes to existing files
-* **Run terminal command** (`run_terminal_command`): Run commands from the workspace root
-* **Create Rule Block** (`create_rule_block`): Create a new rule block in `.continue/rules`
-* All other write/execute tools for modifying the codebase
+* **Create new file** (`create_new_file`): プロジェクト内に新しいファイルを作成する
+* **Edit file** (`edit_existing_file`): 既存のファイルを編集する
+* **Run terminal command** (`run_terminal_command`): ワークスペースのルートからコマンドを実行する
+* **Create Rule Block** (`create_rule_block`): `.continue/rules` に新しいルールブロックを作成する
+* その他、コードベースを修正するためのすべての書き込み/実行ツール
+

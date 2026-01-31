@@ -1,11 +1,11 @@
 ---
-title: 'Recommended Models for Autocomplete in Prometheus'
-description: 'Choose the best autocomplete model for Prometheus, including hosted high-performance options, fast speed/quality tradeoffs, and local privacy-first models.'
+title: 'オートコンプリートの推奨モデル'
+description: 'ホスト型の高性能オプション、速度と品質のバランス型、ローカルのプライバシー重視モデルなど、Prometheusに最適なオートコンプリートモデルを選択しましょう。'
 ---
 
-# Recommended Models for Autocomplete in Prometheus
+# オートコンプリートの推奨モデル
 
-> Choose the best autocomplete model for Prometheus, including hosted high-performance options, fast speed/quality tradeoffs, and local privacy-first models.
+> ホスト型の高性能オプション、速度と品質のバランス型、ローカルのプライバシー重視モデルなど、Prometheusに最適なオートコンプリートモデルを選択しましょう。
 
 export const ModelRecommendations = ({role = "all"}) => {
   const parseMarkdownLinks = text => {
@@ -42,37 +42,37 @@ export const ModelRecommendations = ({role = "all"}) => {
     agent_plan: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[Devstral (27B)](https://hub.continue.dev/ollama/devstral)", "[Kimi K2 (1T)](https://hub.continue.dev/openrouter/kimi-k2)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)", "[GLM 4.5 (355B)](https://hub.continue.dev/openrouter/glm-4-5)", "[GLM 4.5 Air (106B)](https://hub.continue.dev/openrouter/glm-4-5-air)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     chat_edit: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed and open models have pretty similar performance"
+      notes: "クローズドモデルとオープンモデルで性能はほぼ同等です"
     },
     autocomplete: {
       open: ["[QwenCoder2.5 (1.5B)](https://hub.continue.dev/ollama/qwen2.5-coder-1.5b)", "[QwenCoder2.5 (7B)](https://hub.continue.dev/ollama/qwen2.5-coder-7b)"],
       closed: ["[Codestral](https://hub.continue.dev/mistral/codestral)", "[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     apply: {
       open: ["[FastApply](https://hub.continue.dev/mdpauley/fast-apply-15b-v10)"],
       closed: ["[Relace Instant Apply](https://hub.continue.dev/relace/instant-apply)", "[Morph Fast Apply](https://hub.continue.dev/morphllm/morph-v2)"],
-      notes: "Closed models are better than open models"
+      notes: "クローズドモデルの方がオープンモデルより優れています"
     },
     embed: {
       open: ["[Nomic Embed Text](https://hub.continue.dev/ollama/nomic-embed-text-latest)", "Qwen3 Embedding"],
       closed: ["[Voyage Code 3](https://hub.continue.dev/voyageai/voyage-code-3)", "[Morph Embeddings](https://hub.continue.dev/morphllm/morph-embedding-v2)", "Codestral Embed"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     rerank: {
       open: ["zerank-1", "zerank-1-small", "Qwen3 Reranker"],
       closed: ["[Voyage Rerank 2.5](https://hub.continue.dev/voyageai/rerank-2-5)", "Relace Code Rerank", "[Morph Rerank](https://hub.continue.dev/morphllm/morph-rerank-v2)"],
-      notes: "Open models are beginning to emerge for this model role"
+      notes: "このモデルロールでもオープンモデルが登場し始めています"
     },
     next_edit: {
       open: ["[Instinct](https://hub.continue.dev/continuedev/instinct)"],
       closed: ["[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are better than open models"
+      notes: "クローズドモデルの方がオープンモデルより優れています"
     }
   };
   let rolesToShow = [];
@@ -85,7 +85,7 @@ export const ModelRecommendations = ({role = "all"}) => {
     }
   }
   if (rolesToShow.length === 0) {
-    return <div>No recommendations found for role: {role}</div>;
+    return <div>推奨モデルが見つかりませんでした： {role}</div>;
   }
   return <table style={{
     width: "100%",
@@ -99,28 +99,28 @@ export const ModelRecommendations = ({role = "all"}) => {
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Model role
+            モデルロール
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best open models
+            推奨オープンモデル
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best closed models
+            推奨クローズドモデル
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Notes
+            備考
           </th>
         </tr>
       </thead>
@@ -168,30 +168,30 @@ export const ModelRecommendations = ({role = "all"}) => {
     </table>;
 };
 
-Setting up the right model for autocomplete is important for a smooth coding experience. Here are our top recommendations:
+スムーズなコーディング体験のためには、オートコンプリートに適切なモデルを設定することが重要です。以下に主な推奨モデルを挙げます：
 
-## Model Recommendations
+## 推奨モデル
 
 <ModelRecommendations role="autocomplete" />
 
 <Info>
-  For a complete comparison of all models, see our [comprehensive model recommendations](/customize/models#recommended-models).
+  すべてのモデルの完全な比較については、[推奨モデルの包括的なガイド](/customize/models#recommended-models)をご覧ください。
 </Info>
 
-## Next Edit Model
+## ネクストエディット（Next Edit）モデル
 
-For proactive code prediction that anticipates your next edit, Prometheus supports specialized [Next Edit](/ide-extensions/autocomplete/next-edit) models:
+次の編集箇所を予測する先回り型のコード予測機能として、Prometheusは専用の [ネクストエディット](/ide-extensions/autocomplete/next-edit) モデルをサポートしています：
 
-**Supported Next Edit model:**
+**サポートされているネクストエディットモデル:**
 
-* `mercury-coder-nextedit`: Primary model optimized for next edit prediction
+* `mercury-coder-nextedit`: ネクストエディット予測に最適化されたプライマリモデル
 
-Next Edit automatically activates when you have a compatible model configured for autocomplete and the appropriate access permissions.
+ネクストエディットは、オートコンプリート用に互換性のあるモデルが設定されており、適切なアクセス権限がある場合に自動的に有効になります。
 
-## Need Help?
+## お困りですか？
 
-If you're not seeing any completions or need more detailed configuration options, check out our comprehensive [autocomplete deep dive guide](/customize/deep-dives/autocomplete).
+補完が表示されない、またはより詳細な設定オプションが必要な場合は、包括的な [オートコンプリートのディープダイブガイド](/customize/deep-dives/autocomplete) をご覧ください。
 
-## Model Compatibility
+## モデルの互換性
 
-To see a complete list of models and their capabilities, visit our [Model Capabilities guide](/customize/deep-dives/model-capabilities).
+モデルとその機能の完全なリストについては、[モデル機能ガイド](/customize/deep-dives/model-capabilities)をご覧ください。

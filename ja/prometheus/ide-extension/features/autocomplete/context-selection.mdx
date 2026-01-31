@@ -1,28 +1,28 @@
 ---
-title: 'Context Selection'
-description: 'Learn how Prometheus selects relevant code context in Chat Mode.'
+title: 'コンテキストの選択'
+description: 'オートコンプリートでPrometheusがどのように関連するコードコンテキストを選択するかについて学びます。'
 ---
 
 
 
-# Context Selection
+# コンテキストの選択
 
-> Learn how Prometheus's autocomplete selects relevant code context using file content, language server definitions, imports, and recent file history.
+> Prometheusのオートコンプリートが、ファイルの内容、言語サーバーの定義、インポート、および最近のファイル履歴を使用して、どのように関連するコードコンテキストを選択するかについて学びます。
 
-Autocomplete will automatically determine context based on the current cursor position. We use the following techniques to determine what to include in the prompt:
+オートコンプリートは、現在のカーソル位置に基づいて自動的にコンテキストを判断します。プロンプトに何を含めるかを決定するために、以下の手法を使用しています：
 
-## File Prefix and Suffix Context
+## ファイルの前方および後方のコンテキスト
 
-We will always include the code from your file prior to and after the cursor position.
+カーソル位置より前と後のコードは、常に含まれます。
 
-## Language Server Protocol (LSP) Definitions
+## 言語サーバープロトコル (LSP) の定義
 
-Similar to how you can use cmd/ctrl + click in your editor, we use the same tool (the LSP) to power "go to definition". For example, if you are typing out a function call, we will include the function definition. Or, if you are writing code inside of a method, we will include the type definitions for any parameters or the return type.
+エディタで `cmd/ctrl` + クリックを使用するのと同様に、同じツール（LSP）を使用して「定義へ移動」機能を活用しています。例えば、関数呼び出しを入力している場合、その関数の定義が含まれます。また、メソッド内でコードを書いている場合は、パラメータや戻り値の型定義が含まれます。
 
-## Imported File Context
+## インポートされたファイルのコンテキスト
 
-Because there are often many imports, we can't include all of them. Instead, we look for symbols around your cursor that have matching imports and use that as context.
+インポートが多い場合、すべてを含めることはできません。代わりに、カーソル周辺のシンボルを調べ、一致するインポートを探してコンテキストとして使用します。
 
-## Recent File Context
+## 最近のファイルのコンテキスト
 
-We automatically consider recently opened or edited files and include snippets that are relevant to the current completion.
+最近開いた、または編集したファイルを自動的に考慮し、現在の補完に関連するスニペットを含めます。

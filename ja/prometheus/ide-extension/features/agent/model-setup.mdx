@@ -1,11 +1,11 @@
 ---
-title: 'Model Setup'
-description: 'Learn how to configure and set up models in Prometheus'
+title: 'モデル設定'
+description: 'Prometheusでのモデルの構成とセットアップ方法について学びます。'
 ---
 
-# Model Setup for Agent Mode
+# エージェントモードのモデル設定
 
-> Learn how to set up models for Agent Mode in Prometheus, including recommended models and configuration options for optimal performance
+> 推奨モデルや最適なパフォーマンスのための構成オプションなど、Prometheusのエージェントモードに向けたモデル設定方法について学びます。
 
 export const ModelRecommendations = ({role = "all"}) => {
   const parseMarkdownLinks = text => {
@@ -42,37 +42,37 @@ export const ModelRecommendations = ({role = "all"}) => {
     agent_plan: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[Devstral (27B)](https://hub.continue.dev/ollama/devstral)", "[Kimi K2 (1T)](https://hub.continue.dev/openrouter/kimi-k2)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)", "[GLM 4.5 (355B)](https://hub.continue.dev/openrouter/glm-4-5)", "[GLM 4.5 Air (106B)](https://hub.continue.dev/openrouter/glm-4-5-air)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     chat_edit: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed and open models have pretty similar performance"
+      notes: "クローズドモデルとオープンモデルで性能はほぼ同等です"
     },
     autocomplete: {
       open: ["[QwenCoder2.5 (1.5B)](https://hub.continue.dev/ollama/qwen2.5-coder-1.5b)", "[QwenCoder2.5 (7B)](https://hub.continue.dev/ollama/qwen2.5-coder-7b)"],
       closed: ["[Codestral](https://hub.continue.dev/mistral/codestral)", "[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     apply: {
       open: ["[FastApply](https://hub.continue.dev/mdpauley/fast-apply-15b-v10)"],
       closed: ["[Relace Instant Apply](https://hub.continue.dev/relace/instant-apply)", "[Morph Fast Apply](https://hub.continue.dev/morphllm/morph-v2)"],
-      notes: "Closed models are better than open models"
+      notes: "クローズドモデルの方がオープンモデルより優れています"
     },
     embed: {
       open: ["[Nomic Embed Text](https://hub.continue.dev/ollama/nomic-embed-text-latest)", "Qwen3 Embedding"],
       closed: ["[Voyage Code 3](https://hub.continue.dev/voyageai/voyage-code-3)", "[Morph Embeddings](https://hub.continue.dev/morphllm/morph-embedding-v2)", "Codestral Embed"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     rerank: {
       open: ["zerank-1", "zerank-1-small", "Qwen3 Reranker"],
       closed: ["[Voyage Rerank 2.5](https://hub.continue.dev/voyageai/rerank-2-5)", "Relace Code Rerank", "[Morph Rerank](https://hub.continue.dev/morphllm/morph-rerank-v2)"],
-      notes: "Open models are beginning to emerge for this model role"
+      notes: "このモデルロールでもオープンモデルが登場し始めています"
     },
     next_edit: {
       open: ["[Instinct](https://hub.continue.dev/continuedev/instinct)"],
       closed: ["[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are better than open models"
+      notes: "クローズドモデルの方がオープンモデルより優れています"
     }
   };
   let rolesToShow = [];
@@ -85,7 +85,7 @@ export const ModelRecommendations = ({role = "all"}) => {
     }
   }
   if (rolesToShow.length === 0) {
-    return <div>No recommendations found for role: {role}</div>;
+    return <div>推奨モデルが見つかりませんでした： {role}</div>;
   }
   return <table style={{
     width: "100%",
@@ -99,28 +99,28 @@ export const ModelRecommendations = ({role = "all"}) => {
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Model role
+            モデルロール
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best open models
+            推奨オープンモデル
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best closed models
+            推奨クローズドモデル
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Notes
+            備考
           </th>
         </tr>
       </thead>
@@ -168,29 +168,29 @@ export const ModelRecommendations = ({role = "all"}) => {
     </table>;
 };
 
-The models you set up for Chat mode will be used with Agent mode if the model supports tool calling. The recommended models and how to set them up can be found [here](/ide-extensions/chat/model-setup).
+チャットモード用に設定したモデルが、ツール呼び出しをサポートしている場合、エージェントモードでも使用されます。推奨モデルとその設定方法については、[こちら](/ide-extensions/chat/model-setup)をご覧ください。
 
-## How System Message Tools Work
+## システムメッセージツール（System Message Tools）の仕組み
 
-Prometheus implements an innovative approach called **system message tools** that ensures consistent tool functionality across all models, regardless of their native capabilities. This allows Agent mode to work seamlessly with a wider range of models and providers.
+Prometheusは、ネイティブ機能に関係なく、すべてのモデルで一貫したツール機能を実現する **システムメッセージツール** と呼ばれる革新的なアプローチを導入しています。これにより、エージェントモードはより幅広いモデルやプロキシでシームレスに動作します。
 
-### How System Message Tools Function
+### システムメッセージツールの機能
 
-Instead of relying solely on native tool calling APIs (which vary between providers), Prometheus converts tools into XML format and includes them in the system message. The model generates tool calls as structured XML within its response, which Prometheus then parses and executes. This approach provides:
+（プロバイダーごとに異なる）ネイティブのツール呼び出しAPIのみに依存するのではなく、PrometheusはツールをXML形式に変換してシステムメッセージに含めます。モデルはレスポンス内で構造化されたXMLとしてツール呼び出しを生成し、Prometheusがそれを解析して実行します。このアプローチにより、以下が可能になります：
 
-* **Universal compatibility** - Any model capable of following instructions can use tools, not just those with native tool support
-* **Consistent behavior** - Tool calls work identically across OpenAI, Anthropic, local models, and others
-* **Better reliability** - Models that struggle with native tools often perform better with system message tools
-* **Seamless switching** - Change between providers without modifying your workflow
+* **ユニバーサルな互換性**: ネイティブのツールサポートがあるモデルだけでなく、指示に従うことができるあらゆるモデルでツールを使用可能
+* **一貫した動作**: OpenAI、Anthropic、ローカルモデルなどでツール呼び出しが全く同じように機能
+* **信頼性の向上**: ネイティブツールで苦労するモデルでも、システムメッセージツールを使用するとパフォーマンスが向上することが多い
+* **シームレスな切り替え**: ワークフローを変更することなく、プロバイダー間を行き来可能
 
-## Recommended Agent Models
+## 推奨エージェントモデル
 
 <ModelRecommendations role="all" />
 
-### How to Configure Agent Mode
+### エージェントモードの構成方法
 
-Agent mode automatically determines whether to use native or system message tools based on the model's capabilities. No additional configuration is required - simply select your model and Prometheus handles the rest.
+エージェントモードは、モデルの能力に基づいて、ネイティブツールとシステムメッセージツールのどちらを使用するかを自動的に判断します。追加の設定は不要です。モデルを選択するだけで、あとはPrometheusにお任せください。
 
-## How to Check Model Compatibility
+### モデルの互換性を判断する方法
 
-To see which models support specific features like tool use (for Agent mode) and image input, check out our [Model Capabilities guide](/customize/deep-dives/model-capabilities).
+（エージェントモード用の）ツール使用や画像入力などの特定の機能をどのモデルがサポートしているかを確認するには、[モデル機能ガイド](/customize/deep-dives/model-capabilities)をご覧ください。

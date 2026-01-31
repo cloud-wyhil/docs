@@ -1,67 +1,67 @@
 ---
-title: 'Overview'
-description: 'Overview of Prometheus customization options.'
+title: '概要'
+description: 'Prometheusのカスタマイズオプションの概要です。'
 ---
 
-# Customization Overview
+# カスタマイズの概要
 
-> Learn how to customize Prometheus with model providers, rules, prompts, and tools
+> モデルプロバイダー、ルール、プロンプト、ツールを使用してPrometheusをカスタマイズする方法を学びます。
 
-Prometheus can be deeply customized to fit your specific development workflow and preferences. This guide covers the main ways you can customize Prometheus to enhance your coding experience.
+Prometheusは、特定の開発ワークフローや好みに合わせて細かくカスタマイズすることができます。このガイドでは、コーディング体験を向上させるための主なカスタマイズ方法について説明します。
 
-## Change Your Model Provider
+## モデルプロバイダーの変更
 
-Prometheus allows you to choose your favorite or even add multiple model providers. This allows you to use different models for different tasks, or to try another model if you're not happy with the results from your current model. Prometheus supports all of the popular model providers, including OpenAI, Anthropic, Microsoft/Azure, Mistral, and more. You can even self host your own model provider if you'd like.
+Prometheusでは、お好みのモデルプロバイダーを選択したり、複数のプロバイダーを追加したりすることができます。これにより、タスクごとに異なるモデルを使用したり、現在のモデルの結果に満足できない場合に別のモデルを試したりすることが可能です。Prometheusは、OpenAI、Anthropic、Microsoft/Azure、Mistralなど、すべての主要なモデルプロバイダーをサポートしています。必要に応じて、独自のモデルプロバイダーをセルフホストすることもできます。
 
-[Learn more about model providers →](/customize/model-providers/overview)
+[モデルプロバイダーについての詳細はこちら →](/customize/model-providers/overview)
 
-## Select Different Models for Specific Tasks
+## 特定のタスクに異なるモデルを選択する
 
-Different Prometheus features can use different models. We call these *model roles*. For example, you can use a different model for Chat mode than you do for Autocomplete.
+Prometheusの各機能で異なるモデルを使用することができます。これを *モデルロール (model roles)* と呼びます。例えば、チャットモードとオートコンプリートで異なるモデルを使い分けることが可能です。
 
-[Learn more about model roles →](/customize/model-roles)
+[モデルロールについての詳細はこちら →](/customize/model-roles)
 
-## Create Custom Prompts
+## カスタムプロンプトの作成
 
-Create custom slash commands and prompt templates to streamline your workflow.
+カスタムスラッシュコマンドやプロンプトテンプレートを作成して、ワークフローを合理化します。
 
-[Learn more about prompts →](/customize/prompts)
+[プロンプトについての詳細はこちら →](/customize/prompts)
 
-## Configure Rules
+## ルールの設定
 
-Set up rules to guide AI responses and ensure consistent behavior across your codebase.
+AIの回答を導き、コードベース全体で一貫した動作を確保するためのルールを設定します。
 
-[Learn more about rules →](/customize/rules)
+[ルールについての詳細はこちら →](/customize/rules)
 
-## Call External Tools and Functions
+## 外部ツールや関数の呼び出し
 
-Give your agent the power of tools using [Agent mode in the extensions](/ide-extensions/agent/quick-start) or add custom tools to your agent using [MCP Servers](/customize/mcp-tools).
+[拡張機能のエージェントモード](/ide-extensions/agent/quick-start)を使用してエージェントにツールの力を与えたり、[MCPサーバー](/customize/mcp-tools)を使用してエージェントにカスタムツールを追加したりできます。
 
-[Learn more about MCP tools →](/customize/mcp-tools)
+[MCPツールについての詳細はこちら →](/customize/mcp-tools)
 
-## Deep Dives
+## ディープダイブ (Deep Dives)
 
-Detailed technical explanations of Prometheus's internal workings and advanced configuration options.
+Prometheusの内部動作や高度な設定オプションに関する詳細な技術解説です。
 
-[Read Deep Dives →](/customize/deep-dives/configuration)
+[ディープダイブを読む →](/customize/deep-dives/configuration)
 
-## Reference
+## リファレンス (Reference)
 
-Complete configuration reference and API documentation.
+完全な設定リファレンスとAPIドキュメントです。
 
-[View Reference →](/reference)
+[リファレンスを表示 →](/reference)
 
 ***
 
-Whatever you choose, you'll probably start by editing your configuration.
+どのようなカスタマイズを行うにしても、まずは設定の編集から始めることになるでしょう。
 
-## Edit Your Configuration
+## 設定の編集
 
-You can easily access your configuration from the Prometheus Chat sidebar. Open the sidebar by pressing `cmd/ctrl` + `L` (VS Code) or `cmd/ctrl` + `J` (JetBrains) and click the Agent selector above the main chat input. Then, you can hover over an agent and click the `new window` (hub agents) or `gear` (local agents) icon.
+Prometheusのチャットサイドバーから簡単に設定にアクセスできます。`cmd/ctrl` + `L` (VS Code) または `cmd/ctrl` + `J` (JetBrains) を押してサイドバーを開き、メインのチャット入力欄の上にあるエージェントセレクターをクリックします。次に、エージェントの上にカーソルを置くと表示される `新しいウィンドウ` アイコン（Hubエージェントの場合）または `歯車` アイコン（ローカルエージェントの場合）をクリックします。
 
 <img src="https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=4b924f4d0dd50c94893d8609edbe930d" alt="configure" data-og-width="750" width="750" data-og-height="514" height="514" data-path="images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png" data-optimize="true" data-opv="3" srcset="https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=280&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=06a34d2cbb88f86246b824ddee37daf4 280w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=560&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=28e927fa07369e4929dee7ee6a09d636 560w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=840&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=15097d5aabd271cdea87f13425e3d7ca 840w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=1100&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=4b9167730a97dd6588d12c01dd3c931b 1100w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=1650&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=8702c31fe17f6785dde54099b1fce840 1650w, https://mintcdn.com/continue-docs/uBcQ_aho2YOz1Wu7/images/customize/images/configure-continue-a5c8c79f3304c08353f3fc727aa5da7e.png?w=2500&fit=max&auto=format&n=uBcQ_aho2YOz1Wu7&q=85&s=79eea96b2471b8049c93b443da3da45d 2500w" />
 
-## Manage Your Configuration
+## 設定の管理
 
-* See [Editing Hub Configurations](/mission-control/configs/edit-a-config) for more details on managing your hub configuration
-* See the [Config Deep Dive](/reference) for more details on local configurations
+* Hub設定の管理に関する詳細は、[Hub設定の編集](/mission-control/configs/edit-a-config)をご覧ください。
+* ローカル設定に関する詳細は、[設定ディープダイブ](/reference)をご覧ください。

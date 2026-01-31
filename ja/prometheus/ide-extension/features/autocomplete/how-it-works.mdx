@@ -1,38 +1,35 @@
 ---
-title: 'How Autocomplete Works in Prometheus'
-description: 'Learn how Prometheus autocomplete works and how it differs from Agent Mode'
+title: 'オートコンプリートの仕組み'
+description: 'Prometheusのオートコンプリートがどのように動作するのか、またエージェントモードとの違いについて説明します。'
 ---
 
 
-# How Autocomplete Works in Prometheus
+# オートコンプリートの仕組み
 
-> Understand how Prometheus's autocomplete works, including timing optimization, context retrieval from your codebase, and filtering to improve AI code suggestions.
+> タイミングの最適化、コードベースからのコンテキスト取得、AIによるコード提案を改善するためのフィルタリングなど、Prometheusのオートコンプリートがどのように動作するかを理解しましょう。
 
-## Timing Optimization for Autocomplete
+## オートコンプリートのタイミング最適化
 
-In order to display suggestions quickly, without sending too many requests, we do the following:
+リクエストを送りすぎることなく、迅速に提案を表示するために、以下の処理を行っています：
 
-* Debouncing: If you are typing quickly, we won't make a request on each keystroke. Instead, we wait until you have finished.
-* Caching: If your cursor is in a position that we've already generated a completion for, this completion is reused. For example, if you backspace, we'll be able to immediately show the suggestion you saw before.
+* デバウンス（Debouncing）: 素早く入力している間は、一打ごとにリクエストを送ることはしません。代わりに入力が一段落するまで待ちます。
+* キャッシュ（Caching）: すでに補完を生成したことのある位置にカーソルがある場合、その結果を再利用します。例えば、一文字消した（Backスぺース）際、直前に表示されていた提案を即座に再表示できます。
 
-## Context Retrieval from Your Codebase
+## コードベースからのコンテキスト取得
 
-Prometheus uses a number of retrieval methods to find relevant snippets from your codebase to include in the prompt.
+Prometheusは、プロンプトに含めるため、コードベースから関連するスニペットを見つけるための複数の取得メソッドを使用しています。
 
-## Filtering and Post-Processing AI Suggestions
+## AI提案のフィルタリングと後処理
 
-Language models aren't perfect, but can be made much closer by adjusting their output. We do extensive post-processing on responses before displaying a suggestion, including:
+言語モデルは完璧ではありませんが、出力を調整することで精度を大幅に高めることができます。提案を表示する前に、以下のような広範な後処理を行っています：
 
-* Removing special tokens
-* Stopping early when regenerating code to avoid long, irrelevant output
-* Fixing indentation for proper formatting
-* Occasionally discarding low-quality responses, such as those with excessive repetition
+* 特殊トークンの削除
+* 長大で無関係な出力を避けるため、コードの再生成を早めに打ち切る
+* 適切な書式にするためのインデントの修正
+* 過度な繰り返しがあるものなど、低品質な回答の破棄
 
-You can learn more about how it works in the [Autocomplete deep dive](/customize/models#autocomplete).
+仕組みについての詳細は、[オートコンプリートのディープダイブ](/customize/models#autocomplete)をご覧ください。
 
 <Info>
-  **Looking for AI that predicts your next changes or additions?** Check out
-  [Next Edit](/ide-extensions/autocomplete/next-edit), an experimental feature that
-  proactively suggests code changes before you even start typing, going beyond
-  traditional autocomplete to anticipate entire code modifications.
+  **次の変更や追加を予測するAIをお探しですか？** [ネクストエディット (Next Edit)](/ide-extensions/autocomplete/next-edit) をチェックしてみてください。これは、入力し始める前にコードの変更を先回りして提案する実験的な機能で、従来のオートコンプリートを超えて、コード修正全体を予測します。
 </Info>

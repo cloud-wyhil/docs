@@ -1,44 +1,44 @@
 ---
-title: 'Context Selection'
-description: 'Learn how Prometheus selects relevant code context in Chat Mode.'
+title: 'コンテキストの選択'
+description: 'チャットモードでPrometheusがどのように関連するコードコンテキストを選択するかについて学びます。'
 ---
 
-# Chat Mode Context Selection
+# チャットモードのコンテキスト選択
 
-> Learn how Prometheus selects relevant context for your chat requests, including text input, highlighted code, active files.
+> テキスト入力、ハイライトされたコード、アクティブなファイルなど、チャットリクエストに対してPrometheusがどのように関連するコンテキストを選択するかについて学びます。
 
-## How to Use Text Input
+## テキスト入力の使い方
 
-Typing a question or instructions into the input box is the only required context.
+入力ボックスへの質問や指示の入力は、唯一の必須コンテキストです。
 
-## How to Include Highlighted Code
+## ハイライトされたコードの含め方
 
-The highlighted code you've selected by pressing cmd/ctrl + L (VS Code) or cmd/ctrl + J (JetBrains) will be included in your prompt.
+`cmd/ctrl + L` (VS Code) または `cmd/ctrl + J` (JetBrains) を押して選択したハイライトコードは、プロンプトに含まれます。
 
-## How to Include the Active File
+## アクティブなファイルの含め方
 
-You can include the currently open file as context by pressing opt/alt + enter when you send your request.
+リクエストを送信する際に `opt/alt + enter` を押すことで、現在開いているファイルをコンテキストとして含めることができます。
 
-## How to Include a Specific File
+## 特定のファイルの含め方
 
-You can include a specific file in your current workspace by typing '@Files' and selecting the file.
+`@Files` と入力してファイルを選択することで、現在のワークスペース内の特定のファイルをコンテキストに含めることができます。
 
-## Codebase Search
+## コードベース検索
 
-For better codebase awareness, see our [guide on making agent mode aware of codebases and documentation](/guides/codebase-documentation-awareness).
+コードベースをより正確に把握させる方法については、[エージェントモードにコードベースやドキュメントを認識させるためのガイド](/guides/codebase-documentation-awareness)をご覧ください。
 
-## How to Include Documentation Sites
+## ドキュメントサイトの含め方
 
-For better documentation awareness, see our [guide on making agent mode aware of codebases and documentation](/guides/codebase-documentation-awareness).
+ドキュメントをより正確に把握させる方法については、[エージェントモードにコードベースやドキュメントを認識させるためのガイド](/guides/codebase-documentation-awareness)をご覧ください。
 
-## How to Include Terminal Contents
+## ターミナルの内容の含め方
 
-You can include the contents of the terminal in your IDE by typing '@Terminal'.
+`@Terminal` と入力することで、IDE内のターミナルの内容をコンテキストに含めることができます。
 
-## How to Include Git Diff
+## Git Diff の含め方
 
-You can include all of the changes you've made to your current branch by typing '@Git Diff'.
+`@Git Diff` と入力することで、現在のブランチで行ったすべての変更をコンテキストに含めることができます。
 
-## How to Use Other Context Providers
+## その他のコンテキストプロバイダーの使い方
 
-You can see a full list of built-in context providers [here](/customize/deep-dives/custom-providers).
+組み込みのコンテキストプロバイダーの全リストは[こちら](/customize/deep-dives/custom-providers)で確認できます。

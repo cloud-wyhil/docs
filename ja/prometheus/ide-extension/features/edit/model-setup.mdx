@@ -1,11 +1,11 @@
 ---
-title: ' How to Set Up Edit Models'
-description: 'Learn how to set up and customize models for Edit functionality in Prometheus.'
+title: 'エディットモデルの設定方法'
+description: 'Prometheusのエディット機能のためのモデルの設定とカスタマイズ方法について学びます。'
 ---
 
-# How to Set Up Edit Models
+# エディットモデルの設定方法
 
-> Learn how to set up and customize models for Edit functionality in Prometheus.
+> Prometheusのエディット機能のためのモデルの設定とカスタマイズ方法について学びます。
 
 export const ModelRecommendations = ({role = "all"}) => {
   const parseMarkdownLinks = text => {
@@ -42,37 +42,37 @@ export const ModelRecommendations = ({role = "all"}) => {
     agent_plan: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[Devstral (27B)](https://hub.continue.dev/ollama/devstral)", "[Kimi K2 (1T)](https://hub.continue.dev/openrouter/kimi-k2)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)", "[GLM 4.5 (355B)](https://hub.continue.dev/openrouter/glm-4-5)", "[GLM 4.5 Air (106B)](https://hub.continue.dev/openrouter/glm-4-5-air)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     chat_edit: {
       open: ["[Qwen3 Coder (480B)](https://hub.continue.dev/openrouter/qwen3-coder)", "[Qwen3 Coder (30B)](https://hub.continue.dev/ollama/qwen3-coder-30b)", "[gpt-oss (120B)](https://hub.continue.dev/openrouter/gpt-oss-120b)", "[gpt-oss (20B)](https://hub.continue.dev/ollama/gpt-oss-20b)"],
       closed: ["[Claude Opus 4.1](https://hub.continue.dev/anthropic/claude-4-1-opus)", "[Claude Sonnet 4](https://hub.continue.dev/anthropic/claude-4-sonnet)", "[GPT-5](https://hub.continue.dev/openai/gpt-5)", "[Gemini 2.5 Pro](https://hub.continue.dev/google/gemini-2.5-pro)"],
-      notes: "Closed and open models have pretty similar performance"
+      notes: "クローズドモデルとオープンモデルで性能はほぼ同等です"
     },
     autocomplete: {
       open: ["[QwenCoder2.5 (1.5B)](https://hub.continue.dev/ollama/qwen2.5-coder-1.5b)", "[QwenCoder2.5 (7B)](https://hub.continue.dev/ollama/qwen2.5-coder-7b)"],
       closed: ["[Codestral](https://hub.continue.dev/mistral/codestral)", "[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     apply: {
       open: ["[FastApply](https://hub.continue.dev/mdpauley/fast-apply-15b-v10)"],
       closed: ["[Relace Instant Apply](https://hub.continue.dev/relace/instant-apply)", "[Morph Fast Apply](https://hub.continue.dev/morphllm/morph-v2)"],
-      notes: "Closed models are better than open models"
+      notes: "クローズドモデルの方がオープンモデルより優れています"
     },
     embed: {
       open: ["[Nomic Embed Text](https://hub.continue.dev/ollama/nomic-embed-text-latest)", "Qwen3 Embedding"],
       closed: ["[Voyage Code 3](https://hub.continue.dev/voyageai/voyage-code-3)", "[Morph Embeddings](https://hub.continue.dev/morphllm/morph-embedding-v2)", "Codestral Embed"],
-      notes: "Closed models are slightly better than open models"
+      notes: "クローズドモデルの方がオープンモデルよりわずかに優れています"
     },
     rerank: {
       open: ["zerank-1", "zerank-1-small", "Qwen3 Reranker"],
       closed: ["[Voyage Rerank 2.5](https://hub.continue.dev/voyageai/rerank-2-5)", "Relace Code Rerank", "[Morph Rerank](https://hub.continue.dev/morphllm/morph-rerank-v2)"],
-      notes: "Open models are beginning to emerge for this model role"
+      notes: "このモデルロールでもオープンモデルが登場し始めています"
     },
     next_edit: {
       open: ["[Instinct](https://hub.continue.dev/continuedev/instinct)"],
       closed: ["[Mercury Coder](https://hub.continue.dev/inception/mercury-coder)"],
-      notes: "Closed models are better than open models"
+      notes: "クローズドモデルの方がオープンモデルより優れています"
     }
   };
   let rolesToShow = [];
@@ -85,7 +85,7 @@ export const ModelRecommendations = ({role = "all"}) => {
     }
   }
   if (rolesToShow.length === 0) {
-    return <div>No recommendations found for role: {role}</div>;
+    return <div>推奨モデルが見つかりませんでした： {role}</div>;
   }
   return <table style={{
     width: "100%",
@@ -99,28 +99,28 @@ export const ModelRecommendations = ({role = "all"}) => {
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Model role
+            モデルロール
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best open models
+            推奨オープンモデル
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Best closed models
+            推奨クローズドモデル
           </th>
           <th style={{
     textAlign: "left",
     borderBottom: "1px solid #ddd",
     padding: "8px"
   }}>
-            Notes
+            備考
           </th>
         </tr>
       </thead>
@@ -168,22 +168,22 @@ export const ModelRecommendations = ({role = "all"}) => {
     </table>;
 };
 
-The model you set up for Chat mode will be used for Edit mode by default.
+チャットモード用に設定したモデルが、デフォルトでエディットモードでも使用されます。
 
-## Recommendations
+## 推奨事項
 
 <ModelRecommendations role="chat_edit" />
 
 <Info>
-  See our [comprehensive model recommendations](/customize/models#recommended-models) for the best models for each role, including Edit and Apply.
+  エディットや適用など、各ロールに最適なモデルについては、[推奨モデルの包括的なガイド](/customize/models#recommended-models)をご覧ください。
 </Info>
 
-## How to Set Up an Apply Model
+## 適用（Apply）モデルの設定方法
 
-We also recommend setting up an Apply model for the best Edit experience.
+最高のエディット体験を得るために、適用（Apply）モデルの設定もお勧めします。
 
-For recommended Apply models, please refer to our [Model Recommendations page](/customize/models).
+推奨される適用モデルについては、[推奨モデルのページ](/customize/models)を参照してください。
 
-## How to Determine Model Compatibility
+## モデルの互換性を判断する方法
 
-For a complete overview of which models support various features, see our [Model Capabilities guide](/customize/deep-dives/model-capabilities).
+どのモデルがどの機能をサポートしているかの完全な概要については、[モデル機能ガイド](/customize/deep-dives/model-capabilities)をご覧ください。

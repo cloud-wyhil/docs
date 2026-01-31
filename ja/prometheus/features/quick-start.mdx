@@ -1,66 +1,63 @@
 ---
-title: 'Quick Start'
-description: '어플리케이션의 레이아웃을 변경하는 방법을 알아봅니다.'
+title: 'クイックスタート'
+description: 'アプリケーションのレイアウトを変更する方法を学びます。'
 icon: 'rocket'
 ---
 
-# Quick Start Tutorial
+# クイックスタート・チュートリアル
 
-> Learn Prometheus's core features through hands-on exercises. Get started with Autocomplete, Edit, Chat, and Agent mode in minutes.
+> ハンズオン形式の演習を通じて、Prometheusのコア機能を学びましょう。オートコンプリート、エディット、チャット、エージェントモードを数分で使い始めることができます。
 
-Welcome to Prometheus! This interactive tutorial will guide you through all four core features using practical examples. Follow along step-by-step to learn more about Prometheus's capabilities.
+Prometheusへようこそ！このインタラクティブなチュートリアルでは、実用的な例を通じて4つのコア機能をすべて紹介します。ステップバイステップで進めながら、Prometheusの機能について学びましょう。
 
 <Info>
-  **Prerequisites**: Make sure you have [installed
-  Prometheus](/ide-extensions/install) and [signed
-  in](https://auth.continue.dev/) to get started.
+  **前提条件**: 開始する前に、Prometheusを[インストール](/ide-extensions/install)し、[サインイン](https://auth.continue.dev/)していることを確認してください。
 </Info>
 
 ***
 
-## 🔄 Autocomplete
+## 🔄 オートコンプリート (Autocomplete)
 
-**What it does**: Provides intelligent inline code suggestions as you type, powered by AI.
+**機能**: AIを活用して、入力中にインテリジェントなインラインコードの提案を提供します。
 
 <Steps>
-  <Step title="Create a Test File">
-    Create a new file called `tutorial.js` (or use any language you prefer) in your IDE
+  <Step title="テストファイルの作成">
+    IDEで `tutorial.js` という名前の新しいファイルを作成します（またはお好みの言語を使用してください）。
   </Step>
 
-  <Step title="Try Autocomplete">
-    Copy this starter code and place your cursor at the end of the comment:
+  <Step title="オートコンプリートを試す">
+    以下のスターターコードをコピーし、コメントの末尾にカーソルを置きます：
 
     ```javascript  theme={null}
     // TODO: Implement a sorting algorithm function
     function sortingAlgorithm(arr) {
-      // Place cursor here and press Enter
+      // ここにカーソルを置いて Enter を押してください
     }
     ```
 
-    Press **Enter** and watch Prometheus suggest code completions. Press **Tab** to accept suggestions.
+    **Enter** キーを押すと、Prometheusがコードの補完を提案します。**Tab** キーを押して提案を受け入れます。
   </Step>
 
-  <Step title="See the Magic">
-    Prometheus will intelligently suggest function implementations based on the context and comment.
+  <Step title="魔法を見る">
+    Prometheusは、文脈とコメントに基づいて関数の中身をインテリジェントに提案します。
   </Step>
 </Steps>
 
 <Tip>
-  Autocomplete works best when you provide clear function names, comments, or
-  type annotations that give context about your intent.
+  オートコンプリートは、明確な関数名、コメント、または型注釈を提供して意図を伝えると、最も効果的に機能します。
 </Tip>
 
 ***
 
 <img src="https://mintcdn.com/continue-docs/4yBoEYQuVyTbLO4x/images/autocomplete-quick-start.gif?s=c3eeae6173167403efe9d3f13f5bd025" alt="autocomplete-demo" data-og-width="924" width="924" data-og-height="720" height="720" data-path="images/autocomplete-quick-start.gif" data-optimize="true" data-opv="3" />
 
-## ✏️ Edit
+## ✏️ エディット (Edit)
 
-**What it does**: Make quick, targeted changes to specific code sections using natural language instructions.
+**機能**: 自然言語の指示を使用して、特定のコードセクションに対して迅速かつ的を絞った変更を行います。
 
 <Steps>
-  <Step title="Add Sample Code">
-    Paste this bubble sort implementation in your file:
+  <Step title="サンプルコードの追加">
+    以下のバブルソートの実装をファイルに貼り付けます：
 
     ```javascript  theme={null}
     function sortingAlgorithm(x) {
@@ -78,39 +75,38 @@ Welcome to Prometheus! This interactive tutorial will guide you through all four
     ```
   </Step>
 
-  <Step title="Highlight the Function">
-    **Highlight** the entire function in your editor
+  <Step title="関数をハイライトする">
+    エディタで関数全体を**ハイライト**（選択）します。
   </Step>
 
-  <Step title="Open Edit Mode">Press **Cmd/Ctrl + I** to open Edit mode</Step>
+  <Step title="エディットモードを開く">**Cmd/Ctrl + I** を押してエディットモードを開きます。</Step>
 
-  <Step title="Give Instructions">
-    Type: `"make this more readable and add TypeScript types"`
+  <Step title="指示を与える">
+    `"make this more readable and add TypeScript types"`（これを読みやすくして、TypeScriptの型を追加して）と入力します。
   </Step>
 
-  <Step title="Watch the Magic">
-    Watch Prometheus refactor your code automatically!
+  <Step title="魔法を見る">
+    Prometheusがコードを自動的にリファクタリングする様子を確認してください！
   </Step>
 
-  <Step title="Review Changes">
-    Prometheus will show you a diff of the proposed changes. Accept or reject individual changes as needed.
+  <Step title="変更内容の確認">
+    Prometheusは提案された変更の差分（diff）を表示します。必要に応じて、個々の変更を承認または拒否します。
   </Step>
 </Steps>
 
 <Note>
-  Edit is perfect for refactoring, adding documentation, fixing bugs, or
-  converting between languages/frameworks.
+  エディットは、リファクタリング、ドキュメントの追加、バグ修正、または言語/フレームワーク間の変換に最適です。
 </Note>
 
 <img src="https://mintcdn.com/continue-docs/qJOXoW3PnI7_Ra2c/images/edit-quick-start.gif?s=28accc8146b008fcb16a3dfdb263d68c" alt="edit-demo" data-og-width="980" width="980" data-og-height="720" height="720" data-path="images/edit-quick-start.gif" data-optimize="true" data-opv="3" />
 
-## 💬 Chat Mode
+## 💬 チャットモード (Chat Mode)
 
-**What it does**: Interactive AI assistant that can analyze code, answer questions, and provide guidance without leaving your IDE.
+**機能**: IDEを離れることなく、コードを分析し、質問に答え、ガイダンスを提供できる対話型AIアシスタントです。
 
 <Steps>
-  <Step title="Add Another Function">
-    Add this second sorting function to your file:
+  <Step title="別の関数の追加">
+    ファイルに2つ目のソート関数を追加します：
 
     ```javascript  theme={null}
     function sortingAlgorithm2(x) {
@@ -128,194 +124,181 @@ Welcome to Prometheus! This interactive tutorial will guide you through all four
     ```
   </Step>
 
-  <Step title="Start a Conversation">
-    1. **Highlight** the function
-    2. Use the keyboard shortcuts below to add it to Chat.
-    3. Ask: `"What sorting algorithm is this and how can I optimize it?"`
+  <Step title="会話を始める">
+    1. 関数を**ハイライト**します。
+    2. 以下のキーボードショートカットを使用して、チャットに追加します。
+    3. `"What sorting algorithm is this and how can I optimize it?"`（これは何のソートアルゴリズムですか？どうすれば最適化できますか？）と質問します。
   </Step>
 
-  <Step title="Explore Further">
-    Try these follow-up questions:
+  <Step title="さらに探索">
+    以下のような追加の質問を試してみてください：
 
-    * `"Show me how to implement quicksort instead"`
-    * `"What's the time complexity of this algorithm?"`
-    * `"Can you write unit tests for this function?"`
+    * `"Show me how to implement quicksort instead"`（代わりにクイックソートを実装する方法を教えて）
+    * `"What's the time complexity of this algorithm?"`（このアルゴリズムの時間計算量は？）
+    * `"Can you write unit tests for this function?"`（この関数のユニットテストを書いてくれますか？）
   </Step>
 </Steps>
 
-### Chat Mode Keyboard Shortcuts
+### チャットモードのキーボードショートカット
 
 <Tabs>
   <Tab title="VS Code">
     **Cmd/Ctrl + L**\
-    New Chat / New Chat With Selected Code / Close Prometheus Sidebar If Chat Already In Focus
+    新規チャット / 選択したコードで新規チャット / チャットがすでにフォーカスされている場合はPrometheusサイドバーを閉じる
 
     **Cmd/Ctrl + Shift + L**\
-    Focus Current Chat / Add Selected Code To Current Chat / Close Prometheus Sidebar If Chat Already In Focus
+    現在のチャットにフォーカス / 選択したコードを現在のチャットに追加 / チャットがすでにフォーカスされている場合はPrometheusサイドバーを閉じる
   </Tab>
 
   <Tab title="JetBrains IDEs">
     **Cmd/Ctrl + J**\
-    New Chat / New Chat With Selected Code / Close Prometheus Sidebar If Chat Already In Focus
+    新規チャット / 選択したコードで新規チャット / チャットがすでにフォーカスされている場合はPrometheusサイドバーを閉じる
 
     **Cmd/Ctrl + Shift + J**\
-    Focus Current Chat / Add Selected Code To Current Chat / Close Prometheus Sidebar If Chat Already In Focus
+    現在のチャットにフォーカス / 選択したコードを現在のチャットに追加 / チャットがすでにフォーカスされている場合はPrometheusサイドバーを閉じる
   </Tab>
 </Tabs>
 
 <Tip>
-  Use Chat for code reviews, debugging help, learning new concepts, or
-  brainstorming solutions to complex problems.
+  チャットは、コードレビュー、デバッグの支援、新しい概念の学習、または複雑な問題の解決策のブレインストーミングに活用してください。
 </Tip>
 
 <img src="https://mintcdn.com/continue-docs/4yBoEYQuVyTbLO4x/images/chat-quick-start.gif?s=db8b1d40af253b62c244d046be532957" alt="chat-demo" data-og-width="1140" width="1140" data-og-height="720" height="720" data-path="images/chat-quick-start.gif" data-optimize="true" data-opv="3" />
 
 ***
 
-## 🤖 Agent Mode
+## 🤖 エージェントモード (Agent Mode)
 
-**What it does**: An autonomous coding assistant that can read files, make changes, run commands, and handle complex multi-step tasks.
+**機能**: ファイルの読み取り、変更の実行、コマンドの実行、および複雑なマルチステップタスクの処理が可能な自律型コーディングアシスタントです。
 
 <Steps>
-  <Step title="Switch to Agent Mode">
-    1. Open the Prometheus panel
-    2. Click the **dropdown** in the bottom left of the input box
-    3. Select **"Agent"** mode
+  <Step title="エージェントモードへの切り替え">
+    1. Prometheusパネルを開きます。
+    2. 入力ボックスの左下にある**ドロップダウン**をクリックします。
+    3. **"Agent"** モードを選択します。
   </Step>
 
-  <Step title="Give Agent Mode a Complex Task">
-    Try this prompt: `"Write comprehensive unit tests for the sorting functions
-      in this file. Create the tests in a new file using Jest, and make sure to test
-      edge cases like empty arrays and single elements."`
+  <Step title="エージェントモードに複雑なタスクを与える">
+    以下のプロンプトを試してみてください：`"Write comprehensive unit tests for the sorting functions in this file. Create the tests in a new file using Jest, and make sure to test edge cases like empty arrays and single elements."`（このファイルのソート関数の包括的なユニットテストを書いてください。Jestを使用して新しいファイルにテストを作成し、空の配列や単一要素などのエッジケースも必ずテストしてください。）
   </Step>
 
-  <Step title="Watch Agent Mode Work">
-    Agent mode will:
+  <Step title="エージェントモードの働きを見る">
+    エージェントモードは以下のことを行います：
 
-    * ✅ Analyze your existing code
-    * ✅ Create a new test file
-    * ✅ Write comprehensive tests
-    * ✅ Handle setup and imports
-    * ✅ Explain what it's doing at each step
+    * ✅ 既存のコードを分析する
+    * ✅ 新しいテストファイルを作成する
+    * ✅ 包括的なテストを記述する
+    * ✅ セットアップとインポートを処理する
+    * ✅ 各ステップで行っていることを説明する
   </Step>
 </Steps>
 
 <Warning>
-  Agent mode has powerful capabilities including file creation and modification.
-  Always review Agent mode's changes before accepting them.
+  エージェントモードには、ファイルの作成や修正を含む強力な機能があります。エージェントモードによる変更は、承認する前に必ず内容を確認してください。
 </Warning>
 
 <img src="https://mintcdn.com/continue-docs/4yBoEYQuVyTbLO4x/images/agent-quick-start.gif?s=c3fb3c1f7a1003242ee233390c09ed68" alt="agent-demo" data-og-width="996" width="996" data-og-height="720" height="720" data-path="images/agent-quick-start.gif" data-optimize="true" data-opv="3" />
 
 ***
 
-## Explore More Extension Examples
+## その他の拡張機能の例
 
-Ready to explore more? Prometheus offers five powerful features to enhance your coding workflow:
+さらに詳しく知りたいですか？Prometheusは、コーディングワークフローを強化する5つの強力な機能を提供します：
 
 <Tabs>
-  <Tab title="Agent Mode">
-    [Agent Mode](/ide-extensions/agent/quick-start) equips the Chat model with the tools needed to handle a wide range of coding tasks
+  <Tab title="エージェントモード">
+    [エージェントモード](/ide-extensions/agent/quick-start)は、チャットモデルに幅広いコーディングタスクを処理するために必要なツールを装備させます。
 
         <img src="https://mintcdn.com/continue-docs/6EWp3-Bet9bo6Nsz/images/agent-9ef792cfc196a3b5faa984fb072c4400.gif?s=08eb200c6aa31c15d6876757842d60e6" alt="agent mode" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/agent-9ef792cfc196a3b5faa984fb072c4400.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Agent Mode](/ide-extensions/agent/quick-start)
+      [エージェントモード](/ide-extensions/agent/quick-start)の詳細はこちら
     </Info>
   </Tab>
 
-  <Tab title="Chat Mode">
-    [Chat](/ide-extensions/chat/quick-start) makes it easy to ask for help from an LLM without needing to leave the IDE
+  <Tab title="チャットモード">
+    [チャット](/ide-extensions/chat/quick-start)を使用すると、IDEを離れることなくLLMに簡単に助けを求めることができます。
 
         <img src="https://mintcdn.com/continue-docs/6EWp3-Bet9bo6Nsz/images/chat-489b68d156be2aafe09ee7cedf233fba.gif?s=a058d12821d3238b3f7ecef047024d5f" alt="chat" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/chat-489b68d156be2aafe09ee7cedf233fba.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Chat Mode](/ide-extensions/chat/quick-start)
+      [チャットモード](/ide-extensions/chat/quick-start)の詳細はこちら
     </Info>
   </Tab>
 
-  <Tab title="Plan">
-    [Plan](/ide-extensions/agent/plan-mode) provides a safe environment with read-only tools for exploring code and planning changes
+  <Tab title="プラン (Plan)">
+    [プラン](/ide-extensions/agent/plan-mode)は、コードの探索や変更の計画を立てるための読み取り専用ツールを備えた安全な環境を提供します。
 
         <img src="https://mintcdn.com/continue-docs/bpNErLbBON28HbZ-/images/plan-mode.gif?s=628aea892fe00e73589209aab2dd2c54" alt="plan" data-og-width="1108" width="1108" data-og-height="720" height="720" data-path="images/plan-mode.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Plan Mode](/ide-extensions/agent/plan-mode)
+      [プランモード](/ide-extensions/agent/plan-mode)の詳細はこちら
     </Info>
   </Tab>
 
-  <Tab title="Edit">
-    [Edit](/ide-extensions/edit/quick-start) is a convenient way to modify code without leaving your current file
+  <Tab title="エディット (Edit)">
+    [エディット](/ide-extensions/edit/quick-start)は、現在のファイルを離れることなくコードを修正する便利な方法です。
 
         <img src="https://mintcdn.com/continue-docs/tt1KAgjxyDBw6wmj/images/edit.gif?s=fb8e91c14731bec92ede94522f87b98a" alt="edit" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/edit.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Edit](/ide-extensions/edit/quick-start)
+      [エディット](/ide-extensions/edit/quick-start)の詳細はこちら
     </Info>
   </Tab>
 
-  <Tab title="Autocomplete">
-    [Autocomplete](/ide-extensions/autocomplete/quick-start) provides inline code suggestions as you type
+  <Tab title="オートコンプリート">
+    [オートコンプリート](/ide-extensions/autocomplete/quick-start)は、入力中にインラインコードの提案を提供します。
 
         <img src="https://mintcdn.com/continue-docs/6EWp3-Bet9bo6Nsz/images/autocomplete-9d4e3f7658d3e65b8e8b20f2de939675.gif?s=717e217d13baccf5b112cfd06c9bcb82" alt="autocomplete" data-og-width="1552" width="1552" data-og-height="1080" height="1080" data-path="images/autocomplete-9d4e3f7658d3e65b8e8b20f2de939675.gif" data-optimize="true" data-opv="3" />
 
     <Info>
-      Learn more about [Autocomplete](/ide-extensions/autocomplete/quick-start)
+      [オートコンプリート](/ide-extensions/autocomplete/quick-start)の詳細はこちら
     </Info>
   </Tab>
 </Tabs>
 
-## 🚀 Next Steps
+## 🚀 次のステップ
 
-Congratulations! You've experienced all four core Prometheus features. Here's what to explore next:
+おめでとうございます！Prometheusの4つのコア機能をすべて体験しました。次に探索すべき内容は以下の通りです：
 
 <CardGroup cols={2}>
-  <Card title="Customize Your Setup" icon="gear" href="/customize/overview">
-    Configure models, add context providers, and personalize your workflow
+  <Card title="セットアップのカスタマイズ" icon="gear" href="/customize/overview">
+    モデルの設定、コンテキストプロバイダーの追加、ワークフローのパーソナライズを行います。
   </Card>
 
-  <Card title="Advanced Features" icon="rocket" href="/ide-extensions/agent/quick-start">
-    Dive deeper into Agent mode capabilities and advanced use cases
+  <Card title="高度な機能" icon="rocket" href="/ide-extensions/agent/quick-start">
+    エージェントモードの機能や高度なユースケースについてさらに深く掘り下げます。
   </Card>
 
-  <Card title="Model Providers" icon="brain" href="/customize/model-providers/overview">
-    Connect your preferred AI models and providers
+  <Card title="モデルプロバイダー" icon="brain" href="/customize/model-providers/overview">
+    お好みのAIモデルやプロバイダーと接続します。
   </Card>
 
-  <Card title="Join Community" icon="users" href="https://discord.gg/NWtdYexhMs">
-    Get help and share experiences with other Prometheus users
+  <Card title="コミュニティに参加する" icon="users" href="https://discord.gg/NWtdYexhMs">
+    ヘルプを求めたり、他のPrometheusユーザーと経験を共有したりできます。
   </Card>
 </CardGroup>
 
 ***
 
-## 📚 Feature Deep Dives
+## 📚 機能の詳細ガイド
 
-Ready to master specific features? Check out these detailed guides:
+特定の機能をマスターしたいですか？以下の詳細ガイドをチェックしてください：
 
 <AccordionGroup>
-  <Accordion title="Autocomplete Deep Dive">
-    Learn about [configuring autocomplete
-    models](/customize/model-roles/autocomplete), [fine-tuning
-    suggestions](/customize/deep-dives/autocomplete), and [troubleshooting
-    common issues](/troubleshooting).
+  <Accordion title="オートコンプリートの詳細">
+    [オートコンプリートモデルの設定](/customize/model-roles/autocomplete)、[提案の微調整](/customize/deep-dives/autocomplete)、[一般的な問題のトラブルシューティング](/troubleshooting)について学びます。
   </Accordion>
 
-  <Accordion title="Chat & Agent Mode Best Practices">
-    Discover [effective prompting techniques](/customize/deep-dives/prompts), [hub
-    v. local configuration](/guides/understanding-configs), and [custom slash
-    commands](/customize/deep-dives/prompts).
+  <Accordion title="チャット＆エージェントモードのベストプラクティス">
+    [効果的なプロンプト技術](/customize/deep-dives/prompts)、[Hub対ローカル設定](/guides/understanding-configs)、[カスタムスラッシュコマンド](/customize/deep-dives/prompts)について学びます。
   </Accordion>
 
-  <Accordion title="Enterprise & Teams">
-    Explore [Hub configurations](/mission-control/configs/intro), [organization
-    management](/mission-control/governance/creating-an-org), and [sharing
-    configurations](/mission-control/sharing).
+  <Accordion title="エンタープライズ＆チーム">
+    [Hub設定](/mission-control/configs/intro)、[組織管理](/mission-control/governance/creating-an-org)、[設定の共有](/mission-control/sharing)について学びます。
   </Accordion>
 </AccordionGroup>
 
 <Info>
-  **Need help?** Check our [troubleshooting guide](/troubleshooting) or ask a
-  question in our [community
-  discussions](https://github.com/continuedev/continue/discussions).
+  **サポートが必要ですか？** [トラブルシューティングガイド](/troubleshooting)を確認するか、[コミュニティディスカッション](https://github.com/continuedev/continue/discussions)で質問してください。
 </Info>
