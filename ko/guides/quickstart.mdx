@@ -1,0 +1,80 @@
+---
+title: "퀵스타트"
+description: "몇 분 만에 멋진 문서 작성을 시작해 보세요"
+---
+
+## 3단계로 시작하기
+
+문서 사이트를 로컬에서 실행하고 첫 번째 맞춤 설정을 해보세요.
+
+### 1단계: 로컬 환경 설정
+
+<AccordionGroup>
+  <Accordion icon="copy" title="문서 로컬로 복제하기">
+    온보딩 과정에서 기존에 가지고 있지 않았다면 문서 콘텐츠가 포함된 GitHub 리포지토리를 만들었을 것입니다. 이 리포지토리 링크는 [대시보드](https://dashboard.mintlify.com)에서 확인할 수 있습니다.
+    
+    로컬에서 리포지토리를 복제하여 변경 사항을 작성하고 미리 확인하려면 GitHub 문서의 [리포지토리 복제](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) 가이드를 따르세요.
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="미리보기 서버 시작">
+    1. Mintlify CLI 설치: `npm i -g mint`
+    2. 문서 디렉토리로 이동하여 실행: `mint dev`
+    3. `http://localhost:3000`을 열어 실제 문서를 확인하세요!
+    
+    <Tip>파일을 편집하면 미리보기가 자동으로 업데이트됩니다.</Tip>
+  </Accordion>
+</AccordionGroup>
+
+### 2단계: 변경 사항 배포
+
+<AccordionGroup>
+  <Accordion icon="github" title="GitHub 앱 설치">
+    [대시보드](https://dashboard.mintlify.com/settings/organization/github-app)에서 Mintlify GitHub 앱을 설치하세요.
+    
+    저희 GitHub 앱은 문서 사이트에 변경 사항을 자동으로 배포하므로, 배포를 직접 관리할 필요가 없습니다.
+</Accordion>
+<Accordion icon="palette" title="사이트 명칭 및 색상 업데이트">
+    첫 번째 변경으로 문서 사이트의 이름과 색상을 업데이트해 보겠습니다.
+
+    1. 에디터에서 `docs.json`을 엽니다.
+    2. `"name"` 필드를 프로젝트 이름으로 변경합니다.
+    3. 브랜드에 맞게 `"colors"`를 업데이트합니다.
+    4. 저장하고 `http://localhost:3000`에서 즉시 변경 사항을 확인하세요.
+
+    <Tip>기본 색상을 변경하여 즉각적인 차이를 확인해 보세요!</Tip>
+  </Accordion>
+</AccordionGroup>
+
+### 3단계: 라이브 시작
+
+<Accordion icon="rocket" title="문서 게시">
+  1. 변경 사항을 커밋(Commit)하고 푸시(Push)합니다.
+  2. 문서가 업데이트되고 곧 라이브로 적용됩니다!
+</Accordion>
+
+## 다음 단계
+
+이제 문서가 실행 중이므로 다음 핵심 기능들을 살펴보세요:
+
+<CardGroup cols={2}>
+
+<Card title="콘텐츠 작성" icon="pen-to-square" href="/essentials/markdown">
+  MDX 문법을 배우고 문서 작성을 시작해 보세요.
+</Card>
+
+<Card title="스타일 맞춤 설정" icon="palette" href="/essentials/settings">
+  문서를 브랜드에 완벽하게 맞춤 설정하세요.
+</Card>
+
+<Card title="코드 예시 추가" icon="square-code" href="/essentials/code">
+  구문 강조(Syntax highlighting)가 적용된 코드 블록을 포함하세요.
+</Card>
+
+<Card title="API 문서" icon="code" href="/api-reference/introduction">
+  OpenAPI 사양에서 API 문서를 자동으로 생성합니다.
+</Card>
+
+</CardGroup>
+
+<Note>
+  **도움이 필요하신가요?** [전체 문서](https://mintlify.com/docs)를 확인하거나 [커뮤니티](https://mintlify.com/community)에 참여하세요.
+</Note>

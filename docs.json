@@ -19,33 +19,33 @@
               {
                 "group": "Getting started",
                 "pages": [
-                  "en/index",
-                  "en/quickstart",
-                  "en/development"
+                  "en/guides/index",
+                  "en/guides/quickstart",
+                  "en/guides/development"
                 ]
               },
               {
                 "group": "Customization",
                 "pages": [
-                  "en/essentials/settings",
-                  "en/essentials/navigation"
+                  "en/guides/essentials/settings",
+                  "en/guides/essentials/navigation"
                 ]
               },
               {
                 "group": "Writing content",
                 "pages": [
-                  "en/essentials/markdown",
-                  "en/essentials/code",
-                  "en/essentials/images",
-                  "en/essentials/reusable-snippets"
+                  "en/guides/essentials/markdown",
+                  "en/guides/essentials/code",
+                  "en/guides/essentials/images",
+                  "en/guides/essentials/reusable-snippets"
                 ]
               },
               {
                 "group": "AI tools",
                 "pages": [
-                  "en/ai-tools/cursor",
-                  "en/ai-tools/claude-code",
-                  "en/ai-tools/windsurf"
+                  "en/guides/ai-tools/cursor",
+                  "en/guides/ai-tools/claude-code",
+                  "en/guides/ai-tools/windsurf"
                 ]
               }
             ]
@@ -63,7 +63,7 @@
                 "group": "Tutorial",
                 "pages": [
                   "en/singlepoint/tutorial/chat",
-                  "singlepoint/tutorial/Mmnutes"
+                  "en/singlepoint/tutorial/Mmnutes"
                 ]
               }
             ]
@@ -218,33 +218,33 @@
               {
                 "group": "Getting started",
                 "pages": [
-                  "ko/index",
-                  "ko/quickstart",
-                  "ko/development"
+                  "ko/guides/index",
+                  "ko/guides/quickstart",
+                  "ko/guides/development"
                 ]
               },
               {
                 "group": "Customization",
                 "pages": [
-                  "ko/essentials/settings",
-                  "essentials/navigation"
+                  "ko/guides/essentials/settings",
+                  "ko/guides/essentials/navigation"
                 ]
               },
               {
                 "group": "Writing content",
                 "pages": [
-                  "ko/essentials/markdown",
-                  "ko/essentials/code",
-                  "ko/essentials/images",
-                  "ko/essentials/reusable-snippets"
+                  "ko/guides/essentials/markdown",
+                  "ko/guides/essentials/code",
+                  "ko/guides/essentials/images",
+                  "ko/guides/essentials/reusable-snippets"
                 ]
               },
               {
                 "group": "AI tools",
                 "pages": [
-                  "ko/ai-tools/cursor",
-                  "ko/ai-tools/claude-code",
-                  "ko/ai-tools/windsurf"
+                  "ko/guides/ai-tools/cursor",
+                  "ko/guides/ai-tools/claude-code",
+                  "ko/guides/ai-tools/windsurf"
                 ]
               }
             ]
@@ -404,33 +404,33 @@
               {
                 "group": "Getting started",
                 "pages": [
-                  "ja/index",
-                  "ja/quickstart",
-                  "ja/development"
+                  "ja/guides/index",
+                  "ja/guides/quickstart",
+                  "ja/guides/development"
                 ]
               },
               {
                 "group": "Customization",
                 "pages": [
-                  "ja/essentials/settings",
-                  "essentials/navigation"
+                  "ja/guides/essentials/settings",
+                  "ja/guides/essentials/navigation"
                 ]
               },
               {
                 "group": "Writing content",
                 "pages": [
-                  "ja/essentials/markdown",
-                  "ja/essentials/code",
-                  "ja/essentials/images",
-                  "ja/essentials/reusable-snippets"
+                  "ja/guides/essentials/markdown",
+                  "ja/guides/essentials/code",
+                  "ja/guides/essentials/images",
+                  "ja/guides/essentials/reusable-snippets"
                 ]
               },
               {
                 "group": "AI tools",
                 "pages": [
-                  "ja/ai-tools/cursor",
-                  "ja/ai-tools/claude-code",
-                  "ja/ai-tools/windsurf"
+                  "ja/guides/ai-tools/cursor",
+                  "ja/guides/ai-tools/claude-code",
+                  "ja/guides/ai-tools/windsurf"
                 ]
               }
             ]

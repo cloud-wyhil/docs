@@ -1,0 +1,35 @@
+---
+title: '코드 블록'
+description: '인라인 코드 및 코드 블록 표시하기'
+icon: 'code'
+---
+
+## 인라인 코드
+
+단어나 구절을 코드로 표시하려면 백틱(`)으로 감싸세요.
+
+```
+`단어`나 `구절`을 코드로 표시하려면 백틱(`)으로 감싸세요.
+```
+
+## 코드 블록
+
+코드 앞뒤를 세 개의 백틱으로 감싸는 [코드 펜스(Fenced code blocks)](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks)를 사용하세요. 구문 강조(Syntax highlighting)를 적용하려면 시작 백틱 뒤에 해당 코드 조각의 프로그래밍 언어를 입력합니다. 선택 사항으로 언어 뒤에 코드의 이름을 적을 수도 있습니다.
+
+```java HelloWorld.java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+````md
+```java HelloWorld.java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+````
