@@ -330,6 +330,13 @@
                           "ko/prometheus/ide-extension/features/edit/how-to-customize",
                           "ko/prometheus/ide-extension/features/edit/context-selection"
                         ]
+                      },
+                      {
+                        "group": "tools",
+                        "icon": "gear",
+                        "pages": [
+                          "ko/prometheus/ide-extension/features/tool/tools"
+                        ]
                       }
                     ]
                   },
