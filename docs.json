@@ -332,7 +332,7 @@
                         ]
                       },
                       {
-                        "group": "tools",
+                        "group": "Tools",
                         "icon": "gear",
                         "pages": [
                           "ko/prometheus/ide-extension/features/tool/tools"
