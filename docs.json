@@ -26,6 +26,24 @@
                 "pages": [
                   "en/wyhil/introduction"
                 ]
+              },
+              {
+                "group": "Business",
+                "pages": [
+                  "en/wyhil/business"
+                ]
+              },
+              {
+                "group": "Technology",
+                "pages": [
+                  "en/wyhil/technology"
+                ]
+              },
+              {
+                "group": "Customers",
+                "pages": [
+                  "en/wyhil/customers"
+                ]
               }
             ]
           },
@@ -236,6 +254,24 @@
                 "pages": [
                   "ko/wyhil/introduction"
                 ]
+              },
+              {
+                "group": "Business",
+                "pages": [
+                  "ko/wyhil/business"
+                ]
+              },
+              {
+                "group": "Technology",
+                "pages": [
+                  "ko/wyhil/technology"
+                ]
+              },
+              {
+                "group": "Customers",
+                "pages": [
+                  "ko/wyhil/customers"
+                ]
               }
             ]
           },
@@ -432,6 +468,24 @@
                 "group": "Getting started",
                 "pages": [
                   "ja/wyhil/introduction"
+                ]
+              },
+              {
+                "group": "Business",
+                "pages": [
+                  "ja/wyhil/business"
+                ]
+              },
+              {
+                "group": "Technology",
+                "pages": [
+                  "ja/wyhil/technology"
+                ]
+              },
+              {
+                "group": "Customers",
+                "pages": [
+                  "ja/wyhil/customers"
                 ]
               }
             ]
