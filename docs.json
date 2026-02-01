@@ -29,12 +29,14 @@
               },
               {
                 "group": "Business",
+                "icon": "briefcase",
                 "pages": [
                   "en/wyhil/business"
                 ]
               },
               {
                 "group": "Technology",
+                "icon": "tachograph-digital",
                 "pages": [
                   "en/wyhil/technology"
                 ]
@@ -57,10 +59,46 @@
                 ]
               },
               {
+                "group": "Features",
+                "pages": [
+                  "en/singlepoint/features/chat",
+                  {
+                    "group": "AI Space",
+                    "pages": [
+                      "en/singlepoint/ai-space/contract",
+                      "en/singlepoint/ai-space/press-release",
+                      "en/singlepoint/ai-space/summary",
+                      "en/singlepoint/ai-space/translation",
+                      "en/singlepoint/ai-space/rule",
+                      "en/singlepoint/ai-space/manual",
+                      "en/singlepoint/ai-space/contract-draft",
+                      "en/singlepoint/ai-space/presentation-draft",
+                      "en/singlepoint/ai-space/report-draft",
+                      "en/singlepoint/ai-space/minutes",
+                      "en/singlepoint/ai-space/email",
+                      "en/singlepoint/ai-space/market-research"
+                    ]
+                  },
+                  "en/singlepoint/features/dashboard",
+                  "en/singlepoint/features/documents",
+                  "en/singlepoint/features/history",
+                  "en/singlepoint/features/monitoring",
+                  "en/singlepoint/features/prompts",
+                  {
+                    "group": "Management",
+                    "pages": [
+                      "en/singlepoint/management/user",
+                      "en/singlepoint/management/organization",
+                      "en/singlepoint/management/llm"
+                    ]
+                  }
+                ]
+              },
+              {
                 "group": "Tutorial",
                 "pages": [
                   "en/singlepoint/tutorial/chat",
-                  "en/singlepoint/tutorial/Mmnutes"
+                  "en/singlepoint/tutorial/minutes"
                 ]
               }
             ]
@@ -257,12 +295,14 @@
               },
               {
                 "group": "Business",
+                "icon": "briefcase",
                 "pages": [
                   "ko/wyhil/business"
                 ]
               },
               {
                 "group": "Technology",
+                "icon": "tachograph-digital",
                 "pages": [
                   "ko/wyhil/technology"
                 ]
@@ -285,10 +325,47 @@
                 ]
               },
               {
+                "group": "주요기능",
+                "pages": [
+                  "ko/singlepoint/features/chat",
+                  {
+                    "group": "AI Space",
+                    "icon": "cubes",
+                    "pages": [
+                      "ko/singlepoint/ai-space/contract",
+                      "ko/singlepoint/ai-space/press-release",
+                      "ko/singlepoint/ai-space/summary",
+                      "ko/singlepoint/ai-space/translation",
+                      "ko/singlepoint/ai-space/rule",
+                      "ko/singlepoint/ai-space/manual",
+                      "ko/singlepoint/ai-space/contract-draft",
+                      "ko/singlepoint/ai-space/presentation-draft",
+                      "ko/singlepoint/ai-space/report-draft",
+                      "ko/singlepoint/ai-space/minutes",
+                      "ko/singlepoint/ai-space/email",
+                      "ko/singlepoint/ai-space/market-research"
+                    ]
+                  },
+                  "ko/singlepoint/features/dashboard",
+                  "ko/singlepoint/features/documents",
+                  "ko/singlepoint/features/history",
+                  "ko/singlepoint/features/monitoring",
+                  "ko/singlepoint/features/prompts",
+                  {
+                    "group": "관리기능",
+                    "pages": [
+                      "ko/singlepoint/management/user",
+                      "ko/singlepoint/management/organization",
+                      "ko/singlepoint/management/llm"
+                    ]
+                  }
+                ]
+              },
+              {
                 "group": "튜토리얼",
                 "pages": [
                   "ko/singlepoint/tutorial/chat",
-                  "ko/singlepoint/tutorial/Mmnutes"
+                  "ko/singlepoint/tutorial/minutes"
                 ]
               }
             ]
@@ -472,12 +549,14 @@
               },
               {
                 "group": "Business",
+                "icon": "briefcase",
                 "pages": [
                   "ja/wyhil/business"
                 ]
               },
               {
                 "group": "Technology",
+                "icon": "tachograph-digital",
                 "pages": [
                   "ja/wyhil/technology"
                 ]
@@ -494,16 +573,52 @@
             "tab": "シングルポイント",
             "groups": [
               {
-                "group": "プロダクト",
+                "group": "製品",
                 "pages": [
                   "ja/singlepoint/introduction"
+                ]
+              },
+              {
+                "group": "主要機能",
+                "pages": [
+                  "ja/singlepoint/features/chat",
+                  {
+                    "group": "AI Space",
+                    "pages": [
+                      "ja/singlepoint/ai-space/contract",
+                      "ja/singlepoint/ai-space/press-release",
+                      "ja/singlepoint/ai-space/summary",
+                      "ja/singlepoint/ai-space/translation",
+                      "ja/singlepoint/ai-space/rule",
+                      "ja/singlepoint/ai-space/manual",
+                      "ja/singlepoint/ai-space/contract-draft",
+                      "ja/singlepoint/ai-space/presentation-draft",
+                      "ja/singlepoint/ai-space/report-draft",
+                      "ja/singlepoint/ai-space/minutes",
+                      "ja/singlepoint/ai-space/email",
+                      "ja/singlepoint/ai-space/market-research"
+                    ]
+                  },
+                  "ja/singlepoint/features/dashboard",
+                  "ja/singlepoint/features/documents",
+                  "ja/singlepoint/features/history",
+                  "ja/singlepoint/features/monitoring",
+                  "ja/singlepoint/features/prompts",
+                  {
+                    "group": "管理機能",
+                    "pages": [
+                      "ja/singlepoint/management/user",
+                      "ja/singlepoint/management/organization",
+                      "ja/singlepoint/management/llm"
+                    ]
+                  }
                 ]
               },
               {
                 "group": "チュートリアル",
                 "pages": [
                   "ja/singlepoint/tutorial/chat",
-                  "ja/singlepoint/tutorial/Mmnutes"
+                  "ja/singlepoint/tutorial/minutes"
                 ]
               }
             ]
