@@ -14,38 +14,12 @@
         "language": "en",
         "tabs": [
           {
-            "tab": "Guides",
+            "tab": "WYHIL",
             "groups": [
               {
                 "group": "Getting started",
                 "pages": [
-                  "en/guides/index",
-                  "en/guides/quickstart",
-                  "en/guides/development"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "en/guides/essentials/settings",
-                  "en/guides/essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "en/guides/essentials/markdown",
-                  "en/guides/essentials/code",
-                  "en/guides/essentials/images",
-                  "en/guides/essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "AI tools",
-                "pages": [
-                  "en/guides/ai-tools/cursor",
-                  "en/guides/ai-tools/claude-code",
-                  "en/guides/ai-tools/windsurf"
+                  "en/wyhil/introduction"
                 ]
               }
             ]
@@ -188,6 +162,43 @@
             ]
           },
           {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "en/guides/index",
+                  "en/guides/quickstart",
+                  "en/guides/development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "en/guides/essentials/settings",
+                  "en/guides/essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "en/guides/essentials/markdown",
+                  "en/guides/essentials/code",
+                  "en/guides/essentials/images",
+                  "en/guides/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "en/guides/ai-tools/cursor",
+                  "en/guides/ai-tools/claude-code",
+                  "en/guides/ai-tools/windsurf"
+                ]
+              }
+            ]
+          },
+          {
             "tab": "API reference",
             "groups": [
               {
@@ -213,38 +224,12 @@
         "language": "ko",
         "tabs": [
           {
-            "tab": "Guides",
+            "tab": "WYHIL",
             "groups": [
               {
                 "group": "Getting started",
                 "pages": [
-                  "ko/guides/index",
-                  "ko/guides/quickstart",
-                  "ko/guides/development"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "ko/guides/essentials/settings",
-                  "ko/guides/essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "ko/guides/essentials/markdown",
-                  "ko/guides/essentials/code",
-                  "ko/guides/essentials/images",
-                  "ko/guides/essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "AI tools",
-                "pages": [
-                  "ko/guides/ai-tools/cursor",
-                  "ko/guides/ai-tools/claude-code",
-                  "ko/guides/ai-tools/windsurf"
+                  "ko/wyhil/introduction"
                 ]
               }
             ]
@@ -392,6 +377,43 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "ko/guides/index",
+                  "ko/guides/quickstart",
+                  "ko/guides/development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "ko/guides/essentials/settings",
+                  "ko/guides/essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "ko/guides/essentials/markdown",
+                  "ko/guides/essentials/code",
+                  "ko/guides/essentials/images",
+                  "ko/guides/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "ko/guides/ai-tools/cursor",
+                  "ko/guides/ai-tools/claude-code",
+                  "ko/guides/ai-tools/windsurf"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -399,38 +421,12 @@
         "language": "ja",
         "tabs": [
           {
-            "tab": "ガイド",
+            "tab": "WYHIL",
             "groups": [
               {
                 "group": "Getting started",
                 "pages": [
-                  "ja/guides/index",
-                  "ja/guides/quickstart",
-                  "ja/guides/development"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "ja/guides/essentials/settings",
-                  "ja/guides/essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "ja/guides/essentials/markdown",
-                  "ja/guides/essentials/code",
-                  "ja/guides/essentials/images",
-                  "ja/guides/essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "AI tools",
-                "pages": [
-                  "ja/guides/ai-tools/cursor",
-                  "ja/guides/ai-tools/claude-code",
-                  "ja/guides/ai-tools/windsurf"
+                  "ja/wyhil/introduction"
                 ]
               }
             ]
@@ -571,6 +567,43 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "ガイド",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "ja/guides/index",
+                  "ja/guides/quickstart",
+                  "ja/guides/development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "ja/guides/essentials/settings",
+                  "ja/guides/essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "ja/guides/essentials/markdown",
+                  "ja/guides/essentials/code",
+                  "ja/guides/essentials/images",
+                  "ja/guides/essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "AI tools",
+                "pages": [
+                  "ja/guides/ai-tools/cursor",
+                  "ja/guides/ai-tools/claude-code",
+                  "ja/guides/ai-tools/windsurf"
+                ]
+              }
+            ]
           }
         ]
       }
@@ -578,8 +611,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://wyhil.com/docs",
+          "anchor": "Discourse",
+          "href": "https://discourse.wyhil.com",
           "icon": "book-open-cover"
         },
         {
