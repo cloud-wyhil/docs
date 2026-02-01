@@ -2,6 +2,11 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "WYHIL Documentation",
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-9HHZ6VPTS0"
+    }
+  },
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
