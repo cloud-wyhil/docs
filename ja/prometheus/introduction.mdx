@@ -6,11 +6,6 @@ description: 'セキュアなAI DevOpsプラットフォーム'
 
 # 概要
 
-<Note>
-  APIリファレンスドキュメントを作成しない場合は、api-referenceフォルダを削除してこのセクションを削除できます。
-</Note>
-
-## Welcome
 
 開発者はAI支援ツールを通じて高い効率性を経験していますが、クラウドベースのサービスには、コア資産であるコード漏洩などのセキュリティ脅威やシステムの断片化という限界があります。
 
@@ -19,23 +14,3 @@ PROMETHEUSは、このような問題を解決するためにオンプレミス�
 組織の内部データを学習するRAGベースのAIエージェント機能により、企業がカスタマイズした安全な開発環境をサポートします。
   
 ![Prometheus](/images/ja/prometheus/infoGraphic-prometheus.png)
-
-<Card
-  title="PROMETHEUSプラットフォームの紹介と使い方"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  紹介資料および使用方法に関する資料を確認してください。
-</Card>
-
-## 認証 (Authentication)
-
-すべてのAPIエンドポイントは、Bearerトークンを使用して認証され、仕様ファイルから取得されます。
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
