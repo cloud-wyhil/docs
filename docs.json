@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "WYHIL KXP (Knowledge Experience Platform)",
+  "name": "KXP (Knowledge Experience Platform)",
   "integrations": {
     "ga4": {
       "measurementId": "G-9HHZ6VPTS0"
@@ -211,58 +211,40 @@
             ]
           },
           {
-            "tab": "Guides",
+            "tab": "Training",
             "groups": [
               {
                 "group": "Getting started",
                 "pages": [
-                  "en/guides/index",
-                  "en/guides/quickstart",
-                  "en/guides/development"
+                  "en/training/index",
+                  "en/training/quickstart"
                 ]
               },
               {
-                "group": "Customization",
+                "group": "SinglePoint",
                 "pages": [
-                  "en/guides/essentials/settings",
-                  "en/guides/essentials/navigation"
+                  "en/training/singlepoint/preparation"
                 ]
               },
               {
-                "group": "Writing content",
+                "group": "Prometheus",
                 "pages": [
-                  "en/guides/essentials/markdown",
-                  "en/guides/essentials/code",
-                  "en/guides/essentials/images",
-                  "en/guides/essentials/reusable-snippets"
+                  "en/training/prometheus/preparation",
+                  "en/training/prometheus/board",
+                  "en/training/prometheus/layout",
+                  "en/training/prometheus/login",
+                  "en/training/prometheus/logout",
+                  "en/training/prometheus/logic_create",
+                  "en/training/prometheus/logic_update",
+                  "en/training/prometheus/sql_create",
+                  "en/training/prometheus/sql_tuning"
                 ]
               },
               {
-                "group": "AI tools",
+                "group": "FAQ",
                 "pages": [
-                  "en/guides/ai-tools/cursor",
-                  "en/guides/ai-tools/claude-code",
-                  "en/guides/ai-tools/windsurf"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "API reference",
-            "groups": [
-              {
-                "group": "API documentation",
-                "pages": [
-                  "en/api-reference/introduction"
-                ]
-              },
-              {
-                "group": "Endpoint examples",
-                "pages": [
-                  "en/api-reference/endpoint/get",
-                  "en/api-reference/endpoint/create",
-                  "en/api-reference/endpoint/delete",
-                  "en/api-reference/endpoint/webhook"
+                  "en/training/faq/singlepoint",
+                  "en/training/faq/prometheus"
                 ]
               }
             ]
@@ -473,38 +455,40 @@
             ]
           },
           {
-            "tab": "Guides",
+            "tab": "Training",
             "groups": [
               {
                 "group": "Getting started",
                 "pages": [
-                  "ko/guides/index",
-                  "ko/guides/quickstart",
-                  "ko/guides/development"
+                  "ko/training/index",
+                  "ko/training/quickstart"
                 ]
               },
               {
-                "group": "Customization",
+                "group": "SinglePoint",
                 "pages": [
-                  "ko/guides/essentials/settings",
-                  "ko/guides/essentials/navigation"
+                  "ko/training/singlepoint/preparation"
                 ]
               },
               {
-                "group": "Writing content",
+                "group": "Prometheus",
                 "pages": [
-                  "ko/guides/essentials/markdown",
-                  "ko/guides/essentials/code",
-                  "ko/guides/essentials/images",
-                  "ko/guides/essentials/reusable-snippets"
+                  "ko/training/prometheus/preparation",
+                  "ko/training/prometheus/board",
+                  "ko/training/prometheus/layout",
+                  "ko/training/prometheus/login",
+                  "ko/training/prometheus/logout",
+                  "ko/training/prometheus/logic_create",
+                  "ko/training/prometheus/logic_update",
+                  "ko/training/prometheus/sql_create",
+                  "ko/training/prometheus/sql_tuning"
                 ]
               },
               {
-                "group": "AI tools",
+                "group": "FAQ",
                 "pages": [
-                  "ko/guides/ai-tools/cursor",
-                  "ko/guides/ai-tools/claude-code",
-                  "ko/guides/ai-tools/windsurf"
+                  "ko/training/faq/singlepoint",
+                  "ko/training/faq/prometheus"
                 ]
               }
             ]
@@ -707,38 +691,40 @@
             ]
           },
           {
-            "tab": "ガイド",
+            "tab": "Training",
             "groups": [
               {
                 "group": "Getting started",
                 "pages": [
-                  "ja/guides/index",
-                  "ja/guides/quickstart",
-                  "ja/guides/development"
+                  "ja/training/index",
+                  "ja/training/quickstart"
                 ]
               },
               {
-                "group": "Customization",
+                "group": "SinglePoint",
                 "pages": [
-                  "ja/guides/essentials/settings",
-                  "ja/guides/essentials/navigation"
+                  "ja/training/singlepoint/preparation"
                 ]
               },
               {
-                "group": "Writing content",
+                "group": "Prometheus",
                 "pages": [
-                  "ja/guides/essentials/markdown",
-                  "ja/guides/essentials/code",
-                  "ja/guides/essentials/images",
-                  "ja/guides/essentials/reusable-snippets"
+                  "ja/training/prometheus/preparation",
+                  "ja/training/prometheus/board",
+                  "ja/training/prometheus/layout",
+                  "ja/training/prometheus/login",
+                  "ja/training/prometheus/logout",
+                  "ja/training/prometheus/logic_create",
+                  "ja/training/prometheus/logic_update",
+                  "ja/training/prometheus/sql_create",
+                  "ja/training/prometheus/sql_tuning"
                 ]
               },
               {
-                "group": "AI tools",
+                "group": "FAQ",
                 "pages": [
-                  "ja/guides/ai-tools/cursor",
-                  "ja/guides/ai-tools/claude-code",
-                  "ja/guides/ai-tools/windsurf"
+                  "ja/training/faq/singlepoint",
+                  "ja/training/faq/prometheus"
                 ]
               }
             ]
