@@ -1,31 +1,31 @@
 ---
 title: 'Logic Create'
-description: '로직을 생성하는 방법을 알아봅니다.'
+description: 'Learn how to create logic.'
 icon: 'chart-diagram'
 ---
 
 
-## 로직 생성 개요
+## Logic Creation Overview
 
-바이브 코딩의 가장 강력한 점은 복잡한 알고리즘이나 비즈니스 규칙을 개발자가 직접 코드로 치환하지 않아도 된다는 것입니다. 구현하고자 하는 로직의 **'목적'**과 **'조건'**을 설명하면, AI가 프로젝트의 기존 코드 스타일을 참조하여 최적화된 로직을 설계하고 구현합니다.
-
----
-
-## 단계별 로직 구현
-
-게시글의 활동성에 따라 '인기' 태그를 부여하는 새로운 기능을 추가하는 과정입니다.
-
-1. **비즈니스 규칙 정의**: 구현하고자 하는 로직의 조건을 설명합니다.
-   > **Prompt:** "우리 게시판에 '인기글' 기능을 넣고 싶어. 게시글 상세 페이지를 볼 때마다 조회수(viewCount)가 1씩 올라가게 하고, 조회수가 100을 넘으면 게시글 제목 옆에 '🔥인기' 태그가 나타나게 로직을 구현해줘."
-
-2. **도메인 모델 확장**: AI는 `Board` 엔티티에 새로운 필드를 추가하고, 서비스 레이어에 비즈니스 메서드를 생성합니다.
-
-3. **통합 구현**: AI는 `edit_existing_file`을 사용하여 컨트롤러와 서비스 로직을 연결하고, 최종적으로 데이터베이스에 반영될 수 있도록 코드를 작성합니다.
+The most powerful aspect of Vibe Coding is that developers do not need to manually translate complex algorithms or business rules into code. By explaining the **'purpose'** and **'conditions'** of the logic you want to implement, the AI designs and implements optimized logic by referencing the project's existing code style.
 
 ---
 
-## 💡 효율적인 로직 생성을 위한 팁
+## Step-by-Step Logic Implementation
 
-* **입출력(I/O) 정의**: "A를 넣으면 B가 나와야 해"와 같이 입력값과 기대 결과값을 명시하면 로직의 정확도가 비약적으로 상승합니다.
-* **예외 상황 명시**: "데이터가 없을 때는 에러를 던지지 말고 빈 객체를 반환해줘"와 같이 예외 케이스 처리 방식을 미리 알려주세요.
-* **검증 요청**: 로직 생성이 완료되면 "이 로직에 버그가 없는지 검토하고, 테스트 코드를 작성해줘"라고 요청하여 완성도를 높이세요.
+The following is the process of adding a new feature that grants a 'Popular' tag based on the activity of a post.
+
+1. **Defining Business Rules**: Explain the conditions of the logic you want to implement.
+   > **Prompt:** "I want to add a 'Popular Post' feature to our board. Make the view count (`viewCount`) increase by 1 every time the post detail page is viewed, and implement logic so that when the view count exceeds 100, a '🔥Popular' tag appears next to the post title."
+
+2. **Domain Model Expansion**: The AI adds new fields to the `Board` entity and creates business methods in the service layer.
+
+3. **Integration Implementation**: The AI uses `edit_existing_file` to connect the controller and service logic, and writes code so that it can finally be reflected in the database.
+
+---
+
+## 💡 Tips for Efficient Logic Creation
+
+* **Define Input/Output (I/O)**: Specifying input values and expected output values, such as "When A is entered, B should come out," dramatically increases the accuracy of the logic.
+* **Specify Exceptional Situations**: Let the AI know in advance how to handle exception cases, such as "When there is no data, don't throw an error, but return an empty object."
+* **Request Verification**: Once logic creation is complete, increase the level of completion by requesting, "Review if there are any bugs in this logic and write test code."

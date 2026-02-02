@@ -1,41 +1,41 @@
 ---
 title: 'Logic Update'
-description: '로직을 업데이트하는 방법을 알아봅니다.'
+description: 'Learn how to update logic.'
 icon: 'diagram-project'
 ---
 
 
-## 로직 업데이트 개요
+## Logic Update Overview
 
-어플리케이션이 성장함에 따라 기존의 비즈니스 규칙을 변경하거나 성능을 개선해야 하는 상황이 발생합니다. **Logic Update**는 이미 존재하는 코드의 맥락을 유지하면서, 새로운 요구사항에 맞춰 로직을 정교하게 다듬는 과정입니다. Prometheus AI는 기존 코드의 의존성을 파악하여 사이드 이펙트(Side Effect)를 최소화하는 업데이트를 지원합니다.
-
----
-
-## 주요 업데이트 시나리오
-
-기존에 단순히 조회수만 따지던 '인기글' 로직을 날짜 조건까지 포함하도록 업데이트하는 과정입니다.
-
-1. **변경 요구사항 전달**: 기존 로직의 수정 방향을 명확히 제시합니다.
-   > **Prompt:** "기존 인기글 로직을 업데이트해줘. 이제는 전체 조회수뿐만 아니라, '최근 7일 이내에 작성된 글' 중에서 조회수가 50개 이상인 경우에만 인기글로 표시하고 싶어."
-
-2. **코드 분석 및 수정**: AI는 `read_file`을 통해 기존의 `BoardService` 코드를 읽고, 날짜 비교 로직을 추가하여 안전하게 업데이트를 진행합니다.
-
-3. **성능 최적화 요청**: 로직이 복잡해질 경우 성능 개선을 함께 요청할 수 있습니다.
-   > **Prompt:** "이 로직이 데이터베이스에 부하를 주지 않도록 인덱스를 고려하거나 쿼리를 최적화해서 수정해줘."
+As an application grows, situations arise where existing business rules need to be changed or performance improved. **Logic Update** is the process of delicately refining logic to meet new requirements while maintaining the context of existing code. Prometheus AI supports updates that minimize side effects by identifying existing code dependencies.
 
 ---
 
-## 안전한 업데이트를 위한 프로세스
+## Main Update Scenarios
 
-1. **현재 로직 분석**: AI는 `read_file`을 통해 현재 구현된 로직과 연결된 의존성(Method call, DB Table 등)을 먼저 분석합니다.
-2. **변경 사항 계획**: `view_diff` 도구를 제안하여 수정될 코드 라인을 사용자에게 미리 보여주고 승인을 받습니다.
-3. **점진적 적용**: 한 번에 너무 많은 파일을 수정하기보다, 핵심 로직이 담긴 파일부터 하나씩 업데이트하는 것이 안전합니다.
-4. **회귀 테스트**: 업데이트 후 `run_terminal_command`로 기존 테스트 코드가 여전히 통과하는지 확인하여 기능 저하 여부를 검증합니다.
+The following is the process of updating the 'Popular Post' logic, which previously only considered view counts, to include date conditions.
+
+1. **Convey Change Requirements**: Clearly present the direction for modifying the existing logic.
+   > **Prompt:** "Update the existing popular post logic. Now, I want to display as a popular post only if it's among 'posts written within the last 7 days' and the view count is 50 or more, in addition to the total view count."
+
+2. **Code Analysis and Modification**: The AI reads the existing `BoardService` code through `read_file` and proceeds with the update safely by adding date comparison logic.
+
+3. **Request Performance Optimization**: If the logic becomes complex, you can request performance improvement together.
+   > **Prompt:** "Modify this logic by considering indexes or optimizing queries so it doesn't put a load on the database."
 
 ---
 
-## 💡 로직 업데이트 팁
+## Process for Safe Update
 
-* **'Before & After' 명시**: "기존에는 A 방식으로 동작했는데, 이제는 B 방식으로 바꿔줘"라고 명확히 대비하여 지시하면 AI가 수정 범위를 더 정확히 파악합니다.
-* **영향 범위 질문**: 로직을 고치기 전 AI에게 "이 로직을 수정하면 다른 어떤 파일들에 영향을 주게 될까?"라고 물어보세요. 예상치 못한 오류를 사전에 방지할 수 있습니다.
-* **백업 지침 활용**: 중요한 로직을 고칠 때는 "기존 로직은 주석으로 남겨두고 새로운 로직을 작성해줘"라고 요청하여 복구 지점을 확보하세요.
+1. **Current Logic Analysis**: The AI first analyzes the currently implemented logic and its connected dependencies (Method calls, DB Tables, etc.) through `read_file`.
+2. **Planned Changes**: It suggests the `view_diff` tool to show the user the lines of code to be modified in advance and get approval.
+3. **Incremental Application**: Rather than modifying too many files at once, it's safer to update files containing core logic one by one.
+4. **Regression Testing**: After the update, verify if there is any degradation in functionality by checking if existing test codes still pass with `run_terminal_command`.
+
+---
+
+## 💡 Logic Update Tips
+
+* **Specify 'Before & After'**: If you give instructions by clearly contrasting them, such as "It used to work in method A, but now change it to method B," the AI grasps the scope of modification more accurately.
+* **Ask About Impact Scope**: Before fixing the logic, ask the AI, "If I modify this logic, what other files will be affected?" This can prevent unexpected errors in advance.
+* **Use Backup Instructions**: When fixing important logic, secure a recovery point by requesting, "Leave the existing logic as a comment and write the new logic."

@@ -1,39 +1,39 @@
 ---
 title: 'Logout'
-description: '로그아웃하는 방법을 알아봅니다.'
+description: 'Learn how to create logout modules using Prometheus.'
 icon: 'arrow-right-from-bracket'
 ---
 
 
-## 로그아웃 기능 개요
+## Logout Feature Overview
 
-**로그아웃**은 사용자의 인증 상태를 안전하게 파기하여 타인이 계정을 도용하지 못하도록 차단하는 보안의 핵심 단계입니다. 앞서 구현한 로그인 방식(JWT 등)에 맞춰 클라이언트와 서버 측의 인증 정보를 모두 무효화하는 과정을 바이브 코딩으로 구현합니다.
-
----
-
-## 단계별 로그아웃 구현
-
-### 1. 로그아웃 전략 수립
-사용 중인 인증 방식에 따라 최적의 로그아웃 로직을 AI에게 요청합니다. 
-
-> **Prompt:** "게시판 로그아웃 기능을 만들고 싶어. 클라이언트가 가지고 있는 JWT 토큰을 무효화해야 하는데, 서버 측에서도 해당 토큰을 블랙리스트(Blacklist)에 등록해서 더 이상 쓸 수 없게 만드는 로직을 짜줘."
-
-### 2. 로그아웃 로직 생성 (Logic Create)
-AI는 세션 파기 또는 토큰 만료 처리를 위한 전용 핸들러를 생성합니다.
-
-* **Tools 활용**: AI는 `edit_existing_file`을 사용하여 `SecurityConfig`에 로그아웃 엔드포인트를 등록하고, 로그아웃 성공 시 리다이렉트될 페이지를 설정합니다.
-
-### 3. UI 및 내비게이션 업데이트 (Layout Change)
-사용자의 로그인 상태에 따라 헤더의 버튼이 '로그인'에서 '로그아웃'으로 바뀌도록 레이아웃을 수정합니다.
-
-> **Prompt:** "헤더 레이아웃을 업데이트해줘. 사용자가 로그인한 상태면 '로그아웃' 버튼이 보이게 하고, 클릭하면 방금 만든 로그아웃 API가 호출되도록 자바스크립트 코드를 넣어줘."
+**Logout** is a key step in security that safely destroys the user's authentication state to block others from stealing the account. In accordance with the previously implemented login method (JWT, etc.), we implement the process of invalidating both client and server-side authentication information through Vibe Coding.
 
 ---
 
-## 💡 안전한 로그아웃을 위한 체크리스트
+## Step-by-Step Logout Implementation
 
-* **클라이언트 저장소 정리**: 로그아웃 시 브라우저의 `localStorage`나 `Cookie`에 저장된 사용자 정보와 토큰을 완전히 삭제했는지 확인하세요.
-* **캐시 제어**: 로그아웃 후 뒤로가기 버튼을 눌렀을 때 민감한 게시판 작성 페이지가 다시 나타나지 않도록 `Cache-Control` 헤더 설정을 AI에게 요청하는 것이 좋습니다.
-* **리다이렉션**: 로그아웃이 완료되면 사용자에게 "로그아웃되었습니다"라는 메시지를 보여주거나 메인 화면으로 자연스럽게 이동시켜야 합니다.
+### 1. Establish a Logout Strategy
+Request the optimal logout logic from the AI based on the authentication method being used.
+
+> **Prompt:** "I want to create a bulletin board logout function. I need to invalidate the JWT token held by the client, and so I should also create logic for the server side to register that token in a Blacklist so it can no longer be used."
+
+### 2. Logout Logic Creation (Logic Create)
+The AI creates a dedicated handler for session destruction or token expiration processing.
+
+* **Using Tools**: The AI uses `edit_existing_file` to register a logout endpoint in `SecurityConfig` and sets the page to be redirected to upon a successful logout.
+
+### 3. UI and Navigation Update (Layout Change)
+Modify the layout so that the button in the header changes from 'Login' to 'Logout' depending on the user's login status.
+
+> **Prompt:** "Update the header layout. If the user is logged in, show a 'Logout' button and put in JavaScript code so that the logout API we just created is called when it's clicked."
+
+---
+
+## 💡 Checklist for Secure Logout
+
+* **Clean up Client Storage**: Ensure that user information and tokens stored in the browser's `localStorage` or `Cookie` are completely deleted upon logout.
+* **Cache Control**: It's recommended to request the AI to set `Cache-Control` headers so that sensitive board writing pages don't reappear when the back button is pressed after logging out.
+* **Redirection**: Once the logout is complete, you should show a "You have been logged out" message to the user or naturally move them to the main screen.
 
 ---
