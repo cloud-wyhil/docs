@@ -110,7 +110,9 @@
                 "group": "Product",
                 "icon": "box-open",
                 "pages": [
-                  "en/prometheus/introduction"
+                  "en/prometheus/introduction",
+                  "en/prometheus/quick-start",
+                  "en/prometheus/tutorial"
                 ]
               },
               {
@@ -204,20 +206,6 @@
                       }
                     ]
                   }
-                ]
-              },
-              {
-                "group": "Tutorial",
-                "pages": [
-                  "en/prometheus/tutorial/preparation",
-                  "en/prometheus/tutorial/board",
-                  "en/prometheus/tutorial/layout",
-                  "en/prometheus/tutorial/login",
-                  "en/prometheus/tutorial/logout",
-                  "en/prometheus/tutorial/logic_create",
-                  "en/prometheus/tutorial/logic_update",
-                  "en/prometheus/tutorial/sql_create",
-                  "en/prometheus/tutorial/sql_tuning"
                 ]
               }
             ]
@@ -377,7 +365,9 @@
                 "group": "제품",
                 "icon": "box-open",
                 "pages": [
-                  "ko/prometheus/introduction"
+                  "ko/prometheus/introduction",
+                  "ko/prometheus/quick-start",
+                  "ko/prometheus/tutorial"
                 ]
               },
               {
@@ -478,20 +468,6 @@
                       }
                     ]
                   }
-                ]
-              },
-              {
-                "group": "튜토리얼",
-                "pages": [
-                  "ko/prometheus/tutorial/preparation",
-                  "ko/prometheus/tutorial/board",
-                  "ko/prometheus/tutorial/layout",
-                  "ko/prometheus/tutorial/login",
-                  "ko/prometheus/tutorial/logout",
-                  "ko/prometheus/tutorial/logic_create",
-                  "ko/prometheus/tutorial/logic_update",
-                  "ko/prometheus/tutorial/sql_create",
-                  "ko/prometheus/tutorial/sql_tuning"
                 ]
               }
             ]
@@ -630,7 +606,9 @@
                 "group": "プロダクト",
                 "icon": "box-open",
                 "pages": [
-                  "ja/prometheus/introduction"
+                  "ja/prometheus/introduction",
+                  "ja/prometheus/quick-start",
+                  "ja/prometheus/tutorial"
                 ]
               },
               {
@@ -724,20 +702,6 @@
                       }
                     ]
                   }
-                ]
-              },
-              {
-                "group": "チュートリアル",
-                "pages": [
-                  "ja/prometheus/tutorial/preparation",
-                  "ja/prometheus/tutorial/board",
-                  "ja/prometheus/tutorial/layout",
-                  "ja/prometheus/tutorial/login",
-                  "ja/prometheus/tutorial/logout",
-                  "ja/prometheus/tutorial/logic_create",
-                  "ja/prometheus/tutorial/logic_update",
-                  "ja/prometheus/tutorial/sql_create",
-                  "ja/prometheus/tutorial/sql_tuning"
                 ]
               }
             ]
