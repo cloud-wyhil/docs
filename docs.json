@@ -473,15 +473,51 @@
               {
                 "group": "Prometheus",
                 "pages": [
-                  "ko/training/prometheus/preparation",
-                  "ko/training/prometheus/board",
-                  "ko/training/prometheus/layout",
-                  "ko/training/prometheus/login",
-                  "ko/training/prometheus/logout",
-                  "ko/training/prometheus/logic_create",
-                  "ko/training/prometheus/logic_update",
-                  "ko/training/prometheus/sql_create",
-                  "ko/training/prometheus/sql_tuning"
+                  {
+                    "group": "Java",
+                    "icon": "java",
+                    "pages": [
+                      "ko/training/prometheus/java/preparation",
+                      "ko/training/prometheus/java/board",
+                      "ko/training/prometheus/java/layout",
+                      "ko/training/prometheus/java/login",
+                      "ko/training/prometheus/java/logout",
+                      "ko/training/prometheus/java/logic_create",
+                      "ko/training/prometheus/java/logic_update",
+                      "ko/training/prometheus/java/sql_create",
+                      "ko/training/prometheus/java/sql_tuning"
+                    ]
+                  },
+                  {
+                    "group": "Python",
+                    "icon": "python",
+                    "pages": [
+                      "ko/training/prometheus/python/preparation",
+                      "ko/training/prometheus/python/board",
+                      "ko/training/prometheus/python/layout",
+                      "ko/training/prometheus/python/login",
+                      "ko/training/prometheus/python/logout",
+                      "ko/training/prometheus/python/logic_create",
+                      "ko/training/prometheus/python/logic_update",
+                      "ko/training/prometheus/python/sql_create",
+                      "ko/training/prometheus/python/sql_tuning"
+                    ]
+                  },
+                  {
+                    "group": "NodeJS",
+                    "icon": "node-js",
+                    "pages": [
+                      "ko/training/prometheus/nodejs/preparation",
+                      "ko/training/prometheus/nodejs/board",
+                      "ko/training/prometheus/nodejs/layout",
+                      "ko/training/prometheus/nodejs/login",
+                      "ko/training/prometheus/nodejs/logout",
+                      "ko/training/prometheus/nodejs/logic_create",
+                      "ko/training/prometheus/nodejs/logic_update",
+                      "ko/training/prometheus/nodejs/sql_create",
+                      "ko/training/prometheus/nodejs/sql_tuning"
+                    ]
+                  }
                 ]
               },
               {
