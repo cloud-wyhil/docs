@@ -280,7 +280,8 @@
               {
                 "group": "Customers",
                 "pages": [
-                  "ko/wyhil/customers"
+                  "ko/wyhil/customers",
+                  "ko/wyhil/reference"
                 ]
               }
             ]
@@ -473,6 +474,7 @@
               {
                 "group": "Prometheus",
                 "pages": [
+                  "ko/training/prometheus/preparation",
                   {
                     "group": "Java",
                     "icon": "java",
