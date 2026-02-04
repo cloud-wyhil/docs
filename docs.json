@@ -435,20 +435,8 @@
                     "group": "Features",
                     "icon": "star",
                     "pages": [
-                      {
-                        "group": "Chat",
-                        "icon": "comments",
-                        "pages": [
-                          "ko/prometheus/application/features/chat/quick-start"
-                        ]
-                      },
-                      {
-                        "group": "Dashboard",
-                        "icon": "dashboard",
-                        "pages": [
-                          "ko/prometheus/application/features/dashboard/quick-start"
-                        ]
-                      }
+                      "ko/prometheus/application/features/chat",
+                      "ko/prometheus/application/features/dashboard"
                     ]
                   }
                 ]
